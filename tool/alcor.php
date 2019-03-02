@@ -1,13 +1,12 @@
 <?php
 
 $txt = explode("\r\n", file_get_contents($argv[1]));
-$ntxt = "";
+$ntxt = array_shift($txt) . "\r\n";
 foreach($txt as $k){
-    $block = explode(" ", $k);
-    if($k{0} == "#" or $block[0] == "controllers"){
-        $ntxt .= $k . "\r\n";
+    if(trim($k) == ""){
         continue;
     }
+    $block = explode(",", $k);
     list($manufacturer, $cellLevel, $density, $pn, $processNode) = $block;
     if($pn{strlen($pn) - 2} == "/"){
         $pnn = explode("/", $pn);

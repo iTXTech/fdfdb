@@ -2,20 +2,43 @@
 
 [FlashDetector](https://github.com/iTXTech/FlashDetector) (RAW) Flash Database
 
-## Directories
+## Controller Vendors
 
 1. `al` - *Alcor Micro*
 1. `cbm` - *ChipsBank*
-1. `is` - *Innostor* - ~~Now a part of ASolid~~
-1. `jm` - *JMicron* - ~~Now its SSD Controller department is `Maxiotek`~~
-1. `mk` - *Maxiotek* - ~~`HIKVISION` is its major shareholder~~
+1. `is` - *Innostor* - Now a part of ASolid
+1. `jm` - *JMicron* - Now its SSD Controller department is `Maxiotek`
+1. `mk` - *Maxiotek* - `HIKVISION` is its major shareholder
+1. `sf` - *SandForce* - Now a part of Seagate
 1. `smufd` - *SiliconMotion* - UFD controller
 1. `smssd` - *SlicionMotion* - SSD controller
 
-------------
+## Excluded Vendors
+
+1. `ps` - *PHISON* - Mainly used by `Kingston`, `Toshiba`
+1. `sss` - *Solid State System* - The same as `PHISON`
+1. `mw` - *Micov*
+
+## Additional Folders
 
 1. `tools` - Including some tools for processing fdb
 1. `archives` - Including PDFs
+
+## extra.json Format
+
+```json
+{
+    "Vendor":{
+        "Part number": {
+            "id": ["Flash Id 0", "Flash Id 1"],
+            "l": "Process node",
+            "c": "Cell level",
+            "t": ["Controller 0", "Controller 1"],
+            "m": "Additional Info"
+        }
+    }
+}
+```
 
 ## Contribution
 

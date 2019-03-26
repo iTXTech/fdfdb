@@ -1,0 +1,11 @@
+{
+    "Vendor":{
+        "Part number": {
+            "id": ["Flash Id 0", "Flash Id 1"],
+            "l": "Process node",
+            "c": "Cell level",
+            "t": ["Controller 0", "Controller 1"],
+            "m": "Just an example"
+        }
+    }
+}

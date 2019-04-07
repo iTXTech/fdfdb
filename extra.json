@@ -1,11 +1,78 @@
 {
-    "Vendor":{
-        "Part number": {
-            "id": ["Flash Id 0", "Flash Id 1"],
-            "l": "Process node",
-            "c": "Cell level",
-            "t": ["Controller 0", "Controller 1"],
-            "m": "Just an example"
+    "toshiba": {
+        "TH58TFT1DFKLAVH": {
+            "id": [
+                "983CA5937E50"
+            ],
+            "l": "",
+            "c": "",
+            "t": [],
+            "m": ""
+        }
+    },
+    "samsung": {
+        "K9DMGY8SCC": {
+            "id": [
+                "EC1A881F70C8"
+            ],
+            "l": "3DV3",
+            "c": "",
+            "t": [],
+            "m": "K9OKG8S7C x2"
+        },
+        "K9OKGY8S7E": {
+            "id": [
+                "EC1A882F80C9"
+            ],
+            "l": "3DV3",
+            "c": "",
+            "t": [],
+            "m": ""
+        },
+        "K9CKGY8S5M": {
+            "id": [
+                "EC1C982F84C9"
+            ],
+            "l": "3DV3",
+            "c": "",
+            "t": [],
+            "m": ""
+        },
+        "K9DUGB8S7M": {
+            "id": [
+                "EC1ED92F88C9"
+            ],
+            "l": "3DV3",
+            "c": "",
+            "t": [],
+            "m": ""
+        },
+        "K9UUGB8S7M": {
+            "id": [
+                "EC1CD55368C9"
+            ],
+            "l": "3DV3",
+            "c": "",
+            "t": [],
+            "m": ""
+        },
+        "K9PKGY8S4B": {
+            "id": [
+                "EC3CD543A8CA"
+            ],
+            "l": "3DV3",
+            "c": "",
+            "t": [],
+            "m": ""
+        },
+        "K9UKGB8S7F": {
+            "id": [
+                "EC3AD543A8CA"
+            ],
+            "l": "3DV3",
+            "c": "",
+            "t": [],
+            "m": ""
         }
     }
 }

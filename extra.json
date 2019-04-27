@@ -10,6 +10,17 @@
             "m": ""
         }
     },
+	"skhynix": {
+	    "H27QFG8YHE": {
+		    "id": [
+			    "AD3A15A7444A"
+			],
+            "l": "16nm",
+            "c": "",
+            "t": ["IS903"],
+            "m": "8CE 8Die"
+		}
+	},
     "samsung": {
         "K9DMGY8SCC": {
             "id": [

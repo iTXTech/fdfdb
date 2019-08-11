@@ -34,11 +34,21 @@
             "l": "Process node",
             "c": "Cell level",
             "t": ["Controller 0", "Controller 1"],
-            "m": "Additional Info"
+            "m": "Additional Info",
+            "d": 8,//Die
+            "e": 2,//CE
+            "r": 4,//Rb
+            "n": 1,//Channel
         }
     }
 }
 ```
+
+Special comment for SanDisk: `CODE`, `Txxxx`
+
+`CODE` means there's only one CE and need to short all CE pins and Rb pins.
+
+`Txxx` is the name corresponding to Toshiba, like `T0DFK`, `T9THL`, `T2T24`
 
 ## Contribution
 

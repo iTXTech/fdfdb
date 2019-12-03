@@ -56,7 +56,7 @@ If you have a PDF file, please submit an issue and upload it.
 
 If you have a RAW fdb file, please submit a pull request.
 
-Any FDB file should be public and is accessible to anyone.
+Any FDB file should be public and accessible to anyone.
 
 ## License
 

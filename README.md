@@ -12,6 +12,7 @@
 1. `sf` - *SandForce* - Now a part of Seagate
 1. `smufd` - *SiliconMotion* - UFD controller
 1. `smssd` - *SlicionMotion* - SSD controller
+1. `smff` - *SlicionMotion* - ForceFlash
 
 ## Excluded Vendors
 
@@ -24,7 +25,7 @@
 1. `tools` - Including some tools for processing fdb
 1. `archives` - Including PDFs
 
-## extra.json Format
+## FlashDetector Flash Database (extra.json) Format
 
 ```json
 {

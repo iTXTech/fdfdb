@@ -25,7 +25,9 @@
 1. `tools` - Including some tools for processing fdb
 1. `archives` - Including PDFs
 
-## FlashDetector Flash Database (extra.json) Format
+## `extra.json` Format
+
+The full `iTXTech FlashDetector Flash Database Document` is [here](https://github.com/iTXTech/FlashDetector/blob/master/FlashDatabase.md).
 
 ```json
 {
@@ -45,11 +47,11 @@
 }
 ```
 
-Special comment for SanDisk: `CODE`, `Txxxx`
+Special remark for SanDisk: `CODE`, `Txxxx`
 
 `CODE` means there's only one CE and need to short all CE pins and Rb pins.
 
-`Txxx` is the name corresponding to Toshiba, like `T0DFK`, `T9THL`, `T2T24`
+`Txxx` is the codename corresponding to Toshiba, like `T0DFK`, `T9THL`, `T2T24`
 
 ## Contribution
 

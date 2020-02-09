@@ -35,6 +35,7 @@ The full `iTXTech FlashDetector Flash Database Documentation` is [here](https://
     "Vendor":{
         "Part number": {
             "id": ["Flash Id 0", "Flash Id 1"],
+            "fid": ["Flash Id 0", "Flash Id 1"], // Overwrite all FlashIds, do not use fid with id
             "l": "Process node",
             "c": "Cell level",
             "t": ["Controller 0", "Controller 1"],

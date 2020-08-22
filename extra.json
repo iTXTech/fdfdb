@@ -14,6 +14,27 @@
       "id": [
         "983C98B37671"
       ]
+    },
+    "TH58LJG8SA4BA4C": {
+      "id": [
+        "983AA0B17EE3"
+      ],
+      "d": 2,
+      "m": "4KP/16plane"
+    },
+    "TH58LJG9SA4BA8C": {
+      "id": [
+        "983AA0B17EE3"
+      ],
+      "d": 4,
+      "m": "4KP/16plane"
+    },
+    "TH58LJT0SA4BA8H": {
+      "id": [
+        "983CA1B17EE3"
+      ],
+      "d": 8,
+      "m": "4KP/16plane"
     }
   },
   "skhynix": {

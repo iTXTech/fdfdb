@@ -1,0 +1,23 @@
+[SM2269XT-DataBase-U1126]
+A0=Micron,512Gbit,MT29F512G08EBLEE(B47R)(556)(SM2269XT)
+Micron,512Gbit,MT29F512G08EBLEE(B47R)(556)(SM2269XT)=2C,C3,08,32,EA,30,4,16,1968,033792,2112,02224,02104,01000,04,01,01,1,91,00,0,99,7F,01,0303,3B,00,00,00,00,10,10,00,000,00,01,01,00,00,000,3,0,03,04,FF,FF,03,00,3,01,0080,0080,7F,01,01,00,00,00,00,00,00,00,00,00,00,00,00,0000,00,0001,00,00,0000,
+A1=[END]
+
+
+[Setting]
+ICOffset=52
+
+
+[ColumnName]
+Manufacturer,Capacity,Part Number=ID0(H),ID1(H),ID2(H),ID3(H),ID4(H),ID5(H),Flash Type(D),Page Size(D),Spare Byte(D),Block Size(D),Page Number(D),Block Number(D),Minimum Block Number(D),Die Address(H),Plane Number(D),Internal Chip Number(D),CE Number(D),Channel(D),Flash Interface(H),Process(D),Sub-Process(H),Strong Weak Table Select(D),Flash CMD Option1(H),Flash CMD Option2(H),Table Setting(H),SLC CMD Ptn1(H),SLC CMD Ptn2(H),Reliable SLC Mode Option(H),SDR tWC(D),SDR tRC(D),DDR tWC(D),DDR tRC(D),CMD Set Table(D),Read Retry Table(D),SLC Read Retry Table(D),Initial Invalid Block Page(H),Initial Invalid Block Column(H),Initial Invalid Block Pattern(H),Initial Invalid Extend Option(H),ECC Bit(D),VccQ(D),Vcc(D),IO Driving 1(H),IO Driving 2(H),IO Driving 3(H),IO Driving 4(H),Endurance 1(D),Endurance 2(D),Endurance 3(D),Setting Status(H),Flash Status 1(H),Flash Status 2(H),SM2269XT Flash CMD Option 1(H),SM2269XT Flash CMD Option 2(H),SM2269XT Flash CMD Option 3(H),SM2269XT EVB_Driving1_18V(H),SM2269XT EVB_Driving2_18V(H),SM2269XT BGA_Driving1_18V(H),SM2269XT BGA_Driving2_18V(H),SM2269XT M2_Driving1_18V(H),SM2269XT M2_Driving2_18V(H),SM2269XT EVB_Driving1_12V(H),SM2269XT EVB_Driving2_12V(H),SM2269XT BGA_Driving1_12V(H),SM2269XT BGA_Driving2_12V(H),SM2269XT M2_Driving1_12V(H),SM2269XT M2_Driving2_12V(H),SM2269XT SLC_Block(H),SM2269XT ODT Option(H),SM2269XT Flash Status 3(H),SM2269XT Temperature Option(H),SM2269XT Data Training(H),SM2269XT SLC Endurance(D),
+
+
+[ColumnType]
+S,S,S=H,H,H,H,H,H,D,D,D,D,D,D,D,H,D,D,D,D,H,D,H,D,H,H,H,H,H,H,D,D,D,D,D,D,D,H,H,H,H,D,D,D,H,H,H,H,D,D,D,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,D,
+
+
+[CheckSum]
+SM2269XT-DataBase-U1126=8A34AB2A0C5A77DB3CE5A72C29AE777A5E1E50F61C92E6AFAEA6660FFAD100A0
+Setting=F5FFDA13DE6CA6164608492C49E53B9D58BD25943060D778F8493D629171C031
+ColumnName=E47123E805B3E33268875FF08C78965ADB819C95BAA416E4CDF801EE4857DAD5
+ColumnType=08737AB2C9AE29DB1261F514FE2D21FE68FDB4CCFEB0793225707A8D9D3DAFEC

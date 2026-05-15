@@ -1,0 +1,4640 @@
+{
+  "schemaVersion": "mptool.sky.review.v1",
+  "input": "/Users/peratx/dev/fdfdb/archives/sky.txt",
+  "generatedAt": "2026-05-15T09:51:38.308Z",
+  "summary": {
+    "lineCount": 621,
+    "safeRecordCount": 337,
+    "issueCount": 352,
+    "issuesByCode": {
+      "decodepack.topology_conflict": 13,
+      "decodepack.cell_conflict": 19,
+      "samsung.cer_topology_not_allowed": 9,
+      "decodepack.process_conflict": 103,
+      "samsung.cer_decodepack_missing_topology": 1,
+      "part.ignored_js_prefix": 8,
+      "flash_id.too_short": 18,
+      "part.kioxia_decodepack_covered": 98,
+      "part.untrusted": 26,
+      "part.intel_micron_pn": 10,
+      "part.ignored_tc_8t24_032gb": 2,
+      "part.topology_conflict": 30,
+      "part.field_conflict": 15
+    }
+  },
+  "issues": [
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 13,
+      "raw": "MT29F1T08GBLCEJ4(N48R)*2B             2CE38D32EA30          Micron N48R",
+      "partNumber": "MT29F1T08GBLCEJ4(N48R)*2B",
+      "flashId": "2CE38D32EA30",
+      "note": "Micron N48R",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "micron",
+        "decodepackVendor": "micron",
+        "conflicts": {
+          "d": {
+            "extra": 2,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 26,
+      "raw": "K9XVGY8J5M(V4Q)                               EC51DD1F88CB         Samsung SSV4(QLC)",
+      "partNumber": "K9XVGY8J5M(V4Q)",
+      "flashId": "EC51DD1F88CB",
+      "note": "Samsung SSV4(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "QLC",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "samsung.cer_topology_not_allowed",
+      "severity": "warning",
+      "line": 27,
+      "raw": "K9XVGB8J1M(V4Q)                              EC52DE1F8CCB         Samsung SSV4(CER_QLC)",
+      "partNumber": "K9XVGB8J1M(V4Q)",
+      "flashId": "EC52DE1F8CCB",
+      "note": "Samsung SSV4(CER_QLC)",
+      "message": "Samsung CER is only kept when decodepack shows more than one die per CE",
+      "details": {
+        "partNumber": "K9XVGB8J1M",
+        "dieCount": -1,
+        "ceCount": 2,
+        "diePerCe": -0.5
+      }
+    },
+    {
+      "code": "samsung.cer_topology_not_allowed",
+      "severity": "warning",
+      "line": 29,
+      "raw": "K9DUGB8SJM                                       EC119B2F8EC9          Samsung CER(SSV3_TLC)",
+      "partNumber": "K9DUGB8SJM",
+      "flashId": "EC119B2F8EC9",
+      "note": "Samsung CER(SSV3_TLC)",
+      "message": "Samsung CER is only kept when decodepack shows more than one die per CE",
+      "details": {
+        "partNumber": "K9DUGB8SJM",
+        "dieCount": 16,
+        "ceCount": 16,
+        "diePerCe": 1
+      }
+    },
+    {
+      "code": "samsung.cer_topology_not_allowed",
+      "severity": "warning",
+      "line": 34,
+      "raw": "K9AFGD8H0A                                       EC1ED93F88CB          Samsung CER(SSV4_TLC)",
+      "partNumber": "K9AFGD8H0A",
+      "flashId": "EC1ED93F88CB",
+      "note": "Samsung CER(SSV4_TLC)",
+      "message": "Samsung CER is only kept when decodepack shows more than one die per CE",
+      "details": {
+        "partNumber": "K9AFGD8H0A",
+        "dieCount": 1,
+        "ceCount": 1,
+        "diePerCe": 1
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 36,
+      "raw": "K9OUGY8J5M_2Die                              EC1FD93F88CB          Samsung CER(SSV4_TLC)",
+      "partNumber": "K9OUGY8J5M_2Die",
+      "flashId": "EC1FD93F88CB",
+      "note": "Samsung CER(SSV4_TLC)",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "conflicts": {
+          "d": {
+            "extra": 2,
+            "decodepack": 8,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "samsung.cer_topology_not_allowed",
+      "severity": "warning",
+      "line": 38,
+      "raw": "K9PMGY8J7M                                       EC5C94D364CB         Samsung SSV4_MLC(CERCE3)",
+      "partNumber": "K9PMGY8J7M",
+      "flashId": "EC5C94D364CB",
+      "note": "Samsung SSV4_MLC(CERCE3)",
+      "message": "Samsung CER is only kept when decodepack shows more than one die per CE",
+      "details": {
+        "partNumber": "K9PMGY8J7M",
+        "dieCount": 8,
+        "ceCount": 8,
+        "diePerCe": 1
+      }
+    },
+    {
+      "code": "samsung.cer_topology_not_allowed",
+      "severity": "warning",
+      "line": 39,
+      "raw": "K9GFGD8H0A                                       EC1C94D364CB         Samsung SSV4_MLC(CERCE3)",
+      "partNumber": "K9GFGD8H0A",
+      "flashId": "EC1C94D364CB",
+      "note": "Samsung SSV4_MLC(CERCE3)",
+      "message": "Samsung CER is only kept when decodepack shows more than one die per CE",
+      "details": {
+        "partNumber": "K9GFGD8H0A",
+        "dieCount": 1,
+        "ceCount": 1,
+        "diePerCe": 1
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 45,
+      "raw": "KLUGGAR1FA                                       EC1FD9BF88CC         Samsung SSV5",
+      "partNumber": "KLUGGAR1FA",
+      "flashId": "EC1FD9BF88CC",
+      "note": "Samsung SSV5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "SSV5",
+        "decodepack": "V5 92L"
+      }
+    },
+    {
+      "code": "samsung.cer_topology_not_allowed",
+      "severity": "warning",
+      "line": 52,
+      "raw": "K9XVGY8J5A(V5Q)                               EC52DE6B8CCC         Samsung SSV5(CER_QLC)",
+      "partNumber": "K9XVGY8J5A(V5Q)",
+      "flashId": "EC52DE6B8CCC",
+      "note": "Samsung SSV5(CER_QLC)",
+      "message": "Samsung CER is only kept when decodepack shows more than one die per CE",
+      "details": {
+        "partNumber": "K9XVGY8J5A",
+        "dieCount": -1,
+        "ceCount": 4,
+        "diePerCe": -0.25
+      }
+    },
+    {
+      "code": "samsung.cer_decodepack_missing_topology",
+      "severity": "warning",
+      "line": 54,
+      "raw": "K9OVGD8J2B                                        EC51E93F8CCF          Samsung SSV8(CER)",
+      "partNumber": "K9OVGD8J2B",
+      "flashId": "EC51E93F8CCF",
+      "note": "Samsung SSV8(CER)",
+      "message": "Samsung CER requires decodepack CE/Die topology, but die_count or ce_count is missing",
+      "details": {
+        "dieCount": 8,
+        "ceCount": -1
+      }
+    },
+    {
+      "code": "samsung.cer_topology_not_allowed",
+      "severity": "warning",
+      "line": 62,
+      "raw": "K9OUGY8J8H                                       EC5FE93F8CCF          Samsung SSV8(CER)",
+      "partNumber": "K9OUGY8J8H",
+      "flashId": "EC5FE93F8CCF",
+      "note": "Samsung SSV8(CER)",
+      "message": "Samsung CER is only kept when decodepack shows more than one die per CE",
+      "details": {
+        "partNumber": "K9OUGY8J8H",
+        "dieCount": 8,
+        "ceCount": 8,
+        "diePerCe": 1
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 64,
+      "raw": "H25BFT8A1BLR                                    AD7E285302B2          Hynix 128L 3Dv6",
+      "partNumber": "H25BFT8A1BLR",
+      "flashId": "AD7E285302B2",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "3D NAND V6 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 65,
+      "raw": "H25JGT4D1C8R                                    AD892A5300B0         Hynix 128L 3Dv6",
+      "partNumber": "H25JGT4D1C8R",
+      "flashId": "AD892A5300B0",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "3D NAND V6 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 66,
+      "raw": "H25BFT8A1B                                        AD5E295302B0          Hynix 128L 3Dv6",
+      "partNumber": "H25BFT8A1B",
+      "flashId": "AD5E295302B0",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "3D NAND V6 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 67,
+      "raw": "H25JGT8A1MDA-BCH                          AD89285300B2          Hynix 128L 3Dv6",
+      "partNumber": "H25JGT8A1MDA-BCH",
+      "flashId": "AD89285300B2",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "3D NAND V6 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 69,
+      "raw": "H25BFT8A1B8R                                    AD7E285302B0          Hynix 128L 3Dv6",
+      "partNumber": "H25BFT8A1B8R",
+      "flashId": "AD7E285302B0",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "3D NAND V6 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 70,
+      "raw": "H25BFT8A1B                                        AD5E285302B0          Hynix 128L 3Dv6",
+      "partNumber": "H25BFT8A1B",
+      "flashId": "AD5E285302B0",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "3D NAND V6 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 71,
+      "raw": "H25JGT8A1M8R                                   AD89285300B0          Hynix 128L 3Dv6",
+      "partNumber": "H25JGT8A1M8R",
+      "flashId": "AD89285300B0",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "3D NAND V6 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 72,
+      "raw": "H25JGT8B3M8R                                   AD89295300B0          Hynix 128L 3Dv6",
+      "partNumber": "H25JGT8B3M8R",
+      "flashId": "AD89295300B0",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "3D NAND V6 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 73,
+      "raw": "H25BFT4D1C8R                                    AD7E2A5302B0         Hynix 128L 3Dv6",
+      "partNumber": "H25BFT4D1C8R",
+      "flashId": "AD7E2A5302B0",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "3D NAND V6 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 74,
+      "raw": "H25T3TM88C                                       AD89295300B2          Hynix 128L 3Dv6",
+      "partNumber": "H25T3TM88C",
+      "flashId": "AD89295300B2",
+      "note": "Hynix 128L 3Dv6",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "128L 3Dv6",
+        "decodepack": "Unknown"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 81,
+      "raw": "K9AHGD8J0B*2B                                  EC5FD9AF88CD        Samsung 136L 3Dv6(SSV6_CER)",
+      "partNumber": "K9AHGD8J0B*2B",
+      "flashId": "EC5FD9AF88CD",
+      "note": "Samsung 136L 3Dv6(SSV6_CER)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "136L 3Dv6",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 82,
+      "raw": "K9AHGD8H0B                                      EC1E98AF84CD         Samsung 136L 3Dv6(SSV6)",
+      "partNumber": "K9AHGD8H0B",
+      "flashId": "EC1E98AF84CD",
+      "note": "Samsung 136L 3Dv6(SSV6)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "136L 3Dv6",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 83,
+      "raw": "K9AHGD8J0B                                        EC5E98AF84CD         Samsung 136L 3Dv6(SSV6)",
+      "partNumber": "K9AHGD8J0B",
+      "flashId": "EC5E98AF84CD",
+      "note": "Samsung 136L 3Dv6(SSV6)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "136L 3Dv6",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 84,
+      "raw": "K9AFGD8J0C                                        EC1C98AF84CD         Samsung 136L 3Dv6(SSV6)",
+      "partNumber": "K9AFGD8J0C",
+      "flashId": "EC1C98AF84CD",
+      "note": "Samsung 136L 3Dv6(SSV6)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "136L 3Dv6",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 85,
+      "raw": "K9AFGD8J0C                                        EC5C98AF84CD         Samsung 136L 3Dv6(SSV6)",
+      "partNumber": "K9AFGD8J0C",
+      "flashId": "EC5C98AF84CD",
+      "note": "Samsung 136L 3Dv6(SSV6)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "136L 3Dv6",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "part.ignored_js_prefix",
+      "severity": "warning",
+      "line": 86,
+      "raw": "JS29F01T2ALCQJ1(N38B)                     89D3AC32C204         Intel 144L(N38B)",
+      "partNumber": "JS29F01T2ALCQJ1(N38B)",
+      "flashId": "89D3AC32C204",
+      "note": "Intel 144L(N38B)",
+      "message": "JS-prefixed PN is skipped by sky cleaner rule"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 88,
+      "raw": "SDUNCIAMA-064GB(BICS5)_4B            454999037AE4          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_4B",
+      "flashId": "454999037AE4",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 89,
+      "raw": "SDUNCIAMA-128GB(0T25)                  454898037664           Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-128GB(0T25)",
+      "flashId": "454898037664",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 90,
+      "raw": "SDUNCIAMA-128GB(0T25)                  45489803766C          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-128GB(0T25)",
+      "flashId": "45489803766C",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 91,
+      "raw": "SDUNCIAMB1TB(bics5Q)                      45489C037664          Sandisk(BiCS5)(QLC)",
+      "partNumber": "SDUNCIAMB1TB(bics5Q)",
+      "flashId": "45489C037664",
+      "note": "Sandisk(BiCS5)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 92,
+      "raw": "SDUNCIAMC1TB(bics5Q)                     45489D037A64          Sandisk(BiCS5)(QLC)",
+      "partNumber": "SDUNCIAMC1TB(bics5Q)",
+      "flashId": "45489D037A64",
+      "note": "Sandisk(BiCS5)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 93,
+      "raw": "SDUNCIAMA-064GB(BICS5)_4B            454999037AEC          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_4B",
+      "flashId": "454999037AEC",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 94,
+      "raw": "SDUNCIAMA-256GB(BICS5)                 45499A037EEC          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-256GB(BICS5)",
+      "flashId": "45499A037EEC",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 95,
+      "raw": "SDUNCIAMA-064GB(BICS5)                 453E98037664           Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)",
+      "flashId": "453E98037664",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 96,
+      "raw": "SDUNCIAMA-064GB(BICS5)                 453E980376E4           Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)",
+      "flashId": "453E980376E4",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 97,
+      "raw": "SDUNCIAMB-064GB(BICS5)                 453E9B03F264           Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMB-064GB(BICS5)",
+      "flashId": "453E9B03F264",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 98,
+      "raw": "SDUNEIOMZ-128GCE(BICS5)               45499A037E64          Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIOMZ-128GCE(BICS5)",
+      "flashId": "45499A037E64",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 99,
+      "raw": "SDUNEIOMA-128GCE(BICS5)               45499A037E6C          Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIOMA-128GCE(BICS5)",
+      "flashId": "45499A037E6C",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 100,
+      "raw": "SDUNCIAMA-064GB(BICS5)_2B            454899037A64          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_2B",
+      "flashId": "454899037A64",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 101,
+      "raw": "SDUNCIAMA-064GB(9T45)                  453EA8037AE4          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(9T45)",
+      "flashId": "453EA8037AE4",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 102,
+      "raw": "SDUNCIAMA-064GB(9T45)                  453EA8037A64          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(9T45)",
+      "flashId": "453EA8037A64",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 103,
+      "raw": "SDUNCIAMA-064GB(BICS5)                 453E9803766C           Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)",
+      "flashId": "453E9803766C",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 104,
+      "raw": "SDUNCIAMA1-064GB(BICS5)               453E99037A64          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA1-064GB(BICS5)",
+      "flashId": "453E99037A64",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 105,
+      "raw": "SDUNEIAMA-064GCE(bics5)                453E99037A6C          Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIAMA-064GCE(bics5)",
+      "flashId": "453E99037A6C",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 106,
+      "raw": "SDUNEIOMG-128GCE(BICS5)               4548980376E4           Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIOMG-128GCE(BICS5)",
+      "flashId": "4548980376E4",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 107,
+      "raw": "SDUNCIAMA-064GB(BICS5)_2B            454899037A6C          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_2B",
+      "flashId": "454899037A6C",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 108,
+      "raw": "SDUNCIAMA-064GB(BICS5)_2B            454899037AE4          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_2B",
+      "flashId": "454899037AE4",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 109,
+      "raw": "SDUNCIAMA-064GB(BICS5)_2B            454899037AEC          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_2B",
+      "flashId": "454899037AEC",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 110,
+      "raw": "SDUNCIAMA-1T00B54DEC                  45489C03766C          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-1T00B54DEC",
+      "flashId": "45489C03766C",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 111,
+      "raw": "SDUNCIAMA-064GB(BICS5)_4B            454999037A6C          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_4B",
+      "flashId": "454999037A6C",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 113,
+      "raw": "SDUNCIAMA-1T00B54DEC                  45489C0376EC          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-1T00B54DEC",
+      "flashId": "45489C0376EC",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 114,
+      "raw": "SDUNCIAMA-256GB(BICS5)                 45499A037EE4          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-256GB(BICS5)",
+      "flashId": "45499A037EE4",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 115,
+      "raw": "SDUNCIAMA-064GB(BICS5)_4B            454999037A64          Sandisk 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_4B",
+      "flashId": "454999037A64",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 116,
+      "raw": "SDUNEIOMA-064GCE(BICS5)               45FF98037664           Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIOMA-064GCE(BICS5)",
+      "flashId": "45FF98037664",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 117,
+      "raw": "SDUNEIOMA-064GCE(BICS5)               45FF99037A64           Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIOMA-064GCE(BICS5)",
+      "flashId": "45FF99037A64",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 118,
+      "raw": "SDUNEIOBA-128GCE(BICS5)                45FF9A037E64           Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIOBA-128GCE(BICS5)",
+      "flashId": "45FF9A037E64",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 119,
+      "raw": "SDUNEIOMB-128GCE(BICS5)               45FF9B03F264           Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIOMB-128GCE(BICS5)",
+      "flashId": "45FF9B03F264",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 120,
+      "raw": "SDUNCIAMA-1TB(bics5Q)                    45FF9C037664           Sandisk(BiCS5)(QLC)",
+      "partNumber": "SDUNCIAMA-1TB(bics5Q)",
+      "flashId": "45FF9C037664",
+      "note": "Sandisk(BiCS5)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 121,
+      "raw": "SDUNCIAMA-1TB(bics5Q)                    45FF9D037A64          Sandisk(BiCS5)(QLC)",
+      "partNumber": "SDUNCIAMA-1TB(bics5Q)",
+      "flashId": "45FF9D037A64",
+      "note": "Sandisk(BiCS5)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 122,
+      "raw": "SDUNCIAMD-2TB(bics5Q)                   45FF9E037E64           Sandisk(BiCS5)(QLC)",
+      "partNumber": "SDUNCIAMD-2TB(bics5Q)",
+      "flashId": "45FF9E037E64",
+      "note": "Sandisk(BiCS5)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 123,
+      "raw": "SDUNCIAMC-2TB(bics5Q)                    45409E037E64           Sandisk(BiCS5)(QLC)",
+      "partNumber": "SDUNCIAMC-2TB(bics5Q)",
+      "flashId": "45409E037E64",
+      "note": "Sandisk(BiCS5)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 124,
+      "raw": "SDUNCIAMA-1TB(bics5Q)                    45419F03F264           Sandisk(BiCS5)(QLC)",
+      "partNumber": "SDUNCIAMA-1TB(bics5Q)",
+      "flashId": "45419F03F264",
+      "note": "Sandisk(BiCS5)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 125,
+      "raw": "SDUNCIAMC-1TB(bics5Q)                    45499D037A64          Sandisk(BiCS5)(QLC)",
+      "partNumber": "SDUNCIAMC-1TB(bics5Q)",
+      "flashId": "45499D037A64",
+      "note": "Sandisk(BiCS5)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 131,
+      "raw": "MT29F128G08CBECB(L94C)                  2C646456A5              Micron 16nm(L94C)",
+      "partNumber": "MT29F128G08CBECB(L94C)",
+      "flashId": "2C646456A5",
+      "note": "Micron 16nm(L94C)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 133,
+      "raw": "H25BFT9TC1(3DV7)_QLC                      AD892C1B30C0         Hynix 176L 3Dv7(QLC)",
+      "partNumber": "H25BFT9TC1(3DV7)_QLC",
+      "flashId": "AD892C1B30C0",
+      "note": "Hynix 176L 3Dv7(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 134,
+      "raw": "H25T3QA88CX548                               AD892D1B30C0         Hynix 3Dv7(QLC)",
+      "partNumber": "H25T3QA88CX548",
+      "flashId": "AD892D1B30C0",
+      "note": "Hynix 3Dv7(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "QLC",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 135,
+      "raw": "H25JGQ8F4M9R(V5QLC)                      AD892C5330A0         Hynix 3Dv5(QLC)",
+      "partNumber": "H25JGQ8F4M9R(V5QLC)",
+      "flashId": "AD892C5330A0",
+      "note": "Hynix 3Dv5(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "QLC",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 136,
+      "raw": "H25BFT9TC1(3DV7)                              AD7E280B00C0         Hynix 176L 3Dv7",
+      "partNumber": "H25BFT9TC1(3DV7)",
+      "flashId": "AD7E280B00C0",
+      "note": "Hynix 176L 3Dv7",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "176L 3Dv7",
+        "decodepack": "Unknown"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 138,
+      "raw": "H25BFT9TC1*2(3DV7)                          AD7E290B00C0         Hynix 176L 3Dv7",
+      "partNumber": "H25BFT9TC1*2(3DV7)",
+      "flashId": "AD7E290B00C0",
+      "note": "Hynix 176L 3Dv7",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "176L 3Dv7",
+        "decodepack": "Unknown"
+      }
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 143,
+      "raw": "SDUNCIAMA-064GB(BICS5)_4B            984999037A64          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_4B",
+      "flashId": "984999037A64",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 144,
+      "raw": "SDUNCIAMA-256GB(BICS5)                 98499A037EE4          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-256GB(BICS5)",
+      "flashId": "98499A037EE4",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 145,
+      "raw": "TH58LKT1X45BADE(9T45)                    983EA8037AE4          Toshiba 112L BiCS5",
+      "partNumber": "TH58LKT1X45BADE(9T45)",
+      "flashId": "983EA8037AE4",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 146,
+      "raw": "SDUNCIAMA-064GB(BICS5)_2B            984899037AEC          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_2B",
+      "flashId": "984899037AEC",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 147,
+      "raw": "TOSHI-1T00B54DEC                             98489C0376E4          Toshiba 112L BiCS5",
+      "partNumber": "TOSHI-1T00B54DEC",
+      "flashId": "98489C0376E4",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 148,
+      "raw": "SDUNCIAMA-1T00B54DEC                  98489C0376EC          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-1T00B54DEC",
+      "flashId": "98489C0376EC",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 149,
+      "raw": "TH58LKT2T25BA8H                              984899037AE4          Toshiba 112L BiCS5",
+      "partNumber": "TH58LKT2T25BA8H",
+      "flashId": "984899037AE4",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 150,
+      "raw": "SDUNCIAMA-064GB(9T45)                  983EA8037A64          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(9T45)",
+      "flashId": "983EA8037A64",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 151,
+      "raw": "TH58LKT0T25BA4C                               983E980376E4           Toshiba 112L BiCS5",
+      "partNumber": "TH58LKT0T25BA4C",
+      "flashId": "983E980376E4",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 152,
+      "raw": "Toshiba-064GB(BICS5)                         983E9803766C           Toshiba 112L BiCS5",
+      "partNumber": "Toshiba-064GB(BICS5)",
+      "flashId": "983E9803766C",
+      "note": "Toshiba 112L BiCS5",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 153,
+      "raw": "TOSHI-064GB(BICS5)_2B                      984899037A6C          Toshiba 112L BiCS5",
+      "partNumber": "TOSHI-064GB(BICS5)_2B",
+      "flashId": "984899037A6C",
+      "note": "Toshiba 112L BiCS5",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 154,
+      "raw": "TH58LKT0T25BA4D                              983E98037664           Toshiba 112L BiCS5",
+      "partNumber": "TH58LKT0T25BA4D",
+      "flashId": "983E98037664",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 155,
+      "raw": "TOSHI-064GB(BICS5)_2B                      984899037A64          Toshiba 112L BiCS5",
+      "partNumber": "TOSHI-064GB(BICS5)_2B",
+      "flashId": "984899037A64",
+      "note": "Toshiba 112L BiCS5",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 156,
+      "raw": "SDUNCIAMA-064GB(BICS5)_4B            984999037A6C          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_4B",
+      "flashId": "984999037A6C",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 157,
+      "raw": "TH58LKT3T25BA8J                                984999037AE4          Toshiba 112L BiCS5",
+      "partNumber": "TH58LKT3T25BA8J",
+      "flashId": "984999037AE4",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 158,
+      "raw": "TH58LKT1T25BA4K                               9848980376E4           Toshiba 112L BiCS5",
+      "partNumber": "TH58LKT1T25BA4K",
+      "flashId": "9848980376E4",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 159,
+      "raw": "TH58LKT2Y45BA8H                              9848A9037EE4          Toshiba 112L BiCS5",
+      "partNumber": "TH58LKT2Y45BA8H",
+      "flashId": "9848A9037EE4",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 160,
+      "raw": "SDUNCIAMA-256GB(BICS5)                 98499A037EEC          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-256GB(BICS5)",
+      "flashId": "98499A037EEC",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 161,
+      "raw": "SDUNCIAMA-064GB(BICS5)_4B            984999037AEC          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-064GB(BICS5)_4B",
+      "flashId": "984999037AEC",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 162,
+      "raw": "Toshiba-128GB(0T25)                           98489803766C          Toshiba 112L BiCS5",
+      "partNumber": "Toshiba-128GB(0T25)",
+      "flashId": "98489803766C",
+      "note": "Toshiba 112L BiCS5",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 163,
+      "raw": "SDUNCIAMA-256GB(BICS5)                 98499A037E64          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-256GB(BICS5)",
+      "flashId": "98499A037E64",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 164,
+      "raw": "Toshiba-128GB(0T25)                           984898037664           Toshiba 112L BiCS5",
+      "partNumber": "Toshiba-128GB(0T25)",
+      "flashId": "984898037664",
+      "note": "Toshiba 112L BiCS5",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 165,
+      "raw": "SDUNCIAMA-256GB(BICS5)                 98499A037E6C          Toshiba 112L BiCS5",
+      "partNumber": "SDUNCIAMA-256GB(BICS5)",
+      "flashId": "98499A037E6C",
+      "note": "Toshiba 112L BiCS5",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 166,
+      "raw": "TH58LKB4F25BA8K(BICS5Q)                 98739C0376E4          KIOXIA(BiCS5)(QLC)",
+      "partNumber": "TH58LKB4F25BA8K(BICS5Q)",
+      "flashId": "98739C0376E4",
+      "note": "KIOXIA(BiCS5)(QLC)",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 167,
+      "raw": "TH58LKB8F25BA8J(BICS5Q)                  98779D037AE4          KIOXIA(BiCS5)(QLC)",
+      "partNumber": "TH58LKB8F25BA8J(BICS5Q)",
+      "flashId": "98779D037AE4",
+      "note": "KIOXIA(BiCS5)(QLC)",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 168,
+      "raw": "MT29F128G08CBCAB(L95B)                 89846454A9              Intel 16nm(L95B)",
+      "partNumber": "MT29F128G08CBCAB(L95B)",
+      "flashId": "89846454A9",
+      "note": "Intel 16nm(L95B)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 169,
+      "raw": "MT29F128G08CBCAB(L95B)                 2C846454A9              Micron 16nm(L95B)",
+      "partNumber": "MT29F128G08CBCAB(L95B)",
+      "flashId": "2C846454A9",
+      "note": "Micron 16nm(L95B)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 170,
+      "raw": "MT29F128G08CBCAB(L84C)                 8964643CA1              Intel 20nm(L84C)",
+      "partNumber": "MT29F128G08CBCAB(L84C)",
+      "flashId": "8964643CA1",
+      "note": "Intel 20nm(L84C)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 171,
+      "raw": "MT29F128G08CBCAB(L84C)                 8964643CA5              Intel 20nm(L84C)",
+      "partNumber": "MT29F128G08CBCAB(L84C)",
+      "flashId": "8964643CA5",
+      "note": "Intel 20nm(L84C)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 172,
+      "raw": "MT29F128G08CBCAB(L85C)                 8984643CA5              Intel 20nm(L85A)",
+      "partNumber": "MT29F128G08CBCAB(L85C)",
+      "flashId": "8984643CA5",
+      "note": "Intel 20nm(L85A)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 173,
+      "raw": "MT29F128G08CBCAB(L85C)                 8984643CA9              Intel 20nm(L85C)",
+      "partNumber": "MT29F128G08CBCAB(L85C)",
+      "flashId": "8984643CA9",
+      "note": "Intel 20nm(L85C)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 176,
+      "raw": "FNMB47R512G1KLBAEJ4(B47R)            2CC30832EA34          Micron 176L(B47T)",
+      "partNumber": "FNMB47R512G1KLBAEJ4(B47R)",
+      "flashId": "2CC30832EA34",
+      "note": "Micron 176L(B47T)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "micron",
+        "decodepackVendor": "spectek",
+        "extra": "176L(B47T)",
+        "decodepack": "B47R"
+      }
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 185,
+      "raw": "MT29F128G08CBCAB(L84C)                 2C64643CA1             Micron 20nm(L84C)",
+      "partNumber": "MT29F128G08CBCAB(L84C)",
+      "flashId": "2C64643CA1",
+      "note": "Micron 20nm(L84C)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 186,
+      "raw": "MT29F128G08CBCAB(L84C)*2B            2C84E53CA5             Micron 20nm(L84C)",
+      "partNumber": "MT29F128G08CBCAB(L84C)*2B",
+      "flashId": "2C84E53CA5",
+      "note": "Micron 20nm(L84C)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 187,
+      "raw": "MT29F128G08CBCAB(L84C)                 2C64643CA5             Micron 20nm(L84C)",
+      "partNumber": "MT29F128G08CBCAB(L84C)",
+      "flashId": "2C64643CA5",
+      "note": "Micron 20nm(L84C)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 188,
+      "raw": "MT29F128G08CBCAB(L85C)                 2C84643CA5             Micron 20nm(L85A)",
+      "partNumber": "MT29F128G08CBCAB(L85C)",
+      "flashId": "2C84643CA5",
+      "note": "Micron 20nm(L85A)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 189,
+      "raw": "MT29F128G08CBCAB(L85C)                 2C84643CA9             Micron 20nm(L85C)",
+      "partNumber": "MT29F128G08CBCAB(L85C)",
+      "flashId": "2C84643CA9",
+      "note": "Micron 20nm(L85C)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 239,
+      "raw": "SDYNEHBRG-256G(bics8)                    4549A9037EE6          Sandisk BiCS8",
+      "partNumber": "SDYNEHBRG-256G(bics8)",
+      "flashId": "4549A9037EE6",
+      "note": "Sandisk BiCS8",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS8",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 240,
+      "raw": "SDYNEHBRG-256G(BiCS8)                   4540AA03F2E6          Sandisk BiCS8",
+      "partNumber": "SDYNEHBRG-256G(BiCS8)",
+      "flashId": "4540AA03F2E6",
+      "note": "Sandisk BiCS8",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS8",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 241,
+      "raw": "SDYNEHBRG-256G(BiCS8)                   4548A8037AE6          Sandisk BiCS8",
+      "partNumber": "SDYNEHBRG-256G(BiCS8)",
+      "flashId": "4548A8037AE6",
+      "note": "Sandisk BiCS8",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS8",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 243,
+      "raw": "TH58LKT3T48BA8J(bics8)                     9849A9037EE6          Koxia BiCS8",
+      "partNumber": "TH58LKT3T48BA8J(bics8)",
+      "flashId": "9849A9037EE6",
+      "note": "Koxia BiCS8",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 244,
+      "raw": "MT29F128G08CBCAB(L95B)                 B5846454A9              Spectek 16nm(L95B)",
+      "partNumber": "MT29F128G08CBCAB(L95B)",
+      "flashId": "B5846454A9",
+      "note": "Spectek 16nm(L95B)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 246,
+      "raw": "SANDISK_6DDJTA00                             45DE949376D7          Sandisk 19nm",
+      "partNumber": "SANDISK_6DDJTA00",
+      "flashId": "45DE949376D7",
+      "note": "Sandisk 19nm",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 248,
+      "raw": "MT29F128G08CBCAB(L85C)                 B584643CA5              Spectek 20nm(L85A)",
+      "partNumber": "MT29F128G08CBCAB(L85C)",
+      "flashId": "B584643CA5",
+      "note": "Spectek 20nm(L85A)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 249,
+      "raw": "MT29F128G08CBCAB(L85C)                 B584643CA9              Spectek 20nm(L85C)",
+      "partNumber": "MT29F128G08CBCAB(L85C)",
+      "flashId": "B584643CA9",
+      "note": "Spectek 20nm(L85C)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 254,
+      "raw": "MT29F128G08CBCEB(L05B)                  89844434AA              Intel 32L(L05B)",
+      "partNumber": "MT29F128G08CBCEB(L05B)",
+      "flashId": "89844434AA",
+      "note": "Intel 32L(L05B)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 255,
+      "raw": "MT29F128G08CBCEB(L05B)                  8984C434AA             Intel 32L(L05B)",
+      "partNumber": "MT29F128G08CBCEB(L05B)",
+      "flashId": "8984C434AA",
+      "note": "Intel 32L(L05B)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 259,
+      "raw": "H27QEG8M3MDA-BCC                        AD5C28BA0080         Hynix 48L 3Dv3",
+      "partNumber": "H27QEG8M3MDA-BCC",
+      "flashId": "AD5C28BA0080",
+      "note": "Hynix 48L 3Dv3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "48L 3Dv3",
+        "decodepack": "1"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 260,
+      "raw": "H27Q2T8QFB9R                                   AD5C29BA0080         Hynix 48L 3Dv3",
+      "partNumber": "H27Q2T8QFB9R",
+      "flashId": "AD5C29BA0080",
+      "note": "Hynix 48L 3Dv3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "48L 3Dv3",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 261,
+      "raw": "H25QFT8A1A                                       AD5E28221080          Hynix 48L 3Dv3",
+      "partNumber": "H25QFT8A1A",
+      "flashId": "AD5E28221080",
+      "note": "Hynix 48L 3Dv3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "48L 3Dv3",
+        "decodepack": "3D NAND V4 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 262,
+      "raw": "H27QDG8M2C8R                                 AD5A28BA0080         Hynix 48L 3Dv3",
+      "partNumber": "H27QDG8M2C8R",
+      "flashId": "AD5A28BA0080",
+      "note": "Hynix 48L 3Dv3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "48L 3Dv3",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 274,
+      "raw": "H27QEG8M2A                                      AD5C282A0190         Hynix 72L 3Dv4",
+      "partNumber": "H27QEG8M2A",
+      "flashId": "AD5C282A0190",
+      "note": "Hynix 72L 3Dv4",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "72L 3Dv4",
+        "decodepack": "2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 275,
+      "raw": "H27Q2T8QEA9B                                   AD5C292A0190         Hynix 72L 3Dv4",
+      "partNumber": "H27Q2T8QEA9B",
+      "flashId": "AD5C292A0190",
+      "note": "Hynix 72L 3Dv4",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "72L 3Dv4",
+        "decodepack": "2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 276,
+      "raw": "H27Q4T8LEA9R                                    AD5C2A2A0190         Hynix 72L 3Dv4",
+      "partNumber": "H27Q4T8LEA9R",
+      "flashId": "AD5C2A2A0190",
+      "note": "Hynix 72L 3Dv4",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "72L 3Dv4",
+        "decodepack": "2"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 277,
+      "raw": "H25QEM8A1BDA(V4M)                        AD5C14630890         Hynix 3Dv4 MLC",
+      "partNumber": "H25QEM8A1BDA(V4M)",
+      "flashId": "AD5C14630890",
+      "note": "Hynix 3Dv4 MLC",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "MLC",
+        "decodepack": "2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 278,
+      "raw": "H25QFT8A1A*2BANK                           AD5E29221090          Hynix 72L 3Dv4",
+      "partNumber": "H25QFT8A1A*2BANK",
+      "flashId": "AD5E29221090",
+      "note": "Hynix 72L 3Dv4",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "72L 3Dv4",
+        "decodepack": "3D NAND V4 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 279,
+      "raw": "H25QFT8A1A                                       AD5E28221090          Hynix 72L 3Dv4",
+      "partNumber": "H25QFT8A1A",
+      "flashId": "AD5E28221090",
+      "note": "Hynix 72L 3Dv4",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "72L 3Dv4",
+        "decodepack": "3D NAND V4 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 280,
+      "raw": "H25QFTMF4A9R                                   AD5E2A221090         Hynix 72L 3Dv4",
+      "partNumber": "H25QFTMF4A9R",
+      "flashId": "AD5E2A221090",
+      "note": "Hynix 72L 3Dv4",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "72L 3Dv4",
+        "decodepack": "3D NAND V4 TLC"
+      }
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 281,
+      "raw": "MT29F256G08EBHAF_1(L06B)              89A46432AA04          Intel 32L(L06B)",
+      "partNumber": "MT29F256G08EBHAF_1(L06B)",
+      "flashId": "89A46432AA04",
+      "note": "Intel 32L(L06B)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 282,
+      "raw": "MT29F256G08EBHAF_1(L06B)              89A46432AA01          Intel 32L(L06B_B0KB)",
+      "partNumber": "MT29F256G08EBHAF_1(L06B)",
+      "flashId": "89A46432AA01",
+      "note": "Intel 32L(L06B_B0KB)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 283,
+      "raw": "MT29F256G08EBHAF_1(L06B)              89A46432AA05          Intel 32L(L06B)",
+      "partNumber": "MT29F256G08EBHAF_1(L06B)",
+      "flashId": "89A46432AA05",
+      "note": "Intel 32L(L06B)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 289,
+      "raw": "H25BFT8A1MDA-BCH                          AD5E283300A0         Hynix 96L 3Dv5",
+      "partNumber": "H25BFT8A1MDA-BCH",
+      "flashId": "AD5E283300A0",
+      "note": "Hynix 96L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "96L 3Dv5",
+        "decodepack": "3D NAND V5 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 290,
+      "raw": "H25BFT8A1M8R-BDJ                            AD7E283300A0         Hynix 96L 3Dv5",
+      "partNumber": "H25BFT8A1M8R-BDJ",
+      "flashId": "AD7E283300A0",
+      "note": "Hynix 96L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "96L 3Dv5",
+        "decodepack": "3D NAND V5 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 291,
+      "raw": "H25BFT4M9R8R                                   AD5E293300A0         Hynix 96L 3Dv5",
+      "partNumber": "H25BFT4M9R8R",
+      "flashId": "AD5E293300A0",
+      "note": "Hynix 96L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "96L 3Dv5",
+        "decodepack": "3D NAND V5 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 292,
+      "raw": "H25BFT4M9R8R                                   AD5E2A3300A0         Hynix 96L 3Dv5",
+      "partNumber": "H25BFT4M9R8R",
+      "flashId": "AD5E2A3300A0",
+      "note": "Hynix 96L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "96L 3Dv5",
+        "decodepack": "3D NAND V5 TLC"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 293,
+      "raw": "H25BFT8A1M8R                                   AD7E283300A2         Hynix 96L 3Dv5",
+      "partNumber": "H25BFT8A1M8R",
+      "flashId": "AD7E283300A2",
+      "note": "Hynix 96L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "skhynix",
+        "decodepackVendor": "skhynix",
+        "extra": "96L 3Dv5",
+        "decodepack": "3D NAND V5 TLC"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 313,
+      "raw": "K9AFGD8J0D                                        EC52EE4B8EC1         Samsung SSV7_CER(QLC)",
+      "partNumber": "K9AFGD8J0D",
+      "flashId": "EC52EE4B8EC1",
+      "note": "Samsung SSV7_CER(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "QLC",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "samsung.cer_topology_not_allowed",
+      "severity": "warning",
+      "line": 315,
+      "raw": "K9AHGD8J0D                                       EC5FE98F8EC1           Samsung CER(SSV7)",
+      "partNumber": "K9AHGD8J0D",
+      "flashId": "EC5FE98F8EC1",
+      "note": "Samsung CER(SSV7)",
+      "message": "Samsung CER is only kept when decodepack shows more than one die per CE",
+      "details": {
+        "partNumber": "K9AHGD8J0D",
+        "dieCount": 1,
+        "ceCount": 1,
+        "diePerCe": 1
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 316,
+      "raw": "K9XVGD8J5C(V7Qlc)                            EC51ED4B8CC1              Samsung SSV7_CER(QLC)",
+      "partNumber": "K9XVGD8J5C(V7Qlc)",
+      "flashId": "EC51ED4B8CC1",
+      "note": "Samsung SSV7_CER(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "QLC",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 317,
+      "raw": "K9ADGD8U0E                                       EC1A882F80C9          Samsung 48L 3Dv3(SSV3_TLC)",
+      "partNumber": "K9ADGD8U0E",
+      "flashId": "EC1A882F80C9",
+      "note": "Samsung 48L 3Dv3(SSV3_TLC)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "48L 3Dv3",
+        "decodepack": "6"
+      }
+    },
+    {
+      "code": "samsung.cer_topology_not_allowed",
+      "severity": "warning",
+      "line": 324,
+      "raw": "K9AFGD8J0M                                       EC5E983F84CB          Samsung CER(SSV4_TLC)",
+      "partNumber": "K9AFGD8J0M",
+      "flashId": "EC5E983F84CB",
+      "note": "Samsung CER(SSV4_TLC)",
+      "message": "Samsung CER is only kept when decodepack shows more than one die per CE",
+      "details": {
+        "partNumber": "K9AFGD8J0M",
+        "dieCount": 1,
+        "ceCount": 1,
+        "diePerCe": 1
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 325,
+      "raw": "K9AFGD8J0M                                       EC1E983F84CB          Samsung 64L 3Dv4(SSV4)",
+      "partNumber": "K9AFGD8J0M",
+      "flashId": "EC1E983F84CB",
+      "note": "Samsung 64L 3Dv4(SSV4)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "64L 3Dv4",
+        "decodepack": "1"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 326,
+      "raw": "K9AFGD8H0A                                       EC1C983F84CB          Samsung 64L 3Dv4(SSV4)",
+      "partNumber": "K9AFGD8H0A",
+      "flashId": "EC1C983F84CB",
+      "note": "Samsung 64L 3Dv4(SSV4)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "64L 3Dv4",
+        "decodepack": "2"
+      }
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 327,
+      "raw": "SANDISK_7T23TA0D                             453A98B37672          Sandisk 64L BiCS3",
+      "partNumber": "SANDISK_7T23TA0D",
+      "flashId": "453A98B37672",
+      "note": "Sandisk 64L BiCS3",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 328,
+      "raw": "SDYNAIAMA-032G(8T23)                     453C98B37672          Sandisk 64L BiCS3",
+      "partNumber": "SDYNAIAMA-032G(8T23)",
+      "flashId": "453C98B37672",
+      "note": "Sandisk 64L BiCS3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "64L BiCS3",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 329,
+      "raw": "SANDISK_8T23TA0D                             453C98B376F2          Sandisk 64L BiCS3",
+      "partNumber": "SANDISK_8T23TA0D",
+      "flashId": "453C98B376F2",
+      "note": "Sandisk 64L BiCS3",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 332,
+      "raw": "SDYNAIAMA-064G(9T23)                     453E98B37672           Sandisk 64L BiCS3",
+      "partNumber": "SDYNAIAMA-064G(9T23)",
+      "flashId": "453E98B37672",
+      "note": "Sandisk 64L BiCS3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "64L BiCS3",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 334,
+      "raw": "SDYNAIAMA-064G(8T23*2B)               453E99B37A72          Sandisk 64L BiCS3",
+      "partNumber": "SDYNAIAMA-064G(8T23*2B)",
+      "flashId": "453E99B37A72",
+      "note": "Sandisk 64L BiCS3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "64L BiCS3",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 335,
+      "raw": "SDYNAIAMA-064G(8T23*2B)               453E99B37AF2          Sandisk 64L BiCS3",
+      "partNumber": "SDYNAIAMA-064G(8T23*2B)",
+      "flashId": "453E99B37AF2",
+      "note": "Sandisk 64L BiCS3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "64L BiCS3",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 337,
+      "raw": "SDYNAIAMA-064G(8T23*8B)               45409BB37E72           Sandisk 64L BiCS3",
+      "partNumber": "SDYNAIAMA-064G(8T23*8B)",
+      "flashId": "45409BB37E72",
+      "note": "Sandisk 64L BiCS3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "64L BiCS3",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 340,
+      "raw": "SDYNAIAMA-064G(8T23*8B)               45499BB37E72           Sandisk 64L BiCS3",
+      "partNumber": "SDYNAIAMA-064G(8T23*8B)",
+      "flashId": "45499BB37E72",
+      "note": "Sandisk 64L BiCS3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "64L BiCS3",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 341,
+      "raw": "SDYNAIAMA-064G(8T23*4B)               45489AB37E72          Sandisk 64L BiCS3",
+      "partNumber": "SDYNAIAMA-064G(8T23*4B)",
+      "flashId": "45489AB37E72",
+      "note": "Sandisk 64L BiCS3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "64L BiCS3",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 347,
+      "raw": "SNDK 512GB                                        45489AB37EF9          Sandisk 48L BiCS2",
+      "partNumber": "SNDK 512GB",
+      "flashId": "45489AB37EF9",
+      "note": "Sandisk 48L BiCS2",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 348,
+      "raw": "SDTNAIAMA-032G                               453C98B37671          Sandisk 64L BiCS3",
+      "partNumber": "SDTNAIAMA-032G",
+      "flashId": "453C98B37671",
+      "note": "Sandisk 64L BiCS3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "64L BiCS3",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 349,
+      "raw": "SDYNAIAMA-064G(9T23)*4B               45499AB37E72          Sandisk 64L BiCS3",
+      "partNumber": "SDYNAIAMA-064G(9T23)*4B",
+      "flashId": "45499AB37E72",
+      "note": "Sandisk 64L BiCS3",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "64L BiCS3",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 350,
+      "raw": "SNDK 128GB                                        45499AB37EF2          Sandisk 64L BiCS3",
+      "partNumber": "SNDK 128GB",
+      "flashId": "45499AB37EF2",
+      "note": "Sandisk 64L BiCS3",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 351,
+      "raw": "TC58NVG6DDLTA00                            98DE94937651          Toshiba 15nm[1z]",
+      "partNumber": "TC58NVG6DDLTA00",
+      "flashId": "98DE94937651",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 352,
+      "raw": "SDTNSHAMA-016GB(7DFL)*2              983CA5937ED1         Toshiba 15nm[1z]",
+      "partNumber": "SDTNSHAMA-016GB(7DFL)*2",
+      "flashId": "983CA5937ED1",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 353,
+      "raw": "SDTNSHAMA-016GB(7DFL)                 983AA4937A51          Toshiba 15nm[1z]",
+      "partNumber": "SDTNSHAMA-016GB(7DFL)",
+      "flashId": "983AA4937A51",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 354,
+      "raw": "SDTNSHAMA-016GB(7DFL)                 983AA4937AD1         Toshiba 15nm[1z]",
+      "partNumber": "SDTNSHAMA-016GB(7DFL)",
+      "flashId": "983AA4937AD1",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 355,
+      "raw": "TC58NVG7DDLTA00*2B                       983C95937A51          Toshiba 15nm[1z]",
+      "partNumber": "TC58NVG7DDLTA00*2B",
+      "flashId": "983C95937A51",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 356,
+      "raw": "TC58NVG7DDLTA00*2B                       983C95937AD1         Toshiba 15nm[1z]",
+      "partNumber": "TC58NVG7DDLTA00*2B",
+      "flashId": "983C95937AD1",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 357,
+      "raw": "TC58NVG6DDLTA00*4B                       983EA6937E51          Toshiba 15nm[1z]",
+      "partNumber": "TC58NVG6DDLTA00*4B",
+      "flashId": "983EA6937E51",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 358,
+      "raw": "TH58TFT1EFKBA8N                              983EA6937ED0          Toshiba 15nm[1z]",
+      "partNumber": "TH58TFT1EFKBA8N",
+      "flashId": "983EA6937ED0",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 359,
+      "raw": "TH58TFT1DFLBA8P                               983EA6937ED1          Toshiba 15nm[1z]",
+      "partNumber": "TH58TFT1DFLBA8P",
+      "flashId": "983EA6937ED1",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 360,
+      "raw": "TC58NVG6DDLTA00*2B                       983A95937AD1         Toshiba 15nm[1z]",
+      "partNumber": "TC58NVG6DDLTA00*2B",
+      "flashId": "983A95937AD1",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 361,
+      "raw": "TC58NVG7DDLTA00*2B                       983A95937A51          Toshiba 15nm[1z]",
+      "partNumber": "TC58NVG7DDLTA00*2B",
+      "flashId": "983A95937A51",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 362,
+      "raw": "TC58NVG6DDLTA00                            98DE949376D1          Toshiba 15nm[1z]",
+      "partNumber": "TC58NVG6DDLTA00",
+      "flashId": "98DE949376D1",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 363,
+      "raw": "TC58NVG7DDLTA00                            983A949376D1          Toshiba 15nm[1z]",
+      "partNumber": "TC58NVG7DDLTA00",
+      "flashId": "983A949376D1",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 364,
+      "raw": "TH58TFT0DFLBA8H                              983CA5937E51          Toshiba 15nm[1z]",
+      "partNumber": "TH58TFT0DFLBA8H",
+      "flashId": "983CA5937E51",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 365,
+      "raw": "TC58NVG7DDLTA00                            983A94937651          Toshiba 15nm[1z]",
+      "partNumber": "TC58NVG7DDLTA00",
+      "flashId": "983A94937651",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 366,
+      "raw": "TH58LKT1T25BA8K                               983EA8037AE5          Toshiba 162L BiCS6",
+      "partNumber": "TH58LKT1T25BA8K",
+      "flashId": "983EA8037AE5",
+      "note": "Toshiba 162L BiCS6",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 367,
+      "raw": "TH58LKT2V46BA8S                               983EA9037E65          Toshiba 162L BiCS6",
+      "partNumber": "TH58LKT2V46BA8S",
+      "flashId": "983EA9037E65",
+      "note": "Toshiba 162L BiCS6",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 368,
+      "raw": "TH58LKT1T25BA8K                               9848A8037AE5          Toshiba 162L BiCS6",
+      "partNumber": "TH58LKT1T25BA8K",
+      "flashId": "9848A8037AE5",
+      "note": "Toshiba 162L BiCS6",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 369,
+      "raw": "TH58LKT1T25BA8K                               9848A8037A65          Toshiba 162L BiCS6",
+      "partNumber": "TH58LKT1T25BA8K",
+      "flashId": "9848A8037A65",
+      "note": "Toshiba 162L BiCS6",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 370,
+      "raw": "TH58LKT1T25BA8K                               9848A9037EE5          Toshiba 162L BiCS6",
+      "partNumber": "TH58LKT1T25BA8K",
+      "flashId": "9848A9037EE5",
+      "note": "Toshiba 162L BiCS6",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 371,
+      "raw": "TH58LKT3T46BA8S                               9849A9037EE5          Toshiba 162L BiCS6",
+      "partNumber": "TH58LKT3T46BA8S",
+      "flashId": "9849A9037EE5",
+      "note": "Toshiba 162L BiCS6",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 372,
+      "raw": "TH58LKT2F46BA8K(bics6)(QLC)            9848AC037AE5          Toshiba BiCS6_QLC",
+      "partNumber": "TH58LKT2F46BA8K(bics6)(QLC)",
+      "flashId": "9848AC037AE5",
+      "note": "Toshiba BiCS6_QLC",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 373,
+      "raw": "TH58LKT3F46BA8J(bics6)(QLC)             9849AD037EE5          Toshiba BiCS6_QLC",
+      "partNumber": "TH58LKT3F46BA8J(bics6)(QLC)",
+      "flashId": "9849AD037EE5",
+      "note": "Toshiba BiCS6_QLC",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 374,
+      "raw": "TC58TEG6DDJTA00                              98DE948376D7          Toshiba 19nm",
+      "partNumber": "TC58TEG6DDJTA00",
+      "flashId": "98DE948376D7",
+      "note": "Toshiba 19nm",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 375,
+      "raw": "SDTNQFAMA-008G(6DDJ)*4                983C9693F457           Toshiba 19nm",
+      "partNumber": "SDTNQFAMA-008G(6DDJ)*4",
+      "flashId": "983C9693F457",
+      "note": "Toshiba 19nm",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 376,
+      "raw": "TH58TEG9TDKTA00                              983CA9927AD0         Toshiba 19nm[1y]",
+      "partNumber": "TH58TEG9TDKTA00",
+      "flashId": "983CA9927AD0",
+      "note": "Toshiba 19nm[1y]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 377,
+      "raw": "TH58TET0THLBA8H                              983C99A37AD1         Toshiba 15nm[1z]",
+      "partNumber": "TH58TET0THLBA8H",
+      "flashId": "983C99A37AD1",
+      "note": "Toshiba 15nm[1z]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 378,
+      "raw": "SDTNQFAMA-008G(6DDJ)                   98DE94937657          Toshiba 19nm",
+      "partNumber": "SDTNQFAMA-008G(6DDJ)",
+      "flashId": "98DE94937657",
+      "note": "Toshiba 19nm",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 379,
+      "raw": "TC58NVG6D2HTA00_512                     98DEA49276D7         Toshiba 19nm",
+      "partNumber": "TC58NVG6D2HTA00_512",
+      "flashId": "98DEA49276D7",
+      "note": "Toshiba 19nm",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 380,
+      "raw": "TC58TEG6DDJTA00                              98DE949376D7          Toshiba 19nm",
+      "partNumber": "TC58TEG6DDJTA00",
+      "flashId": "98DE949376D7",
+      "note": "Toshiba 19nm",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 381,
+      "raw": "TC58NVG6D2HTA00                            98DEA48276D6         Toshiba 24nm",
+      "partNumber": "TC58NVG6D2HTA00",
+      "flashId": "98DEA48276D6",
+      "note": "Toshiba 24nm",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 382,
+      "raw": "TC58TEG8T22TA0D                              983C98B376F1          Toshiba 48L BiCS2",
+      "partNumber": "TC58TEG8T22TA0D",
+      "flashId": "983C98B376F1",
+      "note": "Toshiba 48L BiCS2",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 383,
+      "raw": "TH58TFT1T22BA8H                              983E99B37A71          Toshiba 48L BiCS2",
+      "partNumber": "TH58TFT1T22BA8H",
+      "flashId": "983E99B37A71",
+      "note": "Toshiba 48L BiCS2",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 384,
+      "raw": "TH58TFT1T22BA8H                              983E99B37AF1          Toshiba 48L BiCS2(3)",
+      "partNumber": "TH58TFT1T22BA8H",
+      "flashId": "983E99B37AF1",
+      "note": "Toshiba 48L BiCS2(3)",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 385,
+      "raw": "YMN08TB1B1AU1B_64GB(JGS)             9BC449251000                  YMTC 3Dv2-JGS-64L(x1-9050)",
+      "partNumber": "YMN08TB1B1AU1B_64GB(JGS)",
+      "flashId": "9BC449251000",
+      "note": "YMTC 3Dv2-JGS-64L(x1-9050)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 386,
+      "raw": "YMN08TB1B1AU1B_32GB(JGS)             9BC348251000                  YMTC 3Dv2-JGS-64L(x1-9050)",
+      "partNumber": "YMN08TB1B1AU1B_32GB(JGS)",
+      "flashId": "9BC348251000",
+      "note": "YMTC 3Dv2-JGS-64L(x1-9050)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 389,
+      "raw": "YMN09TC1B1DC6C_64GB(TAS)            9BC529492000                   YMTC 3Dv3-TAS-128L(x2-9060)",
+      "partNumber": "YMN09TC1B1DC6C_64GB(TAS)",
+      "flashId": "9BC529492000",
+      "note": "YMTC 3Dv3-TAS-128L(x2-9060)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 390,
+      "raw": "YMN09TC1B1DC6C_64GB(TAS)            9BC428492000                   YMTC 3Dv3-TAS-128L(x2-9060)",
+      "partNumber": "YMN09TC1B1DC6C_64GB(TAS)",
+      "flashId": "9BC428492000",
+      "note": "YMTC 3Dv3-TAS-128L(x2-9060)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 391,
+      "raw": "YMTC(9B,C6,2A,49,20,00)(TAS)             9BC62A492000          YMTC TAS (x2-9060)",
+      "partNumber": "YMTC(9B,C6,2A,49,20,00)(TAS)",
+      "flashId": "9BC62A492000",
+      "note": "YMTC TAS (x2-9060)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 395,
+      "raw": "YMTC(9B,C6,59,71,30,00)(WDS)            9BC659713000           YMTC 3Dv4-WDS-232L(x3-9070)",
+      "partNumber": "YMTC(9B,C6,59,71,30,00)(WDS)",
+      "flashId": "9BC659713000",
+      "note": "YMTC 3Dv4-WDS-232L(x3-9070)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 396,
+      "raw": "KRN09TC1W03MXD_64GB(WYS)          9BC428493000              YMTC 3Dv4-WYS-128L(x3-9060)",
+      "partNumber": "KRN09TC1W03MXD_64GB(WYS)",
+      "flashId": "9BC428493000",
+      "note": "YMTC 3Dv4-WYS-128L(x3-9060)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 410,
+      "raw": "SDUNEIOMA-1TBCE(bics5)                  45419B03F264           Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIOMA-1TBCE(bics5)",
+      "flashId": "45419B03F264",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 411,
+      "raw": "SDUNEIOBA-128GCE(bics5)                 45FF9A037E6C          Sandisk 112L BiCS5",
+      "partNumber": "SDUNEIOBA-128GCE(bics5)",
+      "flashId": "45FF9A037E6C",
+      "note": "Sandisk 112L BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "112L BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 413,
+      "raw": "TH58TFG9T23TA2D                              983E98B37672           Toshiba 64L BiCS3",
+      "partNumber": "TH58TFG9T23TA2D",
+      "flashId": "983E98B37672",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 414,
+      "raw": "TH58TFT0T23BA4K                               983E98B376F2           Toshiba 64L BiCS3",
+      "partNumber": "TH58TFT0T23BA4K",
+      "flashId": "983E98B376F2",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 415,
+      "raw": "TH58TFT1W23BASH                             983E99B37AF2          Toshiba 64L BiCS3",
+      "partNumber": "TH58TFT1W23BASH",
+      "flashId": "983E99B37AF2",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 416,
+      "raw": "TH58TFT1V23BA8H                              983E99B37A72          Toshiba 64L BiCS3",
+      "partNumber": "TH58TFT1V23BA8H",
+      "flashId": "983E99B37A72",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 417,
+      "raw": "TC58TFG8T23TA0D(8T23*4B)               98489AB37EF2          Toshiba 64L BiCS3",
+      "partNumber": "TC58TFG8T23TA0D(8T23*4B)",
+      "flashId": "98489AB37EF2",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 418,
+      "raw": "TC58TFG8T23TA0D                              983C98B376F2          Toshiba 64L BiCS3",
+      "partNumber": "TC58TFG8T23TA0D",
+      "flashId": "983C98B376F2",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 419,
+      "raw": "TC58TFG8T23TA0D                              983C98B37672          Toshiba 64L BiCS3",
+      "partNumber": "TC58TFG8T23TA0D",
+      "flashId": "983C98B37672",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 420,
+      "raw": "TC58TFG8T23TA0D                              983C9AB37E72          Toshiba 64L BiCS3",
+      "partNumber": "TC58TFG8T23TA0D",
+      "flashId": "983C9AB37E72",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 421,
+      "raw": "SDYNAIAMA-064G(8T23*8B)               98409BB37E72           Toshiba 64L BiCS3",
+      "partNumber": "SDYNAIAMA-064G(8T23*8B)",
+      "flashId": "98409BB37E72",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 422,
+      "raw": "TC58TFG7T23TA0D                              983A98B37672          Toshiba 64L BiCS3",
+      "partNumber": "TC58TFG7T23TA0D",
+      "flashId": "983A98B37672",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 423,
+      "raw": "TH58TFT2V23BA8J                               984899B37A72          Toshiba 64L BiCS3",
+      "partNumber": "TH58TFT2V23BA8J",
+      "flashId": "984899B37A72",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 424,
+      "raw": "TH58TFT2V23BA8J                               984899B37AF2          Toshiba 64L BiCS3",
+      "partNumber": "TH58TFT2V23BA8J",
+      "flashId": "984899B37AF2",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 425,
+      "raw": "TOSHI-032G(8T23*8B)                         98499BB37E72           Toshiba 64L BiCS3",
+      "partNumber": "TOSHI-032G(8T23*8B)",
+      "flashId": "98499BB37E72",
+      "note": "Toshiba 64L BiCS3",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 426,
+      "raw": "SDYNAIAMA-064G(9T23)*4B               98499AB37E72          Toshiba 64L BiCS3",
+      "partNumber": "SDYNAIAMA-064G(9T23)*4B",
+      "flashId": "98499AB37E72",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 427,
+      "raw": "TH58TGT3V23BB8N(9T23)                    98499AB37EF2          Toshiba 64L BiCS3",
+      "partNumber": "TH58TGT3V23BB8N(9T23)",
+      "flashId": "98499AB37EF2",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 428,
+      "raw": "TH58LJT3V24BB8N(9T24)                     98499AB37EE3          Toshiba 64L BiCS3",
+      "partNumber": "TH58LJT3V24BB8N(9T24)",
+      "flashId": "98499AB37EE3",
+      "note": "Toshiba 64L BiCS3",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 429,
+      "raw": "MT29F256G08EBHAF(B16A)                 89A48832A100          Intel 64L(B16A)",
+      "partNumber": "MT29F256G08EBHAF(B16A)",
+      "flashId": "89A48832A100",
+      "note": "Intel 64L(B16A)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "part.ignored_js_prefix",
+      "severity": "warning",
+      "line": 430,
+      "raw": "JS29F256G08EBHAF_1(B16A)                89A40832A104          Intel 64L(B16A)",
+      "partNumber": "JS29F256G08EBHAF_1(B16A)",
+      "flashId": "89A40832A104",
+      "note": "Intel 64L(B16A)",
+      "message": "JS-prefixed PN is skipped by sky cleaner rule"
+    },
+    {
+      "code": "part.ignored_js_prefix",
+      "severity": "warning",
+      "line": 431,
+      "raw": "JS29F256G08EBHAF_2(B16A)                89A40832A108          Intel 64L(B16A)",
+      "partNumber": "JS29F256G08EBHAF_2(B16A)",
+      "flashId": "89A40832A108",
+      "note": "Intel 64L(B16A)",
+      "message": "JS-prefixed PN is skipped by sky cleaner rule"
+    },
+    {
+      "code": "part.ignored_js_prefix",
+      "severity": "warning",
+      "line": 432,
+      "raw": "JS29F256G08EBHAF(B16A)                   89A40832A100          Intel 64L(B16A)",
+      "partNumber": "JS29F256G08EBHAF(B16A)",
+      "flashId": "89A40832A100",
+      "note": "Intel 64L(B16A)",
+      "message": "JS-prefixed PN is skipped by sky cleaner rule"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 433,
+      "raw": "PF29F04T4AWCTH2                             89C48932A100          Intel 64L(B16A)",
+      "partNumber": "PF29F04T4AWCTH2",
+      "flashId": "89C48932A100",
+      "note": "Intel 64L(B16A)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "intel",
+        "decodepackVendor": "intel",
+        "extra": "64L(B16A)",
+        "decodepack": "3D2 64L"
+      }
+    },
+    {
+      "code": "part.ignored_js_prefix",
+      "severity": "warning",
+      "line": 434,
+      "raw": "JS29F512G08EBHAF_1(B17A)                89C40832A600          Intel 64L(B17A)",
+      "partNumber": "JS29F512G08EBHAF_1(B17A)",
+      "flashId": "89C40832A600",
+      "note": "Intel 64L(B17A)",
+      "message": "JS-prefixed PN is skipped by sky cleaner rule"
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 435,
+      "raw": "MT29F512G08EBHAF_1(B17A)              89C40832A601          Intel 64L(B17A)",
+      "partNumber": "MT29F512G08EBHAF_1(B17A)",
+      "flashId": "89C40832A601",
+      "note": "Intel 64L(B17A)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 436,
+      "raw": "PF29F08T2AWCTH1                             89D48932A600          Intel 64L(B17A)",
+      "partNumber": "PF29F08T2AWCTH1",
+      "flashId": "89D48932A600",
+      "note": "Intel 64L(B17A)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "intel",
+        "decodepackVendor": "intel",
+        "extra": "64L(B17A)",
+        "decodepack": "3D2 64L"
+      }
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 437,
+      "raw": "MT29F512G08EBHAF2                          89E48A32A600          Intel 64L(B17A)",
+      "partNumber": "MT29F512G08EBHAF2",
+      "flashId": "89E48A32A600",
+      "note": "Intel 64L(B17A)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 438,
+      "raw": "MT29F01T2ALCQH1(N18)                    89D40C32AA00         Intel 64L(N18A)",
+      "partNumber": "MT29F01T2ALCQH1(N18)",
+      "flashId": "89D40C32AA00",
+      "note": "Intel 64L(N18A)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 439,
+      "raw": "PF29F16T2AWCQH1(N18)                    89E48D32AA00         Intel 64L(N18A)",
+      "partNumber": "PF29F16T2AWCQH1(N18)",
+      "flashId": "89E48D32AA00",
+      "note": "Intel 64L(N18A)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "intel",
+        "decodepackVendor": "intel",
+        "extra": "64L(N18A)",
+        "decodepack": "3D2 64L"
+      }
+    },
+    {
+      "code": "flash_id.too_short",
+      "severity": "warning",
+      "line": 445,
+      "raw": "JS29F256G08EBHAF_1(B16A)                B5A40832A1              Spectek 64L(B16A)",
+      "partNumber": "JS29F256G08EBHAF_1(B16A)",
+      "flashId": "B5A40832A1",
+      "note": "Spectek 64L(B16A)",
+      "message": "Flash ID is shorter than 6 bytes / 12 hex"
+    },
+    {
+      "code": "part.ignored_js_prefix",
+      "severity": "warning",
+      "line": 447,
+      "raw": "JS29F512G08EBHBF(B27-1)                  89C41832A200          Intel 96L(B27A)",
+      "partNumber": "JS29F512G08EBHBF(B27-1)",
+      "flashId": "89C41832A200",
+      "note": "Intel 96L(B27A)",
+      "message": "JS-prefixed PN is skipped by sky cleaner rule"
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 448,
+      "raw": "MT29F512G08EBHBF                            89C42832A200          Intel 96L(B27A)",
+      "partNumber": "MT29F512G08EBHBF",
+      "flashId": "89C42832A200",
+      "note": "Intel 96L(B27A)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 449,
+      "raw": "PF29H01T2AMCTJ1                              89C41832A201          Intel 96L(B27A)",
+      "partNumber": "PF29H01T2AMCTJ1",
+      "flashId": "89C41832A201",
+      "note": "Intel 96L(B27A)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "intel",
+        "decodepackVendor": "intel",
+        "extra": "96L(B27A)",
+        "decodepack": "3D3 96L"
+      }
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 450,
+      "raw": "MT29F4T08EUHBF                                89D49932A200          Intel 96L(B27A)",
+      "partNumber": "MT29F4T08EUHBF",
+      "flashId": "89D49932A200",
+      "note": "Intel 96L(B27A)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "part.ignored_js_prefix",
+      "severity": "warning",
+      "line": 451,
+      "raw": "JS29F512G08EBLCE(B27B)                    89C30832E600          Intel 96L(B27B)",
+      "partNumber": "JS29F512G08EBLCE(B27B)",
+      "flashId": "89C30832E600",
+      "note": "Intel 96L(B27B)",
+      "message": "JS-prefixed PN is skipped by sky cleaner rule"
+    },
+    {
+      "code": "part.ignored_js_prefix",
+      "severity": "warning",
+      "line": 452,
+      "raw": "JS29F512G08EBLCE_1(B27B)                 89C30832E601          Intel 96L(B27B)",
+      "partNumber": "JS29F512G08EBLCE_1(B27B)",
+      "flashId": "89C30832E601",
+      "note": "Intel 96L(B27B)",
+      "message": "JS-prefixed PN is skipped by sky cleaner rule"
+    },
+    {
+      "code": "part.intel_micron_pn",
+      "severity": "warning",
+      "line": 453,
+      "raw": "MT29F01T2ALCQJ1(N28)                     89D31C32C600         Intel 96L(N28A)",
+      "partNumber": "MT29F01T2ALCQJ1(N28)",
+      "flashId": "89D31C32C600",
+      "note": "Intel 96L(N28A)",
+      "message": "Intel note bucket uses a Micron PN shape; sky cleaner skips it"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 454,
+      "raw": "PF29F04T2ANCQJ2(N28A)                   89E39D32C600          Intel 96L(N28A)",
+      "partNumber": "PF29F04T2ANCQJ2(N28A)",
+      "flashId": "89E39D32C600",
+      "note": "Intel 96L(N28A)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "intel",
+        "decodepackVendor": "intel",
+        "extra": "96L(N28A)",
+        "decodepack": "3D3 96L"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 462,
+      "raw": "PF29F16T2AWCQH1(N18)                    2CE48D32AA00         Micron 64L(N18A)",
+      "partNumber": "PF29F16T2AWCQH1(N18)",
+      "flashId": "2CE48D32AA00",
+      "note": "Micron 64L(N18A)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "micron",
+        "decodepackVendor": "intel",
+        "extra": "64L(N18A)",
+        "decodepack": "3D2 64L"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 463,
+      "raw": "K9AFGD8J0A_1                                     EC1E98BF84CC          Samsung 92L 3Dv5",
+      "partNumber": "K9AFGD8J0A_1",
+      "flashId": "EC1E98BF84CC",
+      "note": "Samsung 92L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "92L 3Dv5",
+        "decodepack": "2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 464,
+      "raw": "K9AFGD8H0B*2B                                  EC1ED9BF88CC         Samsung 92L 3Dv5",
+      "partNumber": "K9AFGD8H0B*2B",
+      "flashId": "EC1ED9BF88CC",
+      "note": "Samsung 92L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "92L 3Dv5",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 465,
+      "raw": "K9AHGD8J0A                                       EC5E98BF84CC          Samsung 92L 3Dv5",
+      "partNumber": "K9AHGD8J0A",
+      "flashId": "EC5E98BF84CC",
+      "note": "Samsung 92L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "92L 3Dv5",
+        "decodepack": "2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 466,
+      "raw": "K9AHGD8J0A*2B                                  EC5FD9BF88CC         Samsung 92L 3Dv5",
+      "partNumber": "K9AHGD8J0A*2B",
+      "flashId": "EC5FD9BF88CC",
+      "note": "Samsung 92L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "92L 3Dv5",
+        "decodepack": "2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 467,
+      "raw": "K9AFGD8H0B                                       EC1C98BF84CC         Samsung 92L 3Dv5",
+      "partNumber": "K9AFGD8H0B",
+      "flashId": "EC1C98BF84CC",
+      "note": "Samsung 92L 3Dv5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "92L 3Dv5",
+        "decodepack": "3"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 478,
+      "raw": "PF29F512G08EBLCE(B27B)*4                2CE38A32E600          Micron 96L(B27B)",
+      "partNumber": "PF29F512G08EBLCE(B27B)*4",
+      "flashId": "2CE38A32E600",
+      "note": "Micron 96L(B27B)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "micron",
+        "decodepackVendor": "intel",
+        "extra": "96L(B27B)",
+        "decodepack": "50 nm"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 480,
+      "raw": "PF29F512G08EBLCE(B27B)                   2CC30832E600          Micron 96L(B27B)",
+      "partNumber": "PF29F512G08EBLCE(B27B)",
+      "flashId": "2CC30832E600",
+      "note": "Micron 96L(B27B)",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "micron",
+        "decodepackVendor": "intel",
+        "extra": "96L(B27B)",
+        "decodepack": "50 nm"
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 486,
+      "raw": "MT29F01T2ALCQJ1(N28)*2B                2CE39D32C600         Micron 96L(N28A)",
+      "partNumber": "MT29F01T2ALCQJ1(N28)*2B",
+      "flashId": "2CE39D32C600",
+      "note": "Micron 96L(N28A)",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "micron",
+        "decodepackVendor": "micron",
+        "conflicts": {
+          "d": {
+            "extra": 2,
+            "decodepack": 64,
+            "decodepackField": "die_count"
+          },
+          "e": {
+            "extra": 1,
+            "decodepack": 8,
+            "decodepackField": "ce_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 487,
+      "raw": "MT29F01T2ALCQJ1(N28)*4B                2CF39E32C600          Micron 96L(N28A)",
+      "partNumber": "MT29F01T2ALCQJ1(N28)*4B",
+      "flashId": "2CF39E32C600",
+      "note": "Micron 96L(N28A)",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "micron",
+        "decodepackVendor": "micron",
+        "conflicts": {
+          "d": {
+            "extra": 4,
+            "decodepack": 64,
+            "decodepackField": "die_count"
+          },
+          "e": {
+            "extra": 1,
+            "decodepack": 8,
+            "decodepackField": "ce_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 501,
+      "raw": "TH58LKT1T48BA4K(bics8)                     9848A8037AE6          Koxia BiCS8",
+      "partNumber": "TH58LKT1T48BA4K(bics8)",
+      "flashId": "9848A8037AE6",
+      "note": "Koxia BiCS8",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 502,
+      "raw": "TH58LKT2F48BA8R(bics8Q)                  9848AC037AE6          Koxia BiCS8 QLC",
+      "partNumber": "TH58LKT2F48BA8R(bics8Q)",
+      "flashId": "9848AC037AE6",
+      "note": "Koxia BiCS8 QLC",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 503,
+      "raw": "TH58LKT3F48BA8R(bics8)                     9849AC037AE6          Koxia BiCS8",
+      "partNumber": "TH58LKT3F48BA8R(bics8)",
+      "flashId": "9849AC037AE6",
+      "note": "Koxia BiCS8",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 504,
+      "raw": "TH58LKT3F48BA8S(bics8)                     9849AD037EE6          Koxia BiCS8",
+      "partNumber": "TH58LKT3F48BA8S(bics8)",
+      "flashId": "9849AD037EE6",
+      "note": "Koxia BiCS8",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 505,
+      "raw": "TH58LKT4F48BA8S(bics8Q)                  9840AD037EE6          Koxia BiCS8 QLC",
+      "partNumber": "TH58LKT4F48BA8S(bics8Q)",
+      "flashId": "9840AD037EE6",
+      "note": "Koxia BiCS8 QLC",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 506,
+      "raw": "TH58LLT0V49BA4R(bics9)                     983EA8037AE7          Koxia BiCS9",
+      "partNumber": "TH58LLT0V49BA4R(bics9)",
+      "flashId": "983EA8037AE7",
+      "note": "Koxia BiCS9",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 507,
+      "raw": "TH58LLT2V49BA8S(bics9)                     9848A9037EE7          Koxia BiCS9",
+      "partNumber": "TH58LLT2V49BA8S(bics9)",
+      "flashId": "9848A9037EE7",
+      "note": "Koxia BiCS9",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 509,
+      "raw": "PF29F01T2BLCQKM(N38E)                   89D32C32C608         Intel,N38E",
+      "partNumber": "PF29F01T2BLCQKM(N38E)",
+      "flashId": "89D32C32C608",
+      "note": "Intel,N38E",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "intel",
+        "decodepackVendor": "intel",
+        "extra": "N38E",
+        "decodepack": "144L"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 511,
+      "raw": "K99UGY8J5C(V7Q)                               EC5FAC4B88C1         Samsung,SSV7 QLC",
+      "partNumber": "K99UGY8J5C(V7Q)",
+      "flashId": "EC5FAC4B88C1",
+      "note": "Samsung,SSV7 QLC",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "samsung",
+        "decodepackVendor": "samsung",
+        "extra": "QLC",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 528,
+      "raw": "SDUNCIAMA-128GB(8T24*4B)             45499BB37E63           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB(8T24*4B)",
+      "flashId": "45499BB37E63",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "conflicts": {
+          "d": {
+            "extra": 4,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 531,
+      "raw": "SDUNCIAMA-128GB(8T24*4B)             454998B37E6B           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB(8T24*4B)",
+      "flashId": "454998B37E6B",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "conflicts": {
+          "d": {
+            "extra": 4,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 532,
+      "raw": "SDUNCIAMA-128GB(8T24*4B)             454998B37E63           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB(8T24*4B)",
+      "flashId": "454998B37E63",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "conflicts": {
+          "d": {
+            "extra": 4,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 533,
+      "raw": "SDUNDIAMB-64GCE(Bics4.5)               454899B3FAE3          Sandisk 96L BiCS4",
+      "partNumber": "SDUNDIAMB-64GCE(Bics4.5)",
+      "flashId": "454899B3FAE3",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "96L BiCS4",
+        "decodepack": "BiCS5"
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 546,
+      "raw": "SDUNCIAMA-064GB(8T24*2B)             453E99B37AEB          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(8T24*2B)",
+      "flashId": "453E99B37AEB",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "conflicts": {
+          "d": {
+            "extra": 2,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 547,
+      "raw": "SDUNCIAMA-064GB(8T24*2B)             453E99B37AE3          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(8T24*2B)",
+      "flashId": "453E99B37AE3",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "conflicts": {
+          "d": {
+            "extra": 2,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 548,
+      "raw": "SDUNCIAMA-064GB(8T24*2B)             453E99B37A6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(8T24*2B)",
+      "flashId": "453E99B37A6B",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "conflicts": {
+          "d": {
+            "extra": 2,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 551,
+      "raw": "SDUNDIAMA-64GCE(Bics4.5)               453E98B3F6E3           Sandisk 96L BiCS4",
+      "partNumber": "SDUNDIAMA-64GCE(Bics4.5)",
+      "flashId": "453E98B3F6E3",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "96L BiCS4",
+        "decodepack": "BiCS5"
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 556,
+      "raw": "SDUNCIAMB1-064GB_4die                  453E9AB37E6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMB1-064GB_4die",
+      "flashId": "453E9AB37E6B",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "conflicts": {
+          "d": {
+            "extra": 4,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 557,
+      "raw": "SDUNCIAMA1-064GB-4Die                 453E9A037E64          Sandisk BiCS5",
+      "partNumber": "SDUNCIAMA1-064GB-4Die",
+      "flashId": "453E9A037E64",
+      "note": "Sandisk BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 558,
+      "raw": "SDUNEIOBB-128GCE                           45409A037E64          Sandisk BiCS5",
+      "partNumber": "SDUNEIOBB-128GCE",
+      "flashId": "45409A037E64",
+      "note": "Sandisk BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 559,
+      "raw": "SDUNEIOBA-128GCE                           45409A037EE4          Sandisk BiCS5",
+      "partNumber": "SDUNEIOBA-128GCE",
+      "flashId": "45409A037EE4",
+      "note": "Sandisk BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 560,
+      "raw": "SDUNEIOMA-128GCE                          45409B03F264           Sandisk BiCS5",
+      "partNumber": "SDUNEIOMA-128GCE",
+      "flashId": "45409B03F264",
+      "note": "Sandisk BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 561,
+      "raw": "SDUNEIOMA-128GCE                          45409B03F26C          Sandisk BiCS5",
+      "partNumber": "SDUNEIOMA-128GCE",
+      "flashId": "45409B03F26C",
+      "note": "Sandisk BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS5",
+        "decodepack": "BiCS6"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 568,
+      "raw": "SDWNCJAMA_1V2-128GCE(8F24)                45739CB37663          Sandisk(BiCS4)(QLC)",
+      "partNumber": "SDWNCJAMA_1V2-128GCE(8F24)",
+      "flashId": "45739CB37663",
+      "note": "Sandisk(BiCS4)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 569,
+      "raw": "SDWNCJAMA_1V2-128GCE(8F24)               45739CB3766B          Sandisk(BiCS4)(QLC)",
+      "partNumber": "SDWNCJAMA_1V2-128GCE(8F24)",
+      "flashId": "45739CB3766B",
+      "note": "Sandisk(BiCS4)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "decodepack.cell_conflict",
+      "severity": "warning",
+      "line": 570,
+      "raw": "SDWNCJAMA_1V2-128GCE(8F24)               45739CB376E3          Sandisk(BiCS4)(QLC)",
+      "partNumber": "SDWNCJAMA_1V2-128GCE(8F24)",
+      "flashId": "45739CB376E3",
+      "note": "Sandisk(BiCS4)(QLC)",
+      "message": "decodepack cell_level conflicts with sky; record is skipped",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "QLC",
+        "decodepack": "4"
+      }
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 571,
+      "raw": "SNDK-1TB(bics4Q)                               45739DB37A63          Sandisk(BiCS4)(QLC)",
+      "partNumber": "SNDK-1TB(bics4Q)",
+      "flashId": "45739DB37A63",
+      "note": "Sandisk(BiCS4)(QLC)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 572,
+      "raw": "Sandisk_FXE4(Bics4.5)                           453C98B3F6EB          Sandisk 96L BiCS4",
+      "partNumber": "Sandisk_FXE4(Bics4.5)",
+      "flashId": "453C98B3F6EB",
+      "note": "Sandisk 96L BiCS4",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 580,
+      "raw": "SDUNCIAMA-064GB_4B                       45499AB3FE6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_4B",
+      "flashId": "45499AB3FE6B",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "conflicts": {
+          "d": {
+            "extra": 4,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 582,
+      "raw": "SDTNAIAMA_H45-64GB(bics4)             453E99B37A63          Sandisk BiCS4",
+      "partNumber": "SDTNAIAMA_H45-64GB(bics4)",
+      "flashId": "453E99B37A63",
+      "note": "Sandisk BiCS4",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS4",
+        "decodepack": "BiCS2"
+      }
+    },
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "line": 583,
+      "raw": "SDUNCIAMA-064GCE(bics5)                450098037664           Sandisk BiCS5",
+      "partNumber": "SDUNCIAMA-064GCE(bics5)",
+      "flashId": "450098037664",
+      "note": "Sandisk BiCS5",
+      "message": "decodepack process/generation conflicts with sky; record needs manual resolution",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "extra": "BiCS5",
+        "decodepack": "BiCS4"
+      }
+    },
+    {
+      "code": "decodepack.topology_conflict",
+      "severity": "warning",
+      "line": 584,
+      "raw": "SDUNCIAMA-128GB(8T24*4B)             45499BB37E6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB(8T24*4B)",
+      "flashId": "45499BB37E6B",
+      "note": "Sandisk 96L BiCS4",
+      "message": "decodepack topology conflicts with sky suffix; conflicting fields are omitted",
+      "details": {
+        "vendor": "sndk",
+        "decodepackVendor": "sndk",
+        "conflicts": {
+          "d": {
+            "extra": 4,
+            "decodepack": 1,
+            "decodepackField": "die_count"
+          }
+        }
+      }
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 586,
+      "raw": "SNDK-1TB(bics4Q)                               45409EB37E63           Sandisk(BiCS4)(QLC)",
+      "partNumber": "SNDK-1TB(bics4Q)",
+      "flashId": "45409EB37E63",
+      "note": "Sandisk(BiCS4)(QLC)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 587,
+      "raw": "SNDK-1TB(bics4Q)                               45419FB37E63           Sandisk(BiCS4)(QLC)",
+      "partNumber": "SNDK-1TB(bics4Q)",
+      "flashId": "45419FB37E63",
+      "note": "Sandisk(BiCS4)(QLC)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 588,
+      "raw": "SNDK 128GB(bics4Q)                           98779DB37AE3          Sandisk(BiCS4)(QLC)",
+      "partNumber": "SNDK 128GB(bics4Q)",
+      "flashId": "98779DB37AE3",
+      "note": "Sandisk(BiCS4)(QLC)",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 596,
+      "raw": "TC58LJG8T24TA0D(Bics4.5)                  983C98B3F663          Toshiba 96L BiCS4",
+      "partNumber": "TC58LJG8T24TA0D(Bics4.5)",
+      "flashId": "983C98B3F663",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 597,
+      "raw": "TH58LKT0T2MBADE(Bics4.5)                983C98B3F6E3          Toshiba 96L BiCS4",
+      "partNumber": "TH58LKT0T2MBADE(Bics4.5)",
+      "flashId": "983C98B3F6E3",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 598,
+      "raw": "SDUNCIAMA-064GB(8T24*2B)             983E99B37AEB          Toshiba 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(8T24*2B)",
+      "flashId": "983E99B37AEB",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 599,
+      "raw": "TH58LJT1T24BA8C                               983E9AB37EE3           Toshiba 96L BiCS4",
+      "partNumber": "TH58LJT1T24BA8C",
+      "flashId": "983E9AB37EE3",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 600,
+      "raw": "TH58LJB4F24BA8K(fsp0)                       98739CB376E3          Toshiba 96L BiCS4",
+      "partNumber": "TH58LJB4F24BA8K(fsp0)",
+      "flashId": "98739CB376E3",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 601,
+      "raw": "SDUNCIAMA-064GB_4B                       98499AB3FE6B          Toshiba 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_4B",
+      "flashId": "98499AB3FE6B",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.ignored_tc_8t24_032gb",
+      "severity": "warning",
+      "line": 602,
+      "raw": "TC_8T24-032GB_2                                983398B37663           Toshiba 96L BiCS4",
+      "partNumber": "TC_8T24-032GB_2",
+      "flashId": "983398B37663",
+      "note": "Toshiba 96L BiCS4",
+      "message": "TC_8T24-032GB is skipped by sky cleaner rule"
+    },
+    {
+      "code": "part.ignored_tc_8t24_032gb",
+      "severity": "warning",
+      "line": 603,
+      "raw": "TC_8T24-032GB_2                                983C98B37663          Toshiba 96L BiCS4",
+      "partNumber": "TC_8T24-032GB_2",
+      "flashId": "983C98B37663",
+      "note": "Toshiba 96L BiCS4",
+      "message": "TC_8T24-032GB is skipped by sky cleaner rule"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 604,
+      "raw": "TC58LJG8T24TA0D                               983C98B3766B          Toshiba 96L BiCS4",
+      "partNumber": "TC58LJG8T24TA0D",
+      "flashId": "983C98B3766B",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 605,
+      "raw": "TC58LJG8T24TA0D                               983C98B376E3          Toshiba 96L BiCS4",
+      "partNumber": "TC58LJG8T24TA0D",
+      "flashId": "983C98B376E3",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 606,
+      "raw": "SDUNCIAMA-064GB(8T24*2B)             983E99B3FA6B          Toshiba 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(8T24*2B)",
+      "flashId": "983E99B3FA6B",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 607,
+      "raw": "Toshiba_FXE4(Bics4.5)                          983C98B3F66B          Toshiba 96L BiCS4",
+      "partNumber": "Toshiba_FXE4(Bics4.5)",
+      "flashId": "983C98B3F66B",
+      "note": "Toshiba 96L BiCS4",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 608,
+      "raw": "TH58LJT1V24BA8H                               983E99B37AE3          Toshiba 96L BiCS4",
+      "partNumber": "TH58LJT1V24BA8H",
+      "flashId": "983E99B37AE3",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 609,
+      "raw": "Toshiba_FXE4(Bics4.5)                          983C98B3F6EB          Toshiba 96L BiCS4",
+      "partNumber": "Toshiba_FXE4(Bics4.5)",
+      "flashId": "983C98B3F6EB",
+      "note": "Toshiba 96L BiCS4",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 610,
+      "raw": "SDUNCIAMA-064GB_2B(0T24)             984899B37A6B          Toshiba 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_2B(0T24)",
+      "flashId": "984899B37A6B",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.untrusted",
+      "severity": "warning",
+      "line": 611,
+      "raw": "TOSHI-064GB_1(9T24)                         983E98B37663           Toshiba 96L BiCS4",
+      "partNumber": "TOSHI-064GB_1(9T24)",
+      "flashId": "983E98B37663",
+      "note": "Toshiba 96L BiCS4",
+      "message": "part number is synthetic, generic or cannot be normalized to an exact PN"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 612,
+      "raw": "TC58LJG9T24TA0D                               983E98B3766B           Toshiba 96L BiCS4",
+      "partNumber": "TC58LJG9T24TA0D",
+      "flashId": "983E98B3766B",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 613,
+      "raw": "TH58LJT1T24BA8C(9T24)                      983E98B376E3           Toshiba 96L BiCS4",
+      "partNumber": "TH58LJT1T24BA8C(9T24)",
+      "flashId": "983E98B376E3",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 614,
+      "raw": "TH58LJT1T24BA8C(9T24)                      983E98B3F6E3           Toshiba 96L BiCS4",
+      "partNumber": "TH58LJT1T24BA8C(9T24)",
+      "flashId": "983E98B3F6E3",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 615,
+      "raw": "SDUNCIAMA-064GB_2B(0T24)             984899B3FA63          Toshiba 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_2B(0T24)",
+      "flashId": "984899B3FA63",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 616,
+      "raw": "SDUNCIAMA-064GB_2B(0T24)             984899B37AEB          Toshiba 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_2B(0T24)",
+      "flashId": "984899B37AEB",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 617,
+      "raw": "TH58LJT2T24BA8H                               984899B37AE3          Toshiba 96L BiCS4",
+      "partNumber": "TH58LJT2T24BA8H",
+      "flashId": "984899B37AE3",
+      "note": "Toshiba 96L BiCS4",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 618,
+      "raw": "TH58TFG8DFKBA4K(8DFK)                   983AA4937AD0         Toshiba A19nm[1y]",
+      "partNumber": "TH58TFG8DFKBA4K(8DFK)",
+      "flashId": "983AA4937AD0",
+      "note": "Toshiba A19nm[1y]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 619,
+      "raw": "SDTNQFAMA-0032G(8DDK)                983CA5937ED0         Toshiba A19nm[1y]",
+      "partNumber": "SDTNQFAMA-0032G(8DDK)",
+      "flashId": "983CA5937ED0",
+      "note": "Toshiba A19nm[1y]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 620,
+      "raw": "SDTNQFAMA-008G(6DDK)                  98DE949376D0          Toshiba A19nm[1y]",
+      "partNumber": "SDTNQFAMA-008G(6DDK)",
+      "flashId": "98DE949376D0",
+      "note": "Toshiba A19nm[1y]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.kioxia_decodepack_covered",
+      "severity": "warning",
+      "line": 621,
+      "raw": "SDTNQFAMA-008G(6DDK)                  98DE94937650          Toshiba A19nm[1y]",
+      "partNumber": "SDTNQFAMA-008G(6DDK)",
+      "flashId": "98DE94937650",
+      "note": "Toshiba A19nm[1y]",
+      "message": "KIOXIA/Toshiba PN is skipped; decodepack should provide process/generation"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 13,
+      "raw": "MT29F1T08GBLCEJ4(N48R)*2B             2CE38D32EA30          Micron N48R",
+      "partNumber": "MT29F1T08GBLCEJ4(N48R)*2B",
+      "canonicalPartNumber": "MT29F1T08GBLCEJ4",
+      "flashId": "2CE38D32EA30",
+      "vendor": "micron",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 184,
+      "raw": "MT29F1T08GBLCEJ4(N48r)                   2CD30C32EA30         Micron 176L(N48R)",
+      "partNumber": "MT29F1T08GBLCEJ4(N48r)",
+      "canonicalPartNumber": "MT29F1T08GBLCEJ4",
+      "flashId": "2CD30C32EA30",
+      "vendor": "micron",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 18,
+      "raw": "MT29F128G08CBCEB(L05B)                  2C844432AA04          Micron L05B",
+      "partNumber": "MT29F128G08CBCEB(L05B)",
+      "canonicalPartNumber": "MT29F128G08CBCEB",
+      "flashId": "2C844432AA04",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "L05B",
+          "32L(L05B)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 271,
+      "raw": "MT29F128G08CBCEB(L05B)                  2C844434AA00          Micron 32L(L05B)",
+      "partNumber": "MT29F128G08CBCEB(L05B)",
+      "canonicalPartNumber": "MT29F128G08CBCEB",
+      "flashId": "2C844434AA00",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "L05B",
+          "32L(L05B)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 272,
+      "raw": "MT29F128G08CBCEB(L05B)                  2C84C434AA00         Micron 32L(L05B)",
+      "partNumber": "MT29F128G08CBCEB(L05B)",
+      "canonicalPartNumber": "MT29F128G08CBCEB",
+      "flashId": "2C84C434AA00",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "L05B",
+          "32L(L05B)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 79,
+      "raw": "MT29F2T08EMLDE                               2CD3F932EA10          Micron 128L(B37R)",
+      "partNumber": "MT29F2T08EMLDE",
+      "canonicalPartNumber": "MT29F2T08EMLDE",
+      "flashId": "2CD3F932EA10",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "128L(B37R)",
+          "176L(B47T)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 80,
+      "raw": "MT29F2T08EMLDE                               2CE3FA32EA10          Micron 128L(B37R)",
+      "partNumber": "MT29F2T08EMLDE",
+      "canonicalPartNumber": "MT29F2T08EMLDE",
+      "flashId": "2CE3FA32EA10",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "128L(B37R)",
+          "176L(B47T)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 178,
+      "raw": "MT29F2T08EMLDE(B47T)                     2CE38A32EA34          Micron 176L(B47T)",
+      "partNumber": "MT29F2T08EMLDE(B47T)",
+      "canonicalPartNumber": "MT29F2T08EMLDE",
+      "flashId": "2CE38A32EA34",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "128L(B37R)",
+          "176L(B47T)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 205,
+      "raw": "TC58NVG6DDLTA00                            45DE94937651          Sandisk 15nm[1z]",
+      "partNumber": "TC58NVG6DDLTA00",
+      "canonicalPartNumber": "TC58NVG6DDLTA00",
+      "flashId": "45DE94937651",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 207,
+      "raw": "TC58NVG6DDLTA00                            45DE949376D1          Sandisk 15nm[1z]",
+      "partNumber": "TC58NVG6DDLTA00",
+      "canonicalPartNumber": "TC58NVG6DDLTA00",
+      "flashId": "45DE949376D1",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 214,
+      "raw": "TC58NVG6DDLTA00*2B                       453A95937A51          Sandisk 15nm[1z]",
+      "partNumber": "TC58NVG6DDLTA00*2B",
+      "canonicalPartNumber": "TC58NVG6DDLTA00",
+      "flashId": "453A95937A51",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 215,
+      "raw": "TC58NVG6DDLTA00*2B                       453A95937AD1         Sandisk 15nm[1z]",
+      "partNumber": "TC58NVG6DDLTA00*2B",
+      "canonicalPartNumber": "TC58NVG6DDLTA00",
+      "flashId": "453A95937AD1",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 206,
+      "raw": "TC58NVG7DDLTA00                            453A94937651          Sandisk 15nm[1z]",
+      "partNumber": "TC58NVG7DDLTA00",
+      "canonicalPartNumber": "TC58NVG7DDLTA00",
+      "flashId": "453A94937651",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 208,
+      "raw": "TC58NVG7DDLTA00                            453A949376D1          Sandisk 15nm[1z]",
+      "partNumber": "TC58NVG7DDLTA00",
+      "canonicalPartNumber": "TC58NVG7DDLTA00",
+      "flashId": "453A949376D1",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 209,
+      "raw": "TC58NVG7DDLTA00                            453E96937E51           Sandisk 15nm[1z]",
+      "partNumber": "TC58NVG7DDLTA00",
+      "canonicalPartNumber": "TC58NVG7DDLTA00",
+      "flashId": "453E96937E51",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 219,
+      "raw": "TC58NVG7DDLTA00*2B                       453C95937A51          Sandisk 15nm[1z]",
+      "partNumber": "TC58NVG7DDLTA00*2B",
+      "canonicalPartNumber": "TC58NVG7DDLTA00",
+      "flashId": "453C95937A51",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 226,
+      "raw": "FYGLRJ08028M8A-128G                      4548A9037EE5          Sandisk 162L BiCS6",
+      "partNumber": "FYGLRJ08028M8A-128G",
+      "canonicalPartNumber": "FYGLRJ08028M8A-128G",
+      "flashId": "4548A9037EE5",
+      "vendor": "sndk",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "162L BiCS6",
+          "BiCS6"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 229,
+      "raw": "FYGLRJ08028M8A-128G                      4548A9037E65          Sandisk BiCS6",
+      "partNumber": "FYGLRJ08028M8A-128G",
+      "canonicalPartNumber": "FYGLRJ08028M8A-128G",
+      "flashId": "4548A9037E65",
+      "vendor": "sndk",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "162L BiCS6",
+          "BiCS6"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 299,
+      "raw": "MT29F256G08EBHAF_1(L06B)              2CA46432AA01         Micron 32L(L06B)",
+      "partNumber": "MT29F256G08EBHAF_1(L06B)",
+      "canonicalPartNumber": "MT29F256G08EBHAF",
+      "flashId": "2CA46432AA01",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "32L(L06B)",
+          "64L(B16A)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 440,
+      "raw": "MT29F256G08EBHAF(B16A)                 2CA40832A100          Micron 64L(B16A)",
+      "partNumber": "MT29F256G08EBHAF(B16A)",
+      "canonicalPartNumber": "MT29F256G08EBHAF",
+      "flashId": "2CA40832A100",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "32L(L06B)",
+          "64L(B16A)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 443,
+      "raw": "MT29F256G08EBHAF(B16A)                 2CA48832A100          Micron 64L(B16A)",
+      "partNumber": "MT29F256G08EBHAF(B16A)",
+      "canonicalPartNumber": "MT29F256G08EBHAF",
+      "flashId": "2CA48832A100",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "32L(L06B)",
+          "64L(B16A)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 319,
+      "raw": "MT29F256G08EBHAF_1(L06B)              B5A46432AA04         Spectek 32L(L06B)",
+      "partNumber": "MT29F256G08EBHAF_1(L06B)",
+      "canonicalPartNumber": "MT29F256G08EBHAF",
+      "flashId": "B5A46432AA04",
+      "vendor": "spectek",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "32L(L06B)",
+          "64L(B16A)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 446,
+      "raw": "MT29F256G08EBHAF(B16A)                 B5A48832A100          Spectek 64L(B16A)",
+      "partNumber": "MT29F256G08EBHAF(B16A)",
+      "canonicalPartNumber": "MT29F256G08EBHAF",
+      "flashId": "B5A48832A100",
+      "vendor": "spectek",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "32L(L06B)",
+          "64L(B16A)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 444,
+      "raw": "MT29F256G08EBHAF1(B16C)               2CC48932A104          Micron B16C",
+      "partNumber": "MT29F256G08EBHAF1(B16C)",
+      "canonicalPartNumber": "MT29F256G08EBHAF1",
+      "flashId": "2CC48932A104",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "B16C",
+          "64L(B17A)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.field_conflict",
+      "severity": "warning",
+      "line": 458,
+      "raw": "MT29F256G08EBHAF1                          2CD48932A601         Micron 64L(B17A)",
+      "partNumber": "MT29F256G08EBHAF1",
+      "canonicalPartNumber": "MT29F256G08EBHAF1",
+      "flashId": "2CD48932A601",
+      "vendor": "micron",
+      "message": "same canonical PN has conflicting process or cell fields",
+      "details": {
+        "l": [
+          "B16C",
+          "64L(B17A)"
+        ],
+        "c": []
+      }
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 526,
+      "raw": "SDUNCIAMA-064GB_2B(0T24)             454899B3FA6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_2B(0T24)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "454899B3FA6B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 539,
+      "raw": "SDUNCIAMA-064GB_2B(0T24)             454899B3FA63          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_2B(0T24)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "454899B3FA63",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 540,
+      "raw": "SDUNCIAMA-064GB_2B(0T24)             454899B37AEB          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_2B(0T24)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "454899B37AEB",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 541,
+      "raw": "SDUNCIAMA-064GB_2B(0T24)             454899B37A6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_2B(0T24)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "454899B37A6B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 542,
+      "raw": "SDUNCIAMA-064GB_2B(0T24)             454899B37A63          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_2B(0T24)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "454899B37A63",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 543,
+      "raw": "SDUNCIAMA-064GB_4B(9T24)             45409BB37E6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_4B(9T24)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "45409BB37E6B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 546,
+      "raw": "SDUNCIAMA-064GB(8T24*2B)             453E99B37AEB          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(8T24*2B)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "453E99B37AEB",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 547,
+      "raw": "SDUNCIAMA-064GB(8T24*2B)             453E99B37AE3          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(8T24*2B)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "453E99B37AE3",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 548,
+      "raw": "SDUNCIAMA-064GB(8T24*2B)             453E99B37A6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(8T24*2B)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "453E99B37A6B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 549,
+      "raw": "SDUNCIAMA-064GB(Bics4.5)               453E98B3F66B           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(Bics4.5)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "453E98B3F66B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 550,
+      "raw": "SDUNCIAMA-064GB(Bics4.5)               453E98B3F663           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB(Bics4.5)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "453E98B3F663",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 553,
+      "raw": "SDUNCIAMA-064GB_1(9T24)               453E98B3766B           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_1(9T24)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "453E98B3766B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 555,
+      "raw": "SDUNCIAMA-064GB_1(9T24)               453E98B37663           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_1(9T24)",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "453E98B37663",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 580,
+      "raw": "SDUNCIAMA-064GB_4B                       45499AB3FE6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-064GB_4B",
+      "canonicalPartNumber": "SDUNCIAMA-064GB",
+      "flashId": "45499AB3FE6B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 528,
+      "raw": "SDUNCIAMA-128GB(8T24*4B)             45499BB37E63           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB(8T24*4B)",
+      "canonicalPartNumber": "SDUNCIAMA-128GB",
+      "flashId": "45499BB37E63",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 531,
+      "raw": "SDUNCIAMA-128GB(8T24*4B)             454998B37E6B           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB(8T24*4B)",
+      "canonicalPartNumber": "SDUNCIAMA-128GB",
+      "flashId": "454998B37E6B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 532,
+      "raw": "SDUNCIAMA-128GB(8T24*4B)             454998B37E63           Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB(8T24*4B)",
+      "canonicalPartNumber": "SDUNCIAMA-128GB",
+      "flashId": "454998B37E63",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 535,
+      "raw": "SDUNCIAMA-128GB_4B(0T24)             45489AB37E6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB_4B(0T24)",
+      "canonicalPartNumber": "SDUNCIAMA-128GB",
+      "flashId": "45489AB37E6B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 536,
+      "raw": "SDUNCIAMA-128GB_4B(0T24)             45489AB37E63          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB_4B(0T24)",
+      "canonicalPartNumber": "SDUNCIAMA-128GB",
+      "flashId": "45489AB37E63",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    },
+    {
+      "code": "part.topology_conflict",
+      "severity": "warning",
+      "line": 584,
+      "raw": "SDUNCIAMA-128GB(8T24*4B)             45499BB37E6B          Sandisk 96L BiCS4",
+      "partNumber": "SDUNCIAMA-128GB(8T24*4B)",
+      "canonicalPartNumber": "SDUNCIAMA-128GB",
+      "flashId": "45499BB37E6B",
+      "vendor": "sndk",
+      "message": "same canonical PN has multiple topology variants with different Flash IDs"
+    }
+  ]
+}

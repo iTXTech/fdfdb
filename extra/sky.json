@@ -1,0 +1,1281 @@
+{
+  "schemaVersion": "fdnext.fdb.extra.v1",
+  "priority": 50,
+  "vendors": {
+    "intel": {
+      "FP29F01P2ALCQL1": {
+        "fid": [
+          "89092832C200"
+        ]
+      },
+      "PF29F01T2ALCQK1": {
+        "fid": [
+          "89CB9832C600"
+        ]
+      },
+      "PF29F01T2ALCQK2": {
+        "fid": [
+          "89092932C200"
+        ]
+      },
+      "PF29F01T2ALCQK4": {
+        "fid": [
+          "89092A32C200"
+        ]
+      },
+      "PF29F01T2ALCQKA": {
+        "fid": [
+          "89E3AD32C204",
+          "89CB9832C204"
+        ]
+      },
+      "PF29F02T2AMCQK1": {
+        "fid": [
+          "89E3AD32C600"
+        ]
+      },
+      "PF29F02T2APCMG2": {
+        "fid": [
+          "89C4E532AA01",
+          "89CCF932AA01"
+        ]
+      },
+      "PF29F04T2ANCQK1": {
+        "fid": [
+          "89F3AE32C600"
+        ]
+      },
+      "PF29F04T2ASCMG2": {
+        "fid": [
+          "89D4E632AA01",
+          "89DCFA32AA01"
+        ]
+      },
+      "PF29F08T2AOCQK1": {
+        "fid": [
+          "892BAF32C600"
+        ]
+      },
+      "PF29F08T4AOCQK1": {
+        "fid": [
+          "892BAF32C600"
+        ]
+      },
+      "PF29F48B2ALCTG2": {
+        "fid": [
+          "89B47832AA01"
+        ]
+      }
+    },
+    "micron": {
+      "BW29F1T08EMLCE": {
+        "id": [
+          "2CD38932E601"
+        ],
+        "l": "96L(B27B)"
+      },
+      "BW29F4T08EMLCE": {
+        "id": [
+          "2CD38932E604"
+        ],
+        "l": "96L(B27B)"
+      },
+      "FBNB57T512G1KLBAEJ4": {
+        "id": [
+          "2CC30832E630"
+        ]
+      },
+      "FNMB47R512G1KLBAEJ4": {
+        "id": [
+          "2CC30832EA30",
+          "2CC30832EA31",
+          "2CD38932EA30",
+          "2CE38A32EA31"
+        ]
+      },
+      "FNNB05A128G1KDBAB": {
+        "id": [
+          "2C845832A100"
+        ]
+      },
+      "MT29E6T08ETHBBM5": {
+        "id": [
+          "2CCCF932AA05"
+        ],
+        "l": "32L(B0KB)"
+      },
+      "MT29F01T2ALCQH1": {
+        "id": [
+          "2CD40C32AA00"
+        ],
+        "l": "64L(N18A)"
+      },
+      "MT29F01T2ALCQJ1": {
+        "id": [
+          "2CD39C32C600",
+          "2CD31C32C600",
+          "2CE39D32C600",
+          "2CF39E32C600"
+        ],
+        "l": "96L(N28A)"
+      },
+      "MT29F128G08CBCEE": {
+        "id": [
+          "2CA4C534AA00"
+        ],
+        "l": "32L(L05B)"
+      },
+      "MT29F128G08EBCDB": {
+        "id": [
+          "2C845832A104",
+          "2C84D832A100"
+        ],
+        "l": "32L(B05A)"
+      },
+      "MT29F16T08EWLCH": {
+        "id": [
+          "2CF38A32E830",
+          "2CF38A32E831"
+        ],
+        "l": "232L(B58R)"
+      },
+      "MT29F16T08EWLEHD8": {
+        "id": [
+          "2CF38A32E834"
+        ],
+        "l": "276L(B68S)"
+      },
+      "MT29F16T08GULBH": {
+        "id": [
+          "2CF39D42E830"
+        ],
+        "l": "N69R"
+      },
+      "MT29F16T08GULBHD5": {
+        "id": [
+          "2CF39D42E834"
+        ],
+        "l": "N69R"
+      },
+      "MT29F16T08GWLCE": {
+        "id": [
+          "2CF38E32EA30"
+        ],
+        "l": "N48R"
+      },
+      "MT29F16T08GWLDH": {
+        "id": [
+          "2CF38E42EE31",
+          "2CF38E42EE3C"
+        ],
+        "l": "N58R"
+      },
+      "MT29F16T08GWLDHD8": {
+        "id": [
+          "2CF38E42EE30"
+        ],
+        "l": "N58R"
+      },
+      "MT29F1HT08EMCBB": {
+        "id": [
+          "2CB4F832AA04"
+        ],
+        "l": "32L(B0KB)"
+      },
+      "MT29F1HT08EMHBB": {
+        "id": [
+          "2CB47832AA04"
+        ],
+        "l": "32L(B0KB)"
+      },
+      "MT29F1T08EBLCE": {
+        "id": [
+          "2CD38932E600"
+        ],
+        "l": "96L(B27B)"
+      },
+      "MT29F1T08EBLCH": {
+        "id": [
+          "2CD30832E830"
+        ],
+        "l": "232L(B58R)"
+      },
+      "MT29F1T08EBLEH36": {
+        "id": [
+          "2CD30832E836"
+        ],
+        "l": "276L(B68S)"
+      },
+      "MT29F1T08EBLEH3W": {
+        "id": [
+          "2CD30832E834"
+        ],
+        "l": "276L(B68S)"
+      },
+      "MT29F1T08EBLEHD4": {
+        "id": [
+          "2CD30832E835"
+        ],
+        "l": "276L(B68S)"
+      },
+      "MT29F1T08GBLDH": {
+        "id": [
+          "2CD30C42EE30",
+          "2CD30C42EE31",
+          "2CD30C42EE3C"
+        ],
+        "l": "N58R"
+      },
+      "MT29F256G08CBCBB": {
+        "id": [
+          "2CA46432AA05"
+        ],
+        "l": "32L(L06B)"
+      },
+      "MT29F256G08EBHBF-R": {
+        "id": [
+          "2CA40832A104"
+        ],
+        "l": "64L(B16A)"
+      },
+      "MT29F256G08EBLCE": {
+        "id": [
+          "2CA37832E510"
+        ],
+        "l": "128L(B36R)"
+      },
+      "MT29F2T08CQCBBG2": {
+        "id": [
+          "2CC4E532AA05"
+        ],
+        "l": "32L(L06B)"
+      },
+      "MT29F2T08CUCBB": {
+        "id": [
+          "2CC4E532AA04"
+        ],
+        "l": "32L(L06B)"
+      },
+      "MT29F2T08EMLCE": {
+        "id": [
+          "2CE38A32E601"
+        ],
+        "l": "96L(B27B)"
+      },
+      "MT29F2T08EUHAF": {
+        "id": [
+          "2CC48932A100",
+          "2CC48932A101"
+        ],
+        "l": "B16A"
+      },
+      "MT29F2T08GBLBH": {
+        "id": [
+          "2CE31C42E830"
+        ],
+        "l": "N69R"
+      },
+      "MT29F2T08GBLBHD4": {
+        "id": [
+          "2CE31C42E831"
+        ],
+        "l": "N69R"
+      },
+      "MT29F2T08GELDHD4": {
+        "id": [
+          "2CD30842EE31"
+        ],
+        "l": "N58R"
+      },
+      "MT29F32T08GWLBH": {
+        "id": [
+          "2C039E42E830"
+        ],
+        "l": "N69R"
+      },
+      "MT29F32T08GWLBHD6": {
+        "id": [
+          "2C039E42E834"
+        ],
+        "l": "N69R"
+      },
+      "MT29F384G08EBCBB": {
+        "id": [
+          "2CB47832AA05"
+        ],
+        "l": "32L(B0KB)"
+      },
+      "MT29F3T08EUCBB": {
+        "id": [
+          "2CCCF932AA04"
+        ],
+        "l": "32L(B0KB)"
+      },
+      "MT29F4T08EMLCH": {
+        "id": [
+          "2CD30832E831"
+        ],
+        "l": "232L(B58R)"
+      },
+      "MT29F4T08EUHAF": {
+        "id": [
+          "2CD48932A600"
+        ],
+        "l": "64L(B17A)"
+      },
+      "MT29F4T08EUHBF": {
+        "id": [
+          "2CD49932A201"
+        ],
+        "l": "96L(B27A)"
+      },
+      "MT29F4T08EULEE": {
+        "id": [
+          "2CD38932EA31"
+        ],
+        "l": "176L(B47R)"
+      },
+      "MT29F4T08EULKE": {
+        "id": [
+          "2CD38932EA34",
+          "2CD38932EA36"
+        ],
+        "l": "176L(B47T)"
+      },
+      "MT29F4T08GELBHD4": {
+        "id": [
+          "2CC48932A108"
+        ],
+        "l": "N69R"
+      },
+      "MT29F512G08CECBB": {
+        "id": [
+          "2CA46432AA04"
+        ],
+        "l": "32L(L06B)"
+      },
+      "MT29F512G08EBHAF": {
+        "id": [
+          "2CC40832A600",
+          "2CC40832A601"
+        ],
+        "l": "64L(B17A)"
+      },
+      "MT29F512G08EBHAF1": {
+        "id": [
+          "2CE48A32A601"
+        ],
+        "l": "64L(B17A)"
+      },
+      "MT29F512G08EBHAF2": {
+        "id": [
+          "2CE48A32A600"
+        ],
+        "l": "64L(B17A)"
+      },
+      "MT29F512G08EBHBF": {
+        "id": [
+          "2CC41832A200",
+          "2CC41832A201",
+          "2CC40832A200",
+          "2CE49A32A200",
+          "2CD49932A200"
+        ],
+        "l": "96L(B27A)"
+      },
+      "MT29F512G08EBLDE": {
+        "id": [
+          "2CC37832EA10"
+        ],
+        "l": "128L(B37R)"
+      },
+      "MT29F512G08EBLGE": {
+        "id": [
+          "2CC30832E601",
+          "2CC30832E604"
+        ],
+        "l": "B27C"
+      },
+      "MT29F512G08EDCCG": {
+        "id": [
+          "2CA40832A108"
+        ],
+        "l": "64L(B16A)"
+      },
+      "MT29F512G08MBLKE": {
+        "id": [
+          "2CC30832EA36"
+        ],
+        "l": "176L(B47T)"
+      },
+      "MT29F8T08EULCH": {
+        "id": [
+          "2CE38932E830",
+          "2CE38932E831"
+        ],
+        "l": "232L(B58R)"
+      },
+      "MT29F8T08EULEE": {
+        "id": [
+          "2CE38A32EA33"
+        ],
+        "l": "176L(B47R)"
+      },
+      "MT29F8T08EULEHD5": {
+        "id": [
+          "2CE38932E834",
+          "2CE38932E835"
+        ],
+        "l": "276L(B68S)"
+      },
+      "MT29F8T08EWHBFM5": {
+        "id": [
+          "2CE49A32A201"
+        ],
+        "l": "96L(B27A)"
+      },
+      "MT29F8T08EWLEE": {
+        "id": [
+          "2CE38A32EA30"
+        ],
+        "l": "176L(B47R)"
+      },
+      "MT29F8T08EWLKE": {
+        "id": [
+          "2CE38A32EA36"
+        ],
+        "l": "176L(B47T)"
+      },
+      "MT29F8T08GMLBHD4": {
+        "id": [
+          "2CE31C42E834"
+        ],
+        "l": "N69R"
+      },
+      "MT29F8T08GULDH": {
+        "id": [
+          "2CE38D42EE31",
+          "2CE38D42EE3C"
+        ],
+        "l": "N58R"
+      },
+      "MT29F8T08GULDHD5": {
+        "id": [
+          "2CE38D42EE30"
+        ],
+        "l": "N58R"
+      }
+    },
+    "samsung": {
+      "K9AFGD8H0A": {
+        "fid": [
+          "EC1ED93F88CB"
+        ]
+      },
+      "K9AFGD8J0B": {
+        "fid": [
+          "EC5C98BF84CC",
+          "EC5C98BF84C0"
+        ]
+      },
+      "K9AFGD8J0M": {
+        "fid": [
+          "EC5E983FCBEC",
+          "EC5E983F84CB"
+        ]
+      },
+      "K9AHGD8H0E": {
+        "fid": [
+          "EC1E981F84C2"
+        ]
+      },
+      "K9AHGD8J0B": {
+        "fid": [
+          "EC5E98AFCDEC"
+        ]
+      },
+      "K9AHGD8J0D": {
+        "fid": [
+          "EC5EA88F88C1",
+          "EC5FE98F8EC1"
+        ]
+      },
+      "K9AHGD8J0E": {
+        "fid": [
+          "EC1EA88F88C1",
+          "EC5E981F84D2"
+        ]
+      },
+      "K9AKGD8J0B": {
+        "fid": [
+          "EC5FA83F88DF",
+          "EC5FA83F88EF"
+        ]
+      },
+      "K9AKGD8J0D": {
+        "fid": [
+          "EC5FA89F88C3"
+        ]
+      },
+      "K9BKGD8J1A": {
+        "fid": [
+          "EC5ED9AF88CD"
+        ]
+      },
+      "K9CMGD8J0D": {
+        "fid": [
+          "EC51EA8F81C1"
+        ],
+        "m": "CER"
+      },
+      "K9CMGY8J5E": {
+        "fid": [
+          "EC5E981F84C2"
+        ]
+      },
+      "K9DMGB8S7C": {
+        "fid": [
+          "EC1CC91F74C8"
+        ]
+      },
+      "K9DUGB8H1A": {
+        "fid": [
+          "EC119B3F8ECB"
+        ],
+        "m": "CER"
+      },
+      "K9DUGB8J1B": {
+        "fid": [
+          "EC519BBF8ECC"
+        ],
+        "m": "CER"
+      },
+      "K9DUGB8S7M": {
+        "fid": [
+          "EC1ED92F88C9"
+        ]
+      },
+      "K9DUGB8SJM": {
+        "fid": [
+          "EC119B2F8EC9"
+        ]
+      },
+      "K9DUGY8H5A": {
+        "fid": [
+          "EC1F9A3F8CCB"
+        ],
+        "m": "CER"
+      },
+      "K9DUGY8J5C": {
+        "fid": [
+          "EC5FDAAF8CCD"
+        ],
+        "m": "CER"
+      },
+      "K9DVGB8J1A": {
+        "fid": [
+          "EC529BBF8ECC"
+        ],
+        "m": "CER"
+      },
+      "K9DVGB8J1B": {
+        "fid": [
+          "EC52DBAF8ECD"
+        ],
+        "m": "CER"
+      },
+      "K9DVGB8J1M": {
+        "fid": [
+          "EC529B3F8ECB"
+        ],
+        "m": "CER"
+      },
+      "K9DVGY8J5B": {
+        "fid": [
+          "EC51DAAF8CCD",
+          "EC51DBAF8ECD"
+        ],
+        "m": "CER"
+      },
+      "K9DVGY8J5E": {
+        "fid": [
+          "EC51DA1F8CC2",
+          "EC52DB1F8EC2"
+        ],
+        "m": "CER"
+      },
+      "K9DYGY8J5B": {
+        "fid": [
+          "EC52EA3F8ECF"
+        ],
+        "m": "CER"
+      },
+      "K9GCGD8U0D": {
+        "fid": [
+          "ECDE94F3A4C6"
+        ]
+      },
+      "K9GDGD8U0B": {
+        "fid": [
+          "EC3A9443A4CA"
+        ]
+      },
+      "K9GDGD8U0D": {
+        "fid": [
+          "EC3A94C3A4CA"
+        ]
+      },
+      "K9GFGD8F0M": {
+        "fid": [
+          "EC1C945364C9"
+        ]
+      },
+      "K9GFGD8H0A": {
+        "fid": [
+          "EC1C94D364CB"
+        ]
+      },
+      "K9OKGY8S7C": {
+        "fid": [
+          "EC1A881F70C8"
+        ]
+      },
+      "K9OMGB8J1B": {
+        "fid": [
+          "EC5F9ABF8CCC"
+        ],
+        "m": "CER"
+      },
+      "K9OMGY8J5B": {
+        "fid": [
+          "EC5ED9BF88CC"
+        ],
+        "m": "CER"
+      },
+      "K9OMGY8S7M": {
+        "fid": [
+          "EC1C982F84C9"
+        ]
+      },
+      "K9OUGA8J1A": {
+        "fid": [
+          "EC519ABF8CCC"
+        ],
+        "m": "CER"
+      },
+      "K9OUGB8J1M": {
+        "fid": [
+          "EC519A3F8CCB"
+        ],
+        "m": "CER"
+      },
+      "K9OUGY8J5D": {
+        "fid": [
+          "EC1FE98F8EC1"
+        ]
+      },
+      "K9OUGY8J5E": {
+        "fid": [
+          "EC5FD91F88C2"
+        ],
+        "m": "CER"
+      },
+      "K9OUGY8J5M": {
+        "fid": [
+          "EC5FD93F88CB",
+          "EC1FD93F88CB"
+        ],
+        "m": "CER"
+      },
+      "K9OUGY8J6D": {
+        "fid": [
+          "EC51E91F8CCF"
+        ]
+      },
+      "K9OUGY8J8D": {
+        "fid": [
+          "EC53EB3F81CF"
+        ]
+      },
+      "K9OUGY8J8F": {
+        "fid": [
+          "EC51EA3F8ECF",
+          "EC5FA83F88CF"
+        ]
+      },
+      "K9OUGY8J8H": {
+        "fid": [
+          "EC5EA83F88CF",
+          "EC5FE93F8CCF"
+        ]
+      },
+      "K9OVGD8J2B": {
+        "fid": [
+          "EC51E93F8CCF"
+        ]
+      },
+      "K9OVGY8J5D": {
+        "fid": [
+          "EC51E99F8CC3"
+        ]
+      },
+      "K9PKGY8S7A": {
+        "fid": [
+          "EC1A94F364C8"
+        ]
+      },
+      "K9PMGB8J1A": {
+        "fid": [
+          "EC1F96D36CCB"
+        ]
+      },
+      "K9PMGY8J5A": {
+        "fid": [
+          "EC5ED5D368CB"
+        ],
+        "m": "CER"
+      },
+      "K9PMGY8J7M": {
+        "fid": [
+          "EC5C94D364CB"
+        ]
+      },
+      "K9UUGB8J1A": {
+        "fid": [
+          "EC5197D36ECB",
+          "EC1197D36ECB"
+        ],
+        "m": "CER"
+      },
+      "K9UUGY8S7M": {
+        "fid": [
+          "EC1ED55368C9"
+        ]
+      },
+      "K9UUGYBJ5A": {
+        "fid": [
+          "EC5F96D36CCB"
+        ],
+        "m": "CER"
+      },
+      "K9XVGB8J1M": {
+        "fid": [
+          "EC52DE1F8CCB"
+        ]
+      },
+      "K9XVGD8J5D": {
+        "fid": [
+          "EC51ED6B8CC3"
+        ]
+      },
+      "K9XVGY8J5A": {
+        "fid": [
+          "EC52DE6B8CCC",
+          "EC51DD6B88CC"
+        ]
+      },
+      "K9YYGA8J1D": {
+        "fid": [
+          "EC53EF6B81C3"
+        ]
+      },
+      "K9YYGD8J5D": {
+        "fid": [
+          "EC52EE6B8EC3"
+        ]
+      }
+    },
+    "skhynix": {
+      "H25BFT9TC1": {
+        "fid": [
+          "AD7E280B00C2"
+        ]
+      },
+      "H25G9TC18CX488": {
+        "fid": [
+          "AD7E290B00C2"
+        ]
+      },
+      "H25G9TD18CX576": {
+        "fid": [
+          "AD7E283B00D2",
+          "AD7E283B00D0",
+          "AD89283B00D0"
+        ]
+      },
+      "H25T2TB88E": {
+        "fid": [
+          "AD7E295302B0"
+        ]
+      },
+      "H25T2TC88C": {
+        "fid": [
+          "AD7E2A0B00C0"
+        ]
+      },
+      "H25T2TD48C": {
+        "fid": [
+          "AD89284B00E0"
+        ]
+      },
+      "H25T2TD88C": {
+        "fid": [
+          "AD7E293B00D2",
+          "AD7E2A3B00D0",
+          "AD7E293B00D0"
+        ]
+      },
+      "H25T3TC88CX658": {
+        "fid": [
+          "AD89293B00D0"
+        ]
+      },
+      "H25T3TD88C": {
+        "fid": [
+          "AD89294B00E0"
+        ]
+      },
+      "H25T4TDG8C": {
+        "fid": [
+          "AD892A4B00E0"
+        ]
+      },
+      "H27Q1T8YEC": {
+        "fid": [
+          "AD5A15F30070"
+        ]
+      },
+      "H27Q2T87EC9R": {
+        "fid": [
+          "AD5A16F30070"
+        ]
+      },
+      "H27QDG8D2B8R": {
+        "fid": [
+          "AD3A14AB424A"
+        ]
+      },
+      "H27QDG8T2C8R": {
+        "fid": [
+          "AD5A14F30070"
+        ]
+      },
+      "H27QFG8PDM5R": {
+        "fid": [
+          "AD3A18A36125"
+        ]
+      },
+      "H27TDG8T2D": {
+        "fid": [
+          "AD3A14030850"
+        ]
+      }
+    },
+    "sndk": {
+      "0251DXDE50ZC": {
+        "fid": [
+          "45409BB3FE6B"
+        ]
+      },
+      "05485-008G": {
+        "fid": [
+          "45DEA8927650"
+        ],
+        "l": "A19nm[1y]"
+      },
+      "05485-016G": {
+        "fid": [
+          "454CA9927A50"
+        ],
+        "l": "A19nm[1y]"
+      },
+      "05485-032G": {
+        "fid": [
+          "453CAA927E50"
+        ],
+        "l": "A19nm[1y]"
+      },
+      "1215DFKHEOFC-0128GB": {
+        "fid": [
+          "45499AB3FEE3"
+        ],
+        "l": "96L BiCS4"
+      },
+      "14756YFFN50NZ-064GB": {
+        "fid": [
+          "45499AB3FE63"
+        ],
+        "l": "BiCS4"
+      },
+      "9316DVJAF06N": {
+        "fid": [
+          "453E9BB37E72"
+        ]
+      },
+      "FYGLRJ0185B6A-128G": {
+        "fid": [
+          "4540AB03F665",
+          "4541AB03F665"
+        ],
+        "l": "162L BiCS6"
+      },
+      "FYGLRJ08028M3A-128G": {
+        "fid": [
+          "453EA8037AE5"
+        ],
+        "l": "162L BiCS6"
+      },
+      "FYGLRJ08028M4A-128G": {
+        "fid": [
+          "4549AD037EE5"
+        ]
+      },
+      "FYGLRJ08028M4B-128G": {
+        "fid": [
+          "4540AE03F265",
+          "4540AE03F2E5",
+          "4541AF03F6E5",
+          "4548AC037AE5",
+          "4548AE03F265"
+        ]
+      },
+      "FYGLRJ08028M4C-128G": {
+        "fid": [
+          "4541AF03F665",
+          "4548AC037A65",
+          "4549AD037E65"
+        ]
+      },
+      "FYGLRJ08028M4D-128G": {
+        "fid": [
+          "4549AF03F665"
+        ]
+      },
+      "FYGLRJ08028M6A-128G": {
+        "fid": [
+          "4540AA03F265",
+          "4540AA03F2E5"
+        ],
+        "l": "162L BiCS6"
+      },
+      "SD15139-0128G": {
+        "fid": [
+          "453AA6937E51"
+        ]
+      },
+      "SDINBDG4-64G": {
+        "fid": [
+          "453E97937E51"
+        ]
+      },
+      "SDRNKCCCH-256G": {
+        "fid": [
+          "453CA5937E50"
+        ]
+      },
+      "SDTNAIAMA-032G": {
+        "fid": [
+          "453C98B376F1",
+          "453C98B376F9",
+          "453C98B37679"
+        ]
+      },
+      "SDTNAIAMA-064G": {
+        "fid": [
+          "453E99B37A71",
+          "453E99B37A79"
+        ]
+      },
+      "SDTNAIAMA-120G": {
+        "fid": [
+          "45489AB37E71",
+          "45489AB37E79"
+        ]
+      },
+      "SDTNQFAMA-0032G": {
+        "fid": [
+          "453CA5937ED0"
+        ],
+        "m": "8DDK"
+      },
+      "SDTNQFAMA-008G": {
+        "fid": [
+          "453C9693F457",
+          "45DE94937657",
+          "45DE949376D0",
+          "45DE94937650"
+        ],
+        "m": "6DDJ; 6DDK"
+      },
+      "SDTNRIAMA-008GK": {
+        "fid": [
+          "453EAB927E50"
+        ]
+      },
+      "SDTNSHAMA-016GB": {
+        "fid": [
+          "453AA4937A51",
+          "453CA5937ED1",
+          "453CA5937E51",
+          "453EA6937E51",
+          "453AA4937AD1"
+        ],
+        "m": "7DFL"
+      },
+      "SDTNSHAMA-064G": {
+        "fid": [
+          "453E96937ED1"
+        ]
+      },
+      "SDUNBIEMM-32G": {
+        "fid": [
+          "45489AB37EF2"
+        ]
+      },
+      "SDUNCIAMA-0128GB": {
+        "fid": [
+          "45489AB37EEB"
+        ]
+      },
+      "SDUNCIAMA-0256GB": {
+        "fid": [
+          "454899B37AE3",
+          "453E98B376EB"
+        ]
+      },
+      "SDUNCIAMA-032GB": {
+        "fid": [
+          "45489AB3FE6B",
+          "453C98B3F66B",
+          "453C98B3F663",
+          "453C98B3766B",
+          "453C98B37663"
+        ],
+        "m": "8T24"
+      },
+      "SDUNCIAMA-032GB-TOGGLE": {
+        "fid": [
+          "453C98B376EB"
+        ]
+      },
+      "SDUNCIAMA-256GB": {
+        "fid": [
+          "45499AB37E6B",
+          "45499AB37E63"
+        ],
+        "m": "9T24"
+      },
+      "SDUNCIAMA1-064GB": {
+        "fid": [
+          "454999B37A6B"
+        ]
+      },
+      "SDUNCIAMA1TB": {
+        "fid": [
+          "45489C0376E4"
+        ]
+      },
+      "SDUNCIAMA2-064GB": {
+        "fid": [
+          "45499AB37EEB"
+        ]
+      },
+      "SDUNCIAMB-0512GB": {
+        "fid": [
+          "45709BB37E6B"
+        ]
+      },
+      "SDUNCIAMB1-064GB": {
+        "fid": [
+          "453E9AB37E6B"
+        ]
+      },
+      "SDUNCIAMC-064GB": {
+        "fid": [
+          "453E9AB3FE6B"
+        ]
+      },
+      "SDUNCIAZZ-256GCE": {
+        "fid": [
+          "453E99B3FA6B"
+        ]
+      },
+      "SDUNCICMA-032GB": {
+        "fid": [
+          "453C9AB37E6B"
+        ]
+      },
+      "SDUNEIOMA-64GCE": {
+        "fid": [
+          "453EA8037A65"
+        ]
+      },
+      "SDYNBIAMA-032G": {
+        "fid": [
+          "453C9BB37E72",
+          "454899B37AF2"
+        ]
+      },
+      "SDYNBIAMA-064G": {
+        "fid": [
+          "454899B37A72"
+        ]
+      },
+      "SDYNBICMA-032G": {
+        "fid": [
+          "453C9AB37E72"
+        ]
+      },
+      "SDYNEHBRG-256G": {
+        "fid": [
+          "4548A8037AE5"
+        ]
+      },
+      "SDYNEHBRG1-256G": {
+        "fid": [
+          "4548A8037A65"
+        ]
+      },
+      "SDYNEHBRGK-256G": {
+        "fid": [
+          "4549AA03F2E5"
+        ]
+      },
+      "SDYNEHBRGM-256G": {
+        "fid": [
+          "4549A9037E65",
+          "4549A9037EE5"
+        ]
+      },
+      "SDYNSGDPM-128GIR1": {
+        "fid": [
+          "453C95937AD1"
+        ]
+      },
+      "SDYNSGERM-0128G": {
+        "fid": [
+          "454897937E51"
+        ]
+      },
+      "SDYNSGERM-0160G": {
+        "fid": [
+          "455897937E51",
+          "455897937ED1"
+        ]
+      },
+      "SDYNSGERM-016G": {
+        "fid": [
+          "453A96937E51"
+        ]
+      },
+      "SDYNSHERM1-0256G": {
+        "fid": [
+          "4548A7937E51"
+        ]
+      },
+      "SDZNBIAMA-064G": {
+        "fid": [
+          "453E98B376F2"
+        ]
+      },
+      "TH58LJB4F24BA8K": {
+        "fid": [
+          "45739CB376EB"
+        ]
+      },
+      "TH58LKT2F48BA8R": {
+        "fid": [
+          "4548AC037AE6",
+          "4540AE03F2E6"
+        ]
+      }
+    },
+    "spectek": {
+      "FNNB16A256G1DHBAF": {
+        "fid": [
+          "B5A40832A100"
+        ]
+      },
+      "FNNM26A256G1KHBAG": {
+        "fid": [
+          "2CA36032C600"
+        ]
+      }
+    },
+    "ymtc": {
+      "YMN08TB1B1HU1B": {
+        "fid": [
+          "9BC54A251000",
+          "9BC318251000"
+        ]
+      },
+      "YMN09TC1B1DCAD": {
+        "fid": [
+          "9BC529493000"
+        ]
+      },
+      "YMN09TC1B1HCAD": {
+        "fid": [
+          "9BC428494000"
+        ]
+      },
+      "YMN09TF1B5DCBE": {
+        "fid": [
+          "9BC458554000"
+        ]
+      },
+      "YMN09TF1B5JCBE": {
+        "fid": [
+          "9BC559554000"
+        ]
+      },
+      "YMN0AQF1B1JCAD": {
+        "fid": [
+          "9BC55C553000",
+          "9BC65D553000"
+        ]
+      },
+      "YMN0ATF1B1HPAD2": {
+        "fid": [
+          "9BC428554000"
+        ]
+      },
+      "YMN0ATF1B5HFBE": {
+        "fid": [
+          "9BC558754000",
+          "9BC558794000"
+        ]
+      },
+      "YMN0ATF1B5JCBE": {
+        "fid": [
+          "9BC659754000"
+        ]
+      },
+      "YMN0ATF1B5JFBE": {
+        "fid": [
+          "9BC659794000"
+        ]
+      },
+      "YMN0ATF1W00CAD": {
+        "fid": [
+          "9BC558713000"
+        ]
+      },
+      "YMN0BQF1B5HCBE": {
+        "fid": [
+          "9BC65C954000"
+        ]
+      },
+      "YMN0BQF1B5JCBE": {
+        "fid": [
+          "9BC65D954000"
+        ]
+      },
+      "YMN0WQC1B1AC6C": {
+        "fid": [
+          "9BD5588D2000"
+        ]
+      }
+    }
+  }
+}

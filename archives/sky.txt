@@ -1,0 +1,621 @@
+FP29F01P2ALCQL1(Q5171A)                89092832C200          Intel 192L N4PA
+PF29F01T2ALCQK2                               89092932C200          Intel 192L N4PA
+PF29F01T2ALCQK4                               89092A32C200          Intel 192L N4PA
+MT29F1T08GBLDH(N58R)                    2CD30C42EE30          Micron N58R
+MT29F1T08GBLDH(N58R)                    2CD30C42EE31          Micron N58R
+MT29F1T08GBLDH(N58R)                    2CD30C42EE3C         Micron N58R
+MT29F8T08GULDHD5(N58R)               2CE38D42EE30          Micron N58R
+MT29F8T08GULDH(N58R)                    2CE38D42EE31          Micron N58R
+MT29F8T08GULDH(N58R)                    2CE38D42EE3C          Micron N58R
+MT29F16T08GWLDHD8(N58R)             2CF38E42EE30           Micron N58R
+MT29F16T08GWLDH(N58R)                 2CF38E42EE31           Micron N58R
+MT29F16T08GWLDH(N58R)                 2CF38E42EE3C          Micron N58R
+MT29F1T08GBLCEJ4(N48R)*2B             2CE38D32EA30          Micron N48R
+MT29F16T08GWLCE                             2CF38E32EA30          Micron N48R
+MT29F2T08GBLBH                               2CE31C42E830          Micron N69R
+MT29F16T08GULBH                             2CF39D42E830          Micron N69R
+MT29F32T08GWLBH                            2C039E42E830           Micron N69R
+MT29F128G08CBCEB(L05B)                  2C844432AA04          Micron L05B
+K9AFGD8J0M                                       EC5E983FCBEC          Samsung SSV5
+K9AHGD8J0B                                        EC5E98AFCDEC         Samsung SSV5
+K9OMGY8J5B                                       EC5ED9BF88CC         Samsung SSV5_CER
+K9OKGY8S7C                                       EC1A881F70C8          Samsung SSV2_TLC
+K9DMGB8S7C                                      EC1CC91F74C8          Samsung SSV2_TLC
+K9PKGY8S7A(V2_MLC)                         EC1A94F364C8          Samsung SSV2_MLC
+K9OUGY8J5M                                       EC5FD93F88CB          Samsung CER(SSV4_TLC)
+K9XVGY8J5M(V4Q)                               EC51DD1F88CB         Samsung SSV4(QLC)
+K9XVGB8J1M(V4Q)                              EC52DE1F8CCB         Samsung SSV4(CER_QLC)
+K9DUGB8H1A                                      EC119B3F8ECB          Samsung CER(SSV4_TLC)
+K9DUGB8SJM                                       EC119B2F8EC9          Samsung CER(SSV3_TLC)
+K9OMGY8S7M                                     EC1C982F84C9          Samsung SSV3_TLC
+K9DUGB8S7M                                      EC1ED92F88C9          Samsung SSV3_TLC
+K9UUGY8S7M                                      EC1ED55368C9          Samsung SSV3_MLC
+K9DVGB8J1M                                       EC529B3F8ECB          Samsung CER(SSV4_TLC)
+K9AFGD8H0A                                       EC1ED93F88CB          Samsung CER(SSV4_TLC)
+K9DUGY8H5A                                       EC1F9A3F8CCB          Samsung CER(SSV4_TLC)
+K9OUGY8J5M_2Die                              EC1FD93F88CB          Samsung CER(SSV4_TLC)
+K9OUGB8J1M                                       EC519A3F8CCB         Samsung CER(SSV4_TLC)
+K9PMGY8J7M                                       EC5C94D364CB         Samsung SSV4_MLC(CERCE3)
+K9GFGD8H0A                                       EC1C94D364CB         Samsung SSV4_MLC(CERCE3)
+K9PMGY8J5A                                        EC5ED5D368CB        Samsung SSV4_MLC(CERCE3)
+K9UUGB8J1A                                        EC5197D36ECB        Samsung SSV4_MLC(CERCE3)
+K9UUGB8J1A                                        EC1197D36ECB        Samsung SSV4_MLC(CERCE3)
+K9UUGYBJ5A                                        EC5F96D36CCB        Samsung SSV4_MLC(CERCE3)
+K9PMGB8J1A                                        EC1F96D36CCB         Samsung SSV4_MLC
+KLUGGAR1FA                                       EC1FD9BF88CC         Samsung SSV5
+K9OUGA8J1A                                        EC519ABF8CCC         Samsung CER(SSV5)
+K9DUGB8J1B                                        EC519BBF8ECC          Samsung CER(SSV5)
+K9AFGD8J0B                                        EC5C98BF84CC         Samsung SSV5
+K9AFGD8J0B                                        EC5C98BF84C0          Samsung SSV5
+K9OMGB8J1B                                       EC5F9ABF8CCC         Samsung CER(SSV5)
+K9DVGB8J1A                                        EC529BBF8ECC          Samsung CER(SSV5)
+K9XVGY8J5A(V5Q)                               EC52DE6B8CCC         Samsung SSV5(CER_QLC)
+K9OUGY8J6D                                       EC51E91F8CCF          Samsung SSV8
+K9OVGD8J2B                                        EC51E93F8CCF          Samsung SSV8(CER)
+K9OUGY8J8F                                        EC51EA3F8ECF          Samsung SSV8
+K9DYGY8J5B(V8T)                                EC52EA3F8ECF          Samsung SSV8(CER_TLC)
+K9OUGY8J8D                                       EC53EB3F81CF          Samsung SSV8
+K9OUGY8J8H                                       EC5EA83F88CF          Samsung SSV8
+K9OUGY8J8F                                        EC5FA83F88CF          Samsung SSV8
+K9AKGD8J0B                                        EC5FA83F88DF          Samsung SSV8P
+K9AKGD8J0B                                        EC5FA83F88EF           Samsung SSV8
+K9OUGY8J8H                                       EC5FE93F8CCF          Samsung SSV8(CER)
+K9AKGD8J0D                                        EC5FA89F88C3          Samsung SSV9T
+H25BFT8A1BLR                                    AD7E285302B2          Hynix 128L 3Dv6
+H25JGT4D1C8R                                    AD892A5300B0         Hynix 128L 3Dv6
+H25BFT8A1B                                        AD5E295302B0          Hynix 128L 3Dv6
+H25JGT8A1MDA-BCH                          AD89285300B2          Hynix 128L 3Dv6
+H25T2TB88E                                         AD7E295302B0          Hynix 128L 3Dv6
+H25BFT8A1B8R                                    AD7E285302B0          Hynix 128L 3Dv6
+H25BFT8A1B                                        AD5E285302B0          Hynix 128L 3Dv6
+H25JGT8A1M8R                                   AD89285300B0          Hynix 128L 3Dv6
+H25JGT8B3M8R                                   AD89295300B0          Hynix 128L 3Dv6
+H25BFT4D1C8R                                    AD7E2A5302B0         Hynix 128L 3Dv6
+H25T3TM88C                                       AD89295300B2          Hynix 128L 3Dv6
+PF29F02T2AMCQK1(N38A)                  89E3AD32C600         Intel 144L(N38)
+PF29F04T2ANCQK1(N38A)                   89F3AE32C600          Intel 144L(N38)
+MT29F256G08EBLCE                            2CA37832E510          Micron 128L(B36R)
+MT29F512G08EBLDE(B37R)                  2CC37832EA10          Micron 128L(B37R)
+MT29F2T08EMLDE                               2CD3F932EA10          Micron 128L(B37R)
+MT29F2T08EMLDE                               2CE3FA32EA10          Micron 128L(B37R)
+K9AHGD8J0B*2B                                  EC5FD9AF88CD        Samsung 136L 3Dv6(SSV6_CER)
+K9AHGD8H0B                                      EC1E98AF84CD         Samsung 136L 3Dv6(SSV6)
+K9AHGD8J0B                                        EC5E98AF84CD         Samsung 136L 3Dv6(SSV6)
+K9AFGD8J0C                                        EC1C98AF84CD         Samsung 136L 3Dv6(SSV6)
+K9AFGD8J0C                                        EC5C98AF84CD         Samsung 136L 3Dv6(SSV6)
+JS29F01T2ALCQJ1(N38B)                     89D3AC32C204         Intel 144L(N38B)
+PF29F01T2ALCQKA(N38B)                    89E3AD32C204         Intel 144L(N38B)
+SDUNCIAMA-064GB(BICS5)_4B            454999037AE4          Sandisk 112L BiCS5
+SDUNCIAMA-128GB(0T25)                  454898037664           Sandisk 112L BiCS5
+SDUNCIAMA-128GB(0T25)                  45489803766C          Sandisk 112L BiCS5
+SDUNCIAMB1TB(bics5Q)                      45489C037664          Sandisk(BiCS5)(QLC)
+SDUNCIAMC1TB(bics5Q)                     45489D037A64          Sandisk(BiCS5)(QLC)
+SDUNCIAMA-064GB(BICS5)_4B            454999037AEC          Sandisk 112L BiCS5
+SDUNCIAMA-256GB(BICS5)                 45499A037EEC          Sandisk 112L BiCS5
+SDUNCIAMA-064GB(BICS5)                 453E98037664           Sandisk 112L BiCS5
+SDUNCIAMA-064GB(BICS5)                 453E980376E4           Sandisk 112L BiCS5
+SDUNCIAMB-064GB(BICS5)                 453E9B03F264           Sandisk 112L BiCS5
+SDUNEIOMZ-128GCE(BICS5)               45499A037E64          Sandisk 112L BiCS5
+SDUNEIOMA-128GCE(BICS5)               45499A037E6C          Sandisk 112L BiCS5
+SDUNCIAMA-064GB(BICS5)_2B            454899037A64          Sandisk 112L BiCS5
+SDUNCIAMA-064GB(9T45)                  453EA8037AE4          Sandisk 112L BiCS5
+SDUNCIAMA-064GB(9T45)                  453EA8037A64          Sandisk 112L BiCS5
+SDUNCIAMA-064GB(BICS5)                 453E9803766C           Sandisk 112L BiCS5
+SDUNCIAMA1-064GB(BICS5)               453E99037A64          Sandisk 112L BiCS5
+SDUNEIAMA-064GCE(bics5)                453E99037A6C          Sandisk 112L BiCS5
+SDUNEIOMG-128GCE(BICS5)               4548980376E4           Sandisk 112L BiCS5
+SDUNCIAMA-064GB(BICS5)_2B            454899037A6C          Sandisk 112L BiCS5
+SDUNCIAMA-064GB(BICS5)_2B            454899037AE4          Sandisk 112L BiCS5
+SDUNCIAMA-064GB(BICS5)_2B            454899037AEC          Sandisk 112L BiCS5
+SDUNCIAMA-1T00B54DEC                  45489C03766C          Sandisk 112L BiCS5
+SDUNCIAMA-064GB(BICS5)_4B            454999037A6C          Sandisk 112L BiCS5
+SDUNCIAMA1TB(bics5Q)                     45489C0376E4          Sandisk 112L BiCS5_QLC
+SDUNCIAMA-1T00B54DEC                  45489C0376EC          Sandisk 112L BiCS5
+SDUNCIAMA-256GB(BICS5)                 45499A037EE4          Sandisk 112L BiCS5
+SDUNCIAMA-064GB(BICS5)_4B            454999037A64          Sandisk 112L BiCS5
+SDUNEIOMA-064GCE(BICS5)               45FF98037664           Sandisk 112L BiCS5
+SDUNEIOMA-064GCE(BICS5)               45FF99037A64           Sandisk 112L BiCS5
+SDUNEIOBA-128GCE(BICS5)                45FF9A037E64           Sandisk 112L BiCS5
+SDUNEIOMB-128GCE(BICS5)               45FF9B03F264           Sandisk 112L BiCS5
+SDUNCIAMA-1TB(bics5Q)                    45FF9C037664           Sandisk(BiCS5)(QLC)
+SDUNCIAMA-1TB(bics5Q)                    45FF9D037A64          Sandisk(BiCS5)(QLC)
+SDUNCIAMD-2TB(bics5Q)                   45FF9E037E64           Sandisk(BiCS5)(QLC)
+SDUNCIAMC-2TB(bics5Q)                    45409E037E64           Sandisk(BiCS5)(QLC)
+SDUNCIAMA-1TB(bics5Q)                    45419F03F264           Sandisk(BiCS5)(QLC)
+SDUNCIAMC-1TB(bics5Q)                    45499D037A64          Sandisk(BiCS5)(QLC)
+H27TDG8T2D                                       AD3A14030850         Hynix 14nm
+K9GDGD8U0B                                      EC3A9443A4CA         Samsung 14nm
+K9GDGD8U0D                                      EC3A94C3A4CA        Samsung 14nm
+H27QDG8D2B8R                                  AD3A14AB424A        Hynix 16nm
+H27QFG8PDM5R                                  AD3A18A36125         Hynix 16nm
+MT29F128G08CBECB(L94C)                  2C646456A5              Micron 16nm(L94C)
+K9GCGD8U0D                                      ECDE94F3A4C6         Samsung 16nm
+H25BFT9TC1(3DV7)_QLC                      AD892C1B30C0         Hynix 176L 3Dv7(QLC)
+H25T3QA88CX548                               AD892D1B30C0         Hynix 3Dv7(QLC)
+H25JGQ8F4M9R(V5QLC)                      AD892C5330A0         Hynix 3Dv5(QLC)
+H25BFT9TC1(3DV7)                              AD7E280B00C0         Hynix 176L 3Dv7
+H25BFT9TC1(3DV7)                              AD7E280B00C2         Hynix (HYV7)
+H25BFT9TC1*2(3DV7)                          AD7E290B00C0         Hynix 176L 3Dv7
+H25G9TC18CX488(3DV7)                     AD7E290B00C2         Hynix (HYV7)
+H25T2TC88C(3DV7)                             AD7E2A0B00C0         Hynix (HYV7)
+H25G9TD18CX576(3DV8)_1                 AD7E283B00D2         Hynix (HYV8)
+H25T2TD88C_2die(V8)                         AD7E293B00D2         Hynix HYV8
+SDUNCIAMA-064GB(BICS5)_4B            984999037A64          Toshiba 112L BiCS5
+SDUNCIAMA-256GB(BICS5)                 98499A037EE4          Toshiba 112L BiCS5
+TH58LKT1X45BADE(9T45)                    983EA8037AE4          Toshiba 112L BiCS5
+SDUNCIAMA-064GB(BICS5)_2B            984899037AEC          Toshiba 112L BiCS5
+TOSHI-1T00B54DEC                             98489C0376E4          Toshiba 112L BiCS5
+SDUNCIAMA-1T00B54DEC                  98489C0376EC          Toshiba 112L BiCS5
+TH58LKT2T25BA8H                              984899037AE4          Toshiba 112L BiCS5
+SDUNCIAMA-064GB(9T45)                  983EA8037A64          Toshiba 112L BiCS5
+TH58LKT0T25BA4C                               983E980376E4           Toshiba 112L BiCS5
+Toshiba-064GB(BICS5)                         983E9803766C           Toshiba 112L BiCS5
+TOSHI-064GB(BICS5)_2B                      984899037A6C          Toshiba 112L BiCS5
+TH58LKT0T25BA4D                              983E98037664           Toshiba 112L BiCS5
+TOSHI-064GB(BICS5)_2B                      984899037A64          Toshiba 112L BiCS5
+SDUNCIAMA-064GB(BICS5)_4B            984999037A6C          Toshiba 112L BiCS5
+TH58LKT3T25BA8J                                984999037AE4          Toshiba 112L BiCS5
+TH58LKT1T25BA4K                               9848980376E4           Toshiba 112L BiCS5
+TH58LKT2Y45BA8H                              9848A9037EE4          Toshiba 112L BiCS5
+SDUNCIAMA-256GB(BICS5)                 98499A037EEC          Toshiba 112L BiCS5
+SDUNCIAMA-064GB(BICS5)_4B            984999037AEC          Toshiba 112L BiCS5
+Toshiba-128GB(0T25)                           98489803766C          Toshiba 112L BiCS5
+SDUNCIAMA-256GB(BICS5)                 98499A037E64          Toshiba 112L BiCS5
+Toshiba-128GB(0T25)                           984898037664           Toshiba 112L BiCS5
+SDUNCIAMA-256GB(BICS5)                 98499A037E6C          Toshiba 112L BiCS5
+TH58LKB4F25BA8K(BICS5Q)                 98739C0376E4          KIOXIA(BiCS5)(QLC)
+TH58LKB8F25BA8J(BICS5Q)                  98779D037AE4          KIOXIA(BiCS5)(QLC)
+MT29F128G08CBCAB(L95B)                 89846454A9              Intel 16nm(L95B)
+MT29F128G08CBCAB(L95B)                 2C846454A9              Micron 16nm(L95B)
+MT29F128G08CBCAB(L84C)                 8964643CA1              Intel 20nm(L84C)
+MT29F128G08CBCAB(L84C)                 8964643CA5              Intel 20nm(L84C)
+MT29F128G08CBCAB(L85C)                 8984643CA5              Intel 20nm(L85A)
+MT29F128G08CBCAB(L85C)                 8984643CA9              Intel 20nm(L85C)
+FNMB47R512G1KLBAEJ4(B47R)            2CC30832EA30          Micron 176L(B47R)
+FNMB47R512G1KLBAEJ4(B47R)            2CC30832EA31          Micron 176L(B47R)
+FNMB47R512G1KLBAEJ4(B47R)            2CC30832EA34          Micron 176L(B47T)
+MT29F512G08MBLKE(B47T)                 2CC30832EA36          Micron 176L(B47T)
+MT29F2T08EMLDE(B47T)                     2CE38A32EA34          Micron 176L(B47T)
+FNMB47R512G1KLBAEJ4(B47R)*2        2CD38932EA30         Micron 176L(B47R)
+MT29F4T08EULEE(B47R)                       2CD38932EA31         Micron 176L(B47R)
+MT29F4T08EULKE(B47T)                       2CD38932EA34         Micron 176L(B47T)
+MT29F8T08EWLEE                                2CE38A32EA30          Micron 176L(B47R)
+FNMB47R512G1KLBAEJ4(B47R)*4        2CE38A32EA31          Micron 176L(B47R)
+MT29F1T08GBLCEJ4(N48r)                   2CD30C32EA30         Micron 176L(N48R)
+MT29F128G08CBCAB(L84C)                 2C64643CA1             Micron 20nm(L84C)
+MT29F128G08CBCAB(L84C)*2B            2C84E53CA5             Micron 20nm(L84C)
+MT29F128G08CBCAB(L84C)                 2C64643CA5             Micron 20nm(L84C)
+MT29F128G08CBCAB(L85C)                 2C84643CA5             Micron 20nm(L85A)
+MT29F128G08CBCAB(L85C)                 2C84643CA9             Micron 20nm(L85C)
+MT29F1T08EBLCH(B58R)                      2CD30832E830          Micron 232L(B58R)
+MT29F4T08EMLCH(B58R)                     2CD30832E831          Micron 232L(B58R)
+MT29F8T08EULCH(B58R)                     2CE38932E830           Micron 232L(B58R)
+MT29F8T08EULCH(B58R)                     2CE38932E831           Micron 232L(B58R)
+MT29F16T08EWLCH(B58R)                   2CF38A32E830          Micron 232L(B58R)
+MT29F16T08EWLCH(B58R)                   2CF38A32E831          Micron 232L(B58R)
+MT29F1T08EBLEH3W                           2CD30832E834          Micron 276L(B68S)
+MT29F1T08EBLEHD4                            2CD30832E835          Micron 276L(B68S)
+MT29F8T08EULEHD5                           2CE38932E834           Micron 276L(B68S)
+MT29F8T08EULEHD5                           2CE38932E835           Micron 276L(B68S)
+MT29F1T08EBLEH36(B68S)                   2CD30832E836          Micron 276L(B68S)
+SDYNSGDPM-128GIR1(1zMlc)             453C95937AD1         Sandisk 15nm[1z]
+SDTNSHAMA-016GB(7DFL)                 453AA4937A51          Sandisk 15nm[1z]
+SD15139-0128G                                   453AA6937E51          Sandisk 15nm[1z]
+SDTNSHAMA-064G                             453E96937ED1          Sandisk 15nm[1z]
+TC58NVG6DDLTA00                            45DE94937651          Sandisk 15nm[1z]
+TC58NVG7DDLTA00                            453A94937651          Sandisk 15nm[1z]
+TC58NVG6DDLTA00                            45DE949376D1          Sandisk 15nm[1z]
+TC58NVG7DDLTA00                            453A949376D1          Sandisk 15nm[1z]
+TC58NVG7DDLTA00                            453E96937E51           Sandisk 15nm[1z]
+SDINBDG4-64G(1zMlc)                        453E97937E51           Sandisk 15nm[1z]
+SDTNSHAMA-016GB(7DFL)*2              453CA5937ED1         Sandisk 15nm[1z]
+SDRNKCCCH-256G                              453CA5937E50          Sandisk 15nm[1z]
+SDTNSHAMA-016GB(7DFL)*2              453CA5937E51          Sandisk 15nm[1z]
+TC58NVG6DDLTA00*2B                       453A95937A51          Sandisk 15nm[1z]
+TC58NVG6DDLTA00*2B                       453A95937AD1         Sandisk 15nm[1z]
+SDTNSHAMA-016GB(7DFL)                 453EA6937E51          Sandisk 15nm[1z]
+SDYNSGERM-016G(1zMlc)                   453A96937E51          Sandisk 15nm[1z]
+SDTNSHAMA-016GB(7DFL)                 453AA4937AD1         Sandisk 15nm[1z]
+TC58NVG7DDLTA00*2B                       453C95937A51          Sandisk 15nm[1z]
+SDYNSGERM-0128G(1zMLC)               454897937E51           Sandisk 15nm[1z]
+SDYNSHERM1-0256G(1zMlc)               4548A7937E51          Sandisk 15nm[1z]
+SDYNSGERM-0160G(1zMLC)               455897937E51           Sandisk 15nm[1z]
+SDYNSGERM-0160G(1zMLC)               455897937ED1          Sandisk 15nm[1z]
+SDYNEHBRG-256G(BICS6)                   4548A8037AE5          Sandisk 162L BiCS6
+SDYNEHBRG1-256G(BICS6)                 4548A8037A65          Sandisk 162L BiCS6
+FYGLRJ08028M8A-128G                      4548A9037EE5          Sandisk 162L BiCS6
+FYGLRJ08028M6A-128G                      4540AA03F265          Sandisk 162L BiCS6
+FYGLRJ0185B6A-128G                         4540AB03F665          Sandisk 162L BiCS6
+FYGLRJ08028M8A-128G                      4548A9037E65          Sandisk BiCS6
+FYGLRJ08028M4B-128G(BiCS6Q)         4540AE03F265           Sandisk BiCS6_QLC
+FYGLRJ08028M4B-128G(BiCS6Q)         4540AE03F2E5           Sandisk BiCS6_QLC
+FYGLRJ08028M4C-128G(BiCS6Q)        4541AF03F665           Sandisk BiCS6_QLC
+FYGLRJ08028M4B-128G(BiCS6Q)         4541AF03F6E5           Sandisk BiCS6_QLC
+FYGLRJ08028M4C-128G(BiCS6Q)        4548AC037A65          Sandisk BiCS6_QLC
+FYGLRJ08028M4B-128G(BiCS6Q)         4548AC037AE5          Sandisk BiCS6_QLC
+FYGLRJ08028M4B-128G(BiCS6Q)         4548AE03F265           Sandisk BiCS6_QLC
+FYGLRJ08028M4C-128G(BiCS6Q)        4549AD037E65          Sandisk BiCS6_QLC
+FYGLRJ08028M4A-128G(BiCS6Q)        4549AD037EE5          Sandisk BiCS6_QLC
+SDYNEHBRG-256G(bics8)                    4549A9037EE6          Sandisk BiCS8
+SDYNEHBRG-256G(BiCS8)                   4540AA03F2E6          Sandisk BiCS8
+SDYNEHBRG-256G(BiCS8)                   4548A8037AE6          Sandisk BiCS8
+TH58LKT2F48BA8R(BiCS8Q)                 4548AC037AE6          Sandisk BiCS8_QLC
+TH58LKT3T48BA8J(bics8)                     9849A9037EE6          Koxia BiCS8
+MT29F128G08CBCAB(L95B)                 B5846454A9              Spectek 16nm(L95B)
+SDTNQFAMA-008G(6DDJ)*4                453C9693F457           Sandisk 19nm
+SANDISK_6DDJTA00                             45DE949376D7          Sandisk 19nm
+SDTNQFAMA-008G(6DDJ)                   45DE94937657          Sandisk 19nm
+MT29F128G08CBCAB(L85C)                 B584643CA5              Spectek 20nm(L85A)
+MT29F128G08CBCAB(L85C)                 B584643CA9              Spectek 20nm(L85C)
+H25G9TD18CX576(3DV8)                     AD7E283B00D0         Hynix 238L 3Dv8
+H25T2TD88C(HYV8)                             AD7E2A3B00D0         Hynix 238L 3Dv8
+H25G9TD18CX576(3DV8)                     AD89283B00D0         Hynix 238L 3Dv8
+H25T3TC88CX658(3DV8)                      AD89293B00D0         Hynix 238L 3Dv8
+MT29F128G08CBCEB(L05B)                  89844434AA              Intel 32L(L05B)
+MT29F128G08CBCEB(L05B)                  8984C434AA             Intel 32L(L05B)
+FNNB05A128G1KDBAB(B05A)              2C845832A100          Micron 32L(B05A)
+MT29F128G08EBCDB                           2C845832A104          Micron 32L(B05A)
+MT29F128G08EBCDB                           2C84D832A100         Micron 32L(B05A)
+H27QEG8M3MDA-BCC                        AD5C28BA0080         Hynix 48L 3Dv3
+H27Q2T8QFB9R                                   AD5C29BA0080         Hynix 48L 3Dv3
+H25QFT8A1A                                       AD5E28221080          Hynix 48L 3Dv3
+H27QDG8M2C8R                                 AD5A28BA0080         Hynix 48L 3Dv3
+H27QDG8T2C8R                                  AD5A14F30070          Hynix 3Dv2(HYV2)
+H27Q1T8YEC                                        AD5A15F30070          Hynix 3Dv2(HYV2)
+H27Q2T87EC9R                                    AD5A16F30070          Hynix 3Dv2(HYV2)
+MT29F1HT08EMHBB(B0KB)                  2CB47832AA04         Micron 32L(B0KB)
+MT29F384G08EBCBB(B0KB)                  2CB47832AA05         Micron 32L(B0KB)
+MT29F1HT08EMCBB(B0KB)                  2CB4F832AA04          Micron 32L(B0KB)
+MT29F3T08EUCBB                                2CCCF932AA04         Micron 32L(B0KB)
+MT29E6T08ETHBBM5                           2CCCF932AA05         Micron 32L(B0KB)
+MT29F128G08CBCEB(L05B)                  2C844434AA00          Micron 32L(L05B)
+MT29F128G08CBCEB(L05B)                  2C84C434AA00         Micron 32L(L05B)
+MT29F128G08CBCEE                            2CA4C534AA00         Micron 32L(L05B)
+H27QEG8M2A                                      AD5C282A0190         Hynix 72L 3Dv4
+H27Q2T8QEA9B                                   AD5C292A0190         Hynix 72L 3Dv4
+H27Q4T8LEA9R                                    AD5C2A2A0190         Hynix 72L 3Dv4
+H25QEM8A1BDA(V4M)                        AD5C14630890         Hynix 3Dv4 MLC
+H25QFT8A1A*2BANK                           AD5E29221090          Hynix 72L 3Dv4
+H25QFT8A1A                                       AD5E28221090          Hynix 72L 3Dv4
+H25QFTMF4A9R                                   AD5E2A221090         Hynix 72L 3Dv4
+MT29F256G08EBHAF_1(L06B)              89A46432AA04          Intel 32L(L06B)
+MT29F256G08EBHAF_1(L06B)              89A46432AA01          Intel 32L(L06B_B0KB)
+MT29F256G08EBHAF_1(L06B)              89A46432AA05          Intel 32L(L06B)
+PF29F48B2ALCTG2                               89B47832AA01          Intel (L06B_B0KB)
+PF29F02T2APCMG2                             89C4E532AA01          Intel (L06B_B0KB)
+PF29F02T2APCMG2                             89CCF932AA01         Intel (L06B_B0KB)
+PF29F04T2ASCMG2                              89D4E632AA01         Intel (L06B_B0KB)
+PF29F04T2ASCMG2                              89DCFA32AA01         Intel (L06B_B0KB)
+H25BFT8A1MDA-BCH                          AD5E283300A0         Hynix 96L 3Dv5
+H25BFT8A1M8R-BDJ                            AD7E283300A0         Hynix 96L 3Dv5
+H25BFT4M9R8R                                   AD5E293300A0         Hynix 96L 3Dv5
+H25BFT4M9R8R                                   AD5E2A3300A0         Hynix 96L 3Dv5
+H25BFT8A1M8R                                   AD7E283300A2         Hynix 96L 3Dv5
+H25T2TD88C(V8)                                  AD7E293B00D0         Hynix HYV8
+MT29F256G08CBCBB(L06B)                  2CA46432AA05         Micron 32L(L06B)
+MT29F2T08CUCBB(L06B)                      2CC4E532AA04         Micron 32L(L06B)
+MT29F2T08CQCBBG2(L06B)                 2CC4E532AA05         Micron 32L(L06B)
+MT29F512G08CECBB(L06B)                  2CA46432AA04         Micron 32L(L06B)
+MT29F256G08EBHAF_1(L06B)              2CA46432AA01         Micron 32L(L06B)
+K9AHGD8H0E                                       EC1E981F84C2          Samsung SSV6P
+K9DVGY8J5E                                         EC51DA1F8CC2        Samsung CER(SSV6P)
+K9CMGY8J5E                                        EC5E981F84C2          Samsung (SSV6P)
+K9OUGY8J5E                                        EC5FD91F88C2          Samsung CER(SSV6P)
+K9DVGB8J1B                                        EC52DBAF8ECD         Samsung CER(SSV6)
+K9DUGY8J5C                                        EC5FDAAF8CCD        Samsung CER(SSV6)
+K9BKGD8J1A                                        EC5ED9AF88CD         Samsung SSV6P
+K9DVGY8J5B                                        EC51DAAF8CCD        Samsung CER(SSV6)
+K9DVGY8J5B                                        EC51DBAF8ECD         Samsung SSV6
+K9DVGY8J5E                                         EC52DB1F8EC2          Samsung SSV6
+K9AHGD8J0E                                        EC1EA88F88C1          Samsung SSV7
+K9OUGY8J5D                                       EC1FE98F8EC1           Samsung SSV7
+K9CMGD8J0D                                       EC51EA8F81C1          Samsung CER(SSV7)
+K9AFGD8J0D                                        EC52EE4B8EC1         Samsung SSV7_CER(QLC)
+K9AHGD8J0D                                       EC5EA88F88C1          Samsung SSV7
+K9AHGD8J0D                                       EC5FE98F8EC1           Samsung CER(SSV7)
+K9XVGD8J5C(V7Qlc)                            EC51ED4B8CC1              Samsung SSV7_CER(QLC)
+K9ADGD8U0E                                       EC1A882F80C9          Samsung 48L 3Dv3(SSV3_TLC)
+K9GFGD8F0M                                       EC1C945364C9          Samsung SSV3_MLC
+MT29F256G08EBHAF_1(L06B)              B5A46432AA04         Spectek 32L(L06B)
+FNNB16A256G1DHBAF(B16A)              B5A40832A100          Spectek (B16A)
+SDTNAIAMA-032G                               453C98B376F1          Sandisk 48L BiCS2
+SDTNAIAMA-032G                               453C98B376F9          Sandisk 48L BiCS2
+SDTNAIAMA-032G                               453C98B37679          Sandisk 48L BiCS2
+K9AFGD8J0M                                       EC5E983F84CB          Samsung CER(SSV4_TLC)
+K9AFGD8J0M                                       EC1E983F84CB          Samsung 64L 3Dv4(SSV4)
+K9AFGD8H0A                                       EC1C983F84CB          Samsung 64L 3Dv4(SSV4)
+SANDISK_7T23TA0D                             453A98B37672          Sandisk 64L BiCS3
+SDYNAIAMA-032G(8T23)                     453C98B37672          Sandisk 64L BiCS3
+SANDISK_8T23TA0D                             453C98B376F2          Sandisk 64L BiCS3
+SDYNBICMA-032G                               453C9AB37E72          Sandisk 64L BiCS3
+SDYNBIAMA-032G                               453C9BB37E72          Sandisk 64L BiCS3
+SDYNAIAMA-064G(9T23)                     453E98B37672           Sandisk 64L BiCS3
+SDZNBIAMA-064G                               453E98B376F2           Sandisk 64L BiCS3
+SDYNAIAMA-064G(8T23*2B)               453E99B37A72          Sandisk 64L BiCS3
+SDYNAIAMA-064G(8T23*2B)               453E99B37AF2          Sandisk 64L BiCS3
+9316DVJAF06N                                    453E9BB37E72           Sandisk 64L BiCS3
+SDYNAIAMA-064G(8T23*8B)               45409BB37E72           Sandisk 64L BiCS3
+SDYNBIAMA-064G                               454899B37A72          Sandisk 64L BiCS3
+SDYNBIAMA-032G                               454899B37AF2          Sandisk 64L BiCS3
+SDYNAIAMA-064G(8T23*8B)               45499BB37E72           Sandisk 64L BiCS3
+SDYNAIAMA-064G(8T23*4B)               45489AB37E72          Sandisk 64L BiCS3
+SDUNBIEMM-32G                                45489AB37EF2          Sandisk 64L BiCS3
+SDTNAIAMA-064G                               453E99B37A71          Sandisk 48L BiCS2
+SDTNAIAMA-064G                               453E99B37A79          Sandisk 48L BiCS2
+SDTNAIAMA-120G                               45489AB37E71          Sandisk 48L BiCS2
+SDTNAIAMA-120G                               45489AB37E79          Sandisk 48L BiCS2
+SNDK 512GB                                        45489AB37EF9          Sandisk 48L BiCS2
+SDTNAIAMA-032G                               453C98B37671          Sandisk 64L BiCS3
+SDYNAIAMA-064G(9T23)*4B               45499AB37E72          Sandisk 64L BiCS3
+SNDK 128GB                                        45499AB37EF2          Sandisk 64L BiCS3
+TC58NVG6DDLTA00                            98DE94937651          Toshiba 15nm[1z]
+SDTNSHAMA-016GB(7DFL)*2              983CA5937ED1         Toshiba 15nm[1z]
+SDTNSHAMA-016GB(7DFL)                 983AA4937A51          Toshiba 15nm[1z]
+SDTNSHAMA-016GB(7DFL)                 983AA4937AD1         Toshiba 15nm[1z]
+TC58NVG7DDLTA00*2B                       983C95937A51          Toshiba 15nm[1z]
+TC58NVG7DDLTA00*2B                       983C95937AD1         Toshiba 15nm[1z]
+TC58NVG6DDLTA00*4B                       983EA6937E51          Toshiba 15nm[1z]
+TH58TFT1EFKBA8N                              983EA6937ED0          Toshiba 15nm[1z]
+TH58TFT1DFLBA8P                               983EA6937ED1          Toshiba 15nm[1z]
+TC58NVG6DDLTA00*2B                       983A95937AD1         Toshiba 15nm[1z]
+TC58NVG7DDLTA00*2B                       983A95937A51          Toshiba 15nm[1z]
+TC58NVG6DDLTA00                            98DE949376D1          Toshiba 15nm[1z]
+TC58NVG7DDLTA00                            983A949376D1          Toshiba 15nm[1z]
+TH58TFT0DFLBA8H                              983CA5937E51          Toshiba 15nm[1z]
+TC58NVG7DDLTA00                            983A94937651          Toshiba 15nm[1z]
+TH58LKT1T25BA8K                               983EA8037AE5          Toshiba 162L BiCS6
+TH58LKT2V46BA8S                               983EA9037E65          Toshiba 162L BiCS6
+TH58LKT1T25BA8K                               9848A8037AE5          Toshiba 162L BiCS6
+TH58LKT1T25BA8K                               9848A8037A65          Toshiba 162L BiCS6
+TH58LKT1T25BA8K                               9848A9037EE5          Toshiba 162L BiCS6
+TH58LKT3T46BA8S                               9849A9037EE5          Toshiba 162L BiCS6
+TH58LKT2F46BA8K(bics6)(QLC)            9848AC037AE5          Toshiba BiCS6_QLC
+TH58LKT3F46BA8J(bics6)(QLC)             9849AD037EE5          Toshiba BiCS6_QLC
+TC58TEG6DDJTA00                              98DE948376D7          Toshiba 19nm
+SDTNQFAMA-008G(6DDJ)*4                983C9693F457           Toshiba 19nm
+TH58TEG9TDKTA00                              983CA9927AD0         Toshiba 19nm[1y]
+TH58TET0THLBA8H                              983C99A37AD1         Toshiba 15nm[1z]
+SDTNQFAMA-008G(6DDJ)                   98DE94937657          Toshiba 19nm
+TC58NVG6D2HTA00_512                     98DEA49276D7         Toshiba 19nm
+TC58TEG6DDJTA00                              98DE949376D7          Toshiba 19nm
+TC58NVG6D2HTA00                            98DEA48276D6         Toshiba 24nm
+TC58TEG8T22TA0D                              983C98B376F1          Toshiba 48L BiCS2
+TH58TFT1T22BA8H                              983E99B37A71          Toshiba 48L BiCS2
+TH58TFT1T22BA8H                              983E99B37AF1          Toshiba 48L BiCS2(3)
+YMN08TB1B1AU1B_64GB(JGS)             9BC449251000                  YMTC 3Dv2-JGS-64L(x1-9050)
+YMN08TB1B1AU1B_32GB(JGS)             9BC348251000                  YMTC 3Dv2-JGS-64L(x1-9050)
+YMN08TB1B1HU1B(JGS)                      9BC54A251000              YMTC 3Dv2-JGS-64L(x1-9050)
+YMN0WQC1B1AC6C(HUS)                   9BD5588D2000                 YMTC 3Dv3-HUS-128L(x2-6070)
+YMN09TC1B1DC6C_64GB(TAS)            9BC529492000                   YMTC 3Dv3-TAS-128L(x2-9060)
+YMN09TC1B1DC6C_64GB(TAS)            9BC428492000                   YMTC 3Dv3-TAS-128L(x2-9060)
+YMTC(9B,C6,2A,49,20,00)(TAS)             9BC62A492000          YMTC TAS (x2-9060)
+YMN0AQF1B1JCAD(EMS-128G)           9BC55C553000                YMTC 3Dv4-EMS-232L(x3-6070)
+YMN0AQF1B1JCAD(EMS)                     9BC65D553000           YMTC 3Dv4-EMS-232L(x3-6070)
+YMN0ATF1W00CAD(WDS)                   9BC558713000             YMTC 3Dv4-WDS-232L(x3-9070)
+YMTC(9B,C6,59,71,30,00)(WDS)            9BC659713000           YMTC 3Dv4-WDS-232L(x3-9070)
+KRN09TC1W03MXD_64GB(WYS)          9BC428493000              YMTC 3Dv4-WYS-128L(x3-9060)
+YMN09TC1B1HCAD(WYS)                    9BC428494000         YMTC 3Dv4-WYS-128L(x3-9060)
+YMN09TC1B1DCAD(WYS)                    9BC529493000         YMTC 3Dv4-WYS-128L(x3-9060)
+YMN09TF1B5DCBE(WTS)                      9BC458554000          YMTC WTS(X4-9060)
+YMN09TF1B5JCBE(WTS)                       9BC559554000          YMTC WTS(X4-9060)
+YMN0ATF1B1HPAD2(WTS)                   9BC428554000          YMTC WTS(X4-9060)
+YMN0BQF1B5JCBE(PTS)                       9BC65D954000          YMTC PTS(X4-6080)
+YMN0BQF1B5HCBE(PTS)                      9BC65C954000          YMTC PTS(X4-6080)
+YMN0ATF1B5JCBE(SQS)                       9BC659754000          YMTC SQS(X4-9070)
+YMN0ATF1B5HFBE(SQS)                      9BC558754000          YMTC SQS(X4-9070)
+YMN0ATF1B5JFBE(SQS)                       9BC659794000          YMTC SQS(X4-9070)
+YMN0ATF1B5HFBE(SQS)                      9BC558794000          YMTC SQS(X4-9070)
+MT29F2T08GBLBHD4(N69R)                2CE31C42E831          Micron N69R
+TH58LKT2F48BA8R(BiCS8Q)                 4540AE03F2E6           Sandisk BiCS8_QLC
+SDUNEIOMA-1TBCE(bics5)                  45419B03F264           Sandisk 112L BiCS5
+SDUNEIOBA-128GCE(bics5)                 45FF9A037E6C          Sandisk 112L BiCS5
+FYGLRJ08028M4D-128G(BiCS6Q)        4549AF03F665           Sandisk BiCS6_QLC
+TH58TFG9T23TA2D                              983E98B37672           Toshiba 64L BiCS3
+TH58TFT0T23BA4K                               983E98B376F2           Toshiba 64L BiCS3
+TH58TFT1W23BASH                             983E99B37AF2          Toshiba 64L BiCS3
+TH58TFT1V23BA8H                              983E99B37A72          Toshiba 64L BiCS3
+TC58TFG8T23TA0D(8T23*4B)               98489AB37EF2          Toshiba 64L BiCS3
+TC58TFG8T23TA0D                              983C98B376F2          Toshiba 64L BiCS3
+TC58TFG8T23TA0D                              983C98B37672          Toshiba 64L BiCS3
+TC58TFG8T23TA0D                              983C9AB37E72          Toshiba 64L BiCS3
+SDYNAIAMA-064G(8T23*8B)               98409BB37E72           Toshiba 64L BiCS3
+TC58TFG7T23TA0D                              983A98B37672          Toshiba 64L BiCS3
+TH58TFT2V23BA8J                               984899B37A72          Toshiba 64L BiCS3
+TH58TFT2V23BA8J                               984899B37AF2          Toshiba 64L BiCS3
+TOSHI-032G(8T23*8B)                         98499BB37E72           Toshiba 64L BiCS3
+SDYNAIAMA-064G(9T23)*4B               98499AB37E72          Toshiba 64L BiCS3
+TH58TGT3V23BB8N(9T23)                    98499AB37EF2          Toshiba 64L BiCS3
+TH58LJT3V24BB8N(9T24)                     98499AB37EE3          Toshiba 64L BiCS3
+MT29F256G08EBHAF(B16A)                 89A48832A100          Intel 64L(B16A)
+JS29F256G08EBHAF_1(B16A)                89A40832A104          Intel 64L(B16A)
+JS29F256G08EBHAF_2(B16A)                89A40832A108          Intel 64L(B16A)
+JS29F256G08EBHAF(B16A)                   89A40832A100          Intel 64L(B16A)
+PF29F04T4AWCTH2                             89C48932A100          Intel 64L(B16A)
+JS29F512G08EBHAF_1(B17A)                89C40832A600          Intel 64L(B17A)
+MT29F512G08EBHAF_1(B17A)              89C40832A601          Intel 64L(B17A)
+PF29F08T2AWCTH1                             89D48932A600          Intel 64L(B17A)
+MT29F512G08EBHAF2                          89E48A32A600          Intel 64L(B17A)
+MT29F01T2ALCQH1(N18)                    89D40C32AA00         Intel 64L(N18A)
+PF29F16T2AWCQH1(N18)                    89E48D32AA00         Intel 64L(N18A)
+MT29F256G08EBHAF(B16A)                 2CA40832A100          Micron 64L(B16A)
+MT29F256G08EBHBF-R(B16C)             2CA40832A104          Micron 64L(B16A)
+MT29F512G08EDCCG(B16E)                 2CA40832A108          Micron 64L(B16A)
+MT29F256G08EBHAF(B16A)                 2CA48832A100          Micron 64L(B16A)
+MT29F256G08EBHAF1(B16C)               2CC48932A104          Micron B16C
+JS29F256G08EBHAF_1(B16A)                B5A40832A1              Spectek 64L(B16A)
+MT29F256G08EBHAF(B16A)                 B5A48832A100          Spectek 64L(B16A)
+JS29F512G08EBHBF(B27-1)                  89C41832A200          Intel 96L(B27A)
+MT29F512G08EBHBF                            89C42832A200          Intel 96L(B27A)
+PF29H01T2AMCTJ1                              89C41832A201          Intel 96L(B27A)
+MT29F4T08EUHBF                                89D49932A200          Intel 96L(B27A)
+JS29F512G08EBLCE(B27B)                    89C30832E600          Intel 96L(B27B)
+JS29F512G08EBLCE_1(B27B)                 89C30832E601          Intel 96L(B27B)
+MT29F01T2ALCQJ1(N28)                     89D31C32C600         Intel 96L(N28A)
+PF29F04T2ANCQJ2(N28A)                   89E39D32C600          Intel 96L(N28A)
+MT29F512G08EBHAF_1(B17A)              2CC40832A600          Micron 64L(B17A)
+MT29F512G08EBHAF_1(B17A)              2CC40832A601          Micron 64L(B17A)
+MT29F4T08EUHAF                               2CD48932A600         Micron 64L(B17A)
+MT29F256G08EBHAF1                          2CD48932A601         Micron 64L(B17A)
+MT29F512G08EBHAF2                          2CE48A32A600          Micron 64L(B17A)
+MT29F512G08EBHAF1                          2CE48A32A601          Micron 64L(B17A)
+MT29F01T2ALCQH1(N18)                    2CD40C32AA00         Micron 64L(N18A)
+PF29F16T2AWCQH1(N18)                    2CE48D32AA00         Micron 64L(N18A)
+K9AFGD8J0A_1                                     EC1E98BF84CC          Samsung 92L 3Dv5
+K9AFGD8H0B*2B                                  EC1ED9BF88CC         Samsung 92L 3Dv5
+K9AHGD8J0A                                       EC5E98BF84CC          Samsung 92L 3Dv5
+K9AHGD8J0A*2B                                  EC5FD9BF88CC         Samsung 92L 3Dv5
+K9AFGD8H0B                                       EC1C98BF84CC         Samsung 92L 3Dv5
+MT29F512G08EBHBF(B27-1)                2CC41832A200          Micron 96L(B27A)
+MT29F512G08EBHBF(B27-2)                2CC41832A201          Micron 96L(B27A)
+MT29F512G08EBHBF(B27)                    2CC40832A200          Micron 96L(B27A)
+MT29F512G08EBHBF(B27)*4                2CE49A32A200          Micron 96L(B27A)
+MT29F8T08EWHBFM5(B27)                  2CE49A32A201          Micron 96L(B27A)
+MT29F512G08EBHBF(B27)*2                2CD49932A200         Micron 96L(B27A)
+MT29F4T08EUHBF(B27A)                     2CD49932A201         Micron 96L(B27A)
+MT29F512G08EBLGE(B27B)                  2CC30832E601          Micron B27C
+MT29F512G08EBLGE(B27B)                  2CC30832E604          Micron B27C
+FBNB57T512G1KLBAEJ4(B57T)             2CC30832E630          Micron 96L(B57T)
+PF29F512G08EBLCE(B27B)*4                2CE38A32E600          Micron 96L(B27B)
+MT29F2T08EMLCE(B27B)                     2CE38A32E601          Micron 96L(B27B)
+PF29F512G08EBLCE(B27B)                   2CC30832E600          Micron 96L(B27B)
+MT29F1T08EBLCE                                 2CD38932E600          Micron 96L(B27B)
+BW29F1T08EMLCE                               2CD38932E601          Micron 96L(B27B)
+BW29F4T08EMLCE                               2CD38932E604          Micron 96L(B27B)
+MT29F01T2ALCQJ1(N28)                     2CD39C32C600         Micron 96L(N28A)
+MT29F01T2ALCQJ1(N28)                     2CD31C32C600         Micron 96L(N28A)
+MT29F01T2ALCQJ1(N28)*2B                2CE39D32C600         Micron 96L(N28A)
+MT29F01T2ALCQJ1(N28)*4B                2CF39E32C600          Micron 96L(N28A)
+MT29F2T08GELDHD4(N58R)                2CD30842EE31          Micron N58R
+MT29F16T08EWLEHD8(B68S)               2CF38A32E834          Micron 276L(B68S)
+MT29F32T08GWLBHD6(N69R)             2C039E42E834           Micron N69R
+MT29F16T08GULBHD5(N69R)              2CF39D42E834          Micron N69R
+MT29F8T08GMLBHD4(N69R)               2CE31C42E834          Micron N69R
+MT29F4T08GELBHD4(N69R)                 2CC48932A108          Micron N69R
+MT29F4T08EULKE(B47T)                       2CD38932EA36         Micron 176L(B47T)
+MT29F8T08EWLKE(B47T)                      2CE38A32EA36          Micron 176L(B47T)
+PF29F01T2ALCQKA(N38B)                    89CB9832C204          Intel 144L(N38B)
+YMN08TB1B1HU1B(JGS)                      9BC318251000          YMTC 3Dv2-JGS-64L(x1-9050)
+H25T2TD48C(V9)                                  AD89284B00E0          Hynix HYV9
+H25T3TD88C(V9)                                  AD89294B00E0          Hynix HYV9
+H25T4TDG8C(V9)                                 AD892A4B00E0         Hynix HYV9
+TH58LKT1T48BA4K(bics8)                     9848A8037AE6          Koxia BiCS8
+TH58LKT2F48BA8R(bics8Q)                  9848AC037AE6          Koxia BiCS8 QLC
+TH58LKT3F48BA8R(bics8)                     9849AC037AE6          Koxia BiCS8
+TH58LKT3F48BA8S(bics8)                     9849AD037EE6          Koxia BiCS8
+TH58LKT4F48BA8S(bics8Q)                  9840AD037EE6          Koxia BiCS8 QLC
+TH58LLT0V49BA4R(bics9)                     983EA8037AE7          Koxia BiCS9
+TH58LLT2V49BA8S(bics9)                     9848A9037EE7          Koxia BiCS9
+MT29F8T08EULEE(B47R)                       2CE38A32EA33          Micron 176L(B47R)
+PF29F01T2BLCQKM(N38E)                   89D32C32C608         Intel,N38E
+K9AHGD8J0E(V6P)                                EC5E981F84D2          Samsung,SSV6P
+K99UGY8J5C(V7Q)                               EC5FAC4B88C1         Samsung,SSV7 QLC
+K9XVGD8J5D(V9)                                 EC51ED6B8CC3         Samsung,SSV9
+K9YYGD8J5D(V9)                                  EC52EE6B8EC3          Samsung,SSV9
+K9YYGA8J1D(V9)                                  EC53EF6B81C3          Samsung,SSV9
+K9OVGY8J5D(V9T)                               EC51E99F8CC3          Samsung,SSV9T
+K9XVGY8J5A(V5)                                  EC51DD6B88CC        Samsung,SSV5
+SDUNEIOMA-64GCE(bics6)                  453EA8037A65          Sandisk BiCS6
+PF29F08T2AOCQK1(N38)                     892BAF32C600          Intel N38A
+PF29F08T4AOCQK1(N38)                     892BAF32C600          Intel N38A
+PF29F01T2ALCQK1(N38A)                    89CB9832C600          Intel N38A
+MT29F2T08EUHAF(B16A)                     2CC48932A100          Micron B16A
+MT29F2T08EUHAF(B16A)                     2CC48932A101          Micron B16A
+FNNM26A256G1KHBAG                       2CA36032C600          Spectek(M26A to N28)
+SDUNCIAMA1-064GB                          454999B37A6B          Sandisk 96L BiCS4
+SDUNCICMA-032GB                            453C9AB37E6B          Sandisk 96L BiCS4
+SDUNCIAMA-064GB_2B(0T24)             454899B3FA6B          Sandisk 96L BiCS4
+SDUNCIAMA-0256GB                          454899B37AE3          Sandisk 96L BiCS4
+SDUNCIAMA-128GB(8T24*4B)             45499BB37E63           Sandisk 96L BiCS4
+SDUNCIAMA-256GB_4B(9T24)             45499AB37E6B          Sandisk 96L BiCS4
+SDUNCIAMA-256GB_4B(9T24)             45499AB37E63          Sandisk 96L BiCS4
+SDUNCIAMA-128GB(8T24*4B)             454998B37E6B           Sandisk 96L BiCS4
+SDUNCIAMA-128GB(8T24*4B)             454998B37E63           Sandisk 96L BiCS4
+SDUNDIAMB-64GCE(Bics4.5)               454899B3FAE3          Sandisk 96L BiCS4
+SDUNCIAMA-032GB_4B(Bics4.5)          45489AB3FE6B          Sandisk 96L BiCS4
+SDUNCIAMA-128GB_4B(0T24)             45489AB37E6B          Sandisk 96L BiCS4
+SDUNCIAMA-128GB_4B(0T24)             45489AB37E63          Sandisk 96L BiCS4
+SDUNCIAMA-0128GB                          45489AB37EEB          Sandisk 96L BiCS4
+TH58LJB4F24BA8K(fsp0)                       45739CB376EB          Sandisk 96L BiCS4
+SDUNCIAMA-064GB_2B(0T24)             454899B3FA63          Sandisk 96L BiCS4
+SDUNCIAMA-064GB_2B(0T24)             454899B37AEB          Sandisk 96L BiCS4
+SDUNCIAMA-064GB_2B(0T24)             454899B37A6B          Sandisk 96L BiCS4
+SDUNCIAMA-064GB_2B(0T24)             454899B37A63          Sandisk 96L BiCS4
+SDUNCIAMA-064GB_4B(9T24)             45409BB37E6B          Sandisk 96L BiCS4
+0251DXDE50ZC                                    45409BB3FE6B           Sandisk 96L BiCS4
+SDUNCIAZZ-256GCE(Bics4.5)               453E99B3FA6B          Sandisk 96L BiCS4
+SDUNCIAMA-064GB(8T24*2B)             453E99B37AEB          Sandisk 96L BiCS4
+SDUNCIAMA-064GB(8T24*2B)             453E99B37AE3          Sandisk 96L BiCS4
+SDUNCIAMA-064GB(8T24*2B)             453E99B37A6B          Sandisk 96L BiCS4
+SDUNCIAMA-064GB(Bics4.5)               453E98B3F66B           Sandisk 96L BiCS4
+SDUNCIAMA-064GB(Bics4.5)               453E98B3F663           Sandisk 96L BiCS4
+SDUNDIAMA-64GCE(Bics4.5)               453E98B3F6E3           Sandisk 96L BiCS4
+SDUNCIAMC-064GB(Bics4.5)               453E9AB3FE6B          Sandisk 96L BiCS4
+SDUNCIAMA-064GB_1(9T24)               453E98B3766B           Sandisk 96L BiCS4
+SDUNCIAMA-0256GB                          453E98B376EB           Sandisk 96L BiCS4
+SDUNCIAMA-064GB_1(9T24)               453E98B37663           Sandisk 96L BiCS4
+SDUNCIAMB1-064GB_4die                  453E9AB37E6B          Sandisk 96L BiCS4
+SDUNCIAMA1-064GB-4Die                 453E9A037E64          Sandisk BiCS5
+SDUNEIOBB-128GCE                           45409A037E64          Sandisk BiCS5
+SDUNEIOBA-128GCE                           45409A037EE4          Sandisk BiCS5
+SDUNEIOMA-128GCE                          45409B03F264           Sandisk BiCS5
+SDUNEIOMA-128GCE                          45409B03F26C          Sandisk BiCS5
+FYGLRJ08028M3A-128G                      453EA8037AE5          Sandisk 162L BiCS6
+FYGLRJ08028M6A-128G                      4540AA03F2E5          Sandisk 162L BiCS6
+FYGLRJ0185B6A-128G                         4541AB03F665          Sandisk 162L BiCS6
+SDYNEHBRGM-256G                           4549A9037E65          Sandisk 162L BiCS6
+SDYNEHBRGM-256G                           4549A9037EE5          Sandisk 162L BiCS6
+SDYNEHBRGK-256G                             4549AA03F2E5          Sandisk 162L BiCS6
+SDWNCJAMA_1V2-128GCE(8F24)                45739CB37663          Sandisk(BiCS4)(QLC)
+SDWNCJAMA_1V2-128GCE(8F24)               45739CB3766B          Sandisk(BiCS4)(QLC)
+SDWNCJAMA_1V2-128GCE(8F24)               45739CB376E3          Sandisk(BiCS4)(QLC)
+SNDK-1TB(bics4Q)                               45739DB37A63          Sandisk(BiCS4)(QLC)
+Sandisk_FXE4(Bics4.5)                           453C98B3F6EB          Sandisk 96L BiCS4
+SDUNCIAMA-032GB(Bics4.5)               453C98B3F66B          Sandisk 96L BiCS4
+SDUNCIAMA-032GB(Bics4.5)               453C98B3F663          Sandisk 96L BiCS4
+SDUNCIAMA-032GB(8T24)                  453C98B3766B          Sandisk 96L BiCS4
+SDUNCIAMA-032GB(8T24)                  453C98B37663          Sandisk 96L BiCS4
+1215DFKHEOFC-0128GB(Bics4.5)         45499AB3FEE3           Sandisk 96L BiCS4
+SDUNCIAMA-032GB-toggle                453C98B376EB          Sandisk 96L BiCS4
+SDUNCIAMA2-064GB                          45499AB37EEB          Sandisk 96L BiCS4
+SDUNCIAMA-064GB_4B                       45499AB3FE6B          Sandisk 96L BiCS4
+14756YFFN50NZ-064GB(Bics4.5)         45499AB3FE63          Sandisk BiCS4
+SDTNAIAMA_H45-64GB(bics4)             453E99B37A63          Sandisk BiCS4
+SDUNCIAMA-064GCE(bics5)                450098037664           Sandisk BiCS5
+SDUNCIAMA-128GB(8T24*4B)             45499BB37E6B          Sandisk 96L BiCS4
+SDUNCIAMB-0512GB                          45709BB37E6B          Sandisk 96L BiCS4
+SNDK-1TB(bics4Q)                               45409EB37E63           Sandisk(BiCS4)(QLC)
+SNDK-1TB(bics4Q)                               45419FB37E63           Sandisk(BiCS4)(QLC)
+SNDK 128GB(bics4Q)                           98779DB37AE3          Sandisk(BiCS4)(QLC)
+SDTNQFAMA-008G(6DDK)                  45DE949376D0          Sandisk A19nm[1y]
+SNDK 05485 8G                                   45DEA8927650          Sandisk A19nm[1y]
+SDTNQFAMA-0032G(8DDK)                453CA5937ED0         Sandisk A19nm[1y]
+SNDK 05485 32G                                  453CAA927E50          Sandisk A19nm[1y]
+SDTNQFAMA-008G(6DDK)                  45DE94937650          Sandisk A19nm[1y]
+SDTNRIAMA-008GK                             453EAB927E50          Sandisk A19nm[1y]
+SNDK 05485 16G                                  454CA9927A50          Sandisk A19nm[1y]
+TC58LJG8T24TA0D(Bics4.5)                  983C98B3F663          Toshiba 96L BiCS4
+TH58LKT0T2MBADE(Bics4.5)                983C98B3F6E3          Toshiba 96L BiCS4
+SDUNCIAMA-064GB(8T24*2B)             983E99B37AEB          Toshiba 96L BiCS4
+TH58LJT1T24BA8C                               983E9AB37EE3           Toshiba 96L BiCS4
+TH58LJB4F24BA8K(fsp0)                       98739CB376E3          Toshiba 96L BiCS4
+SDUNCIAMA-064GB_4B                       98499AB3FE6B          Toshiba 96L BiCS4
+TC_8T24-032GB_2                                983398B37663           Toshiba 96L BiCS4
+TC_8T24-032GB_2                                983C98B37663          Toshiba 96L BiCS4
+TC58LJG8T24TA0D                               983C98B3766B          Toshiba 96L BiCS4
+TC58LJG8T24TA0D                               983C98B376E3          Toshiba 96L BiCS4
+SDUNCIAMA-064GB(8T24*2B)             983E99B3FA6B          Toshiba 96L BiCS4
+Toshiba_FXE4(Bics4.5)                          983C98B3F66B          Toshiba 96L BiCS4
+TH58LJT1V24BA8H                               983E99B37AE3          Toshiba 96L BiCS4
+Toshiba_FXE4(Bics4.5)                          983C98B3F6EB          Toshiba 96L BiCS4
+SDUNCIAMA-064GB_2B(0T24)             984899B37A6B          Toshiba 96L BiCS4
+TOSHI-064GB_1(9T24)                         983E98B37663           Toshiba 96L BiCS4
+TC58LJG9T24TA0D                               983E98B3766B           Toshiba 96L BiCS4
+TH58LJT1T24BA8C(9T24)                      983E98B376E3           Toshiba 96L BiCS4
+TH58LJT1T24BA8C(9T24)                      983E98B3F6E3           Toshiba 96L BiCS4
+SDUNCIAMA-064GB_2B(0T24)             984899B3FA63          Toshiba 96L BiCS4
+SDUNCIAMA-064GB_2B(0T24)             984899B37AEB          Toshiba 96L BiCS4
+TH58LJT2T24BA8H                               984899B37AE3          Toshiba 96L BiCS4
+TH58TFG8DFKBA4K(8DFK)                   983AA4937AD0         Toshiba A19nm[1y]
+SDTNQFAMA-0032G(8DDK)                983CA5937ED0         Toshiba A19nm[1y]
+SDTNQFAMA-008G(6DDK)                  98DE949376D0          Toshiba A19nm[1y]
+SDTNQFAMA-008G(6DDK)                  98DE94937650          Toshiba A19nm[1y]

@@ -1,0 +1,163 @@
+{
+  "summary": {
+    "candidateVendors": 7,
+    "candidatePartNumbers": 219,
+    "candidateFlashIdRefs": 292,
+    "baseExtraPartNumbers": 51,
+    "baseFdbPartNumbers": 3664,
+    "decodepackChecked": 219
+  },
+  "issues": [
+    {
+      "code": "decodepack.process_conflict",
+      "severity": "warning",
+      "message": "decodepack process/generation output conflicts with the candidate extra record.",
+      "count": 38,
+      "samples": [
+        "micron MT29E6T08ETHBBM5: extra=32L(B0KB) decodepack=B0KB FG-32L",
+        "micron MT29F128G08CBCEE: extra=32L(L05B) decodepack=L05B FG-32L",
+        "micron MT29F128G08EBCDB: extra=32L(B05A) decodepack=B05A FG-32L",
+        "micron MT29F16T08EWLCH: extra=232L(B58R) decodepack=B58R RG-232L",
+        "micron MT29F16T08EWLEHD8: extra=276L(B68S) decodepack=B68S RG-2yyL",
+        "micron MT29F1HT08EMCBB: extra=32L(B0KB) decodepack=B0KB FG-32L",
+        "micron MT29F1HT08EMHBB: extra=32L(B0KB) decodepack=B0KB FG-32L",
+        "micron MT29F1T08EBLCE: extra=96L(B27B) decodepack=B58R RG-232L"
+      ]
+    },
+    {
+      "code": "extra.base_field_conflict",
+      "severity": "warning",
+      "message": "Candidate extra payload differs from the existing extra.json record for the same vendor PN.",
+      "count": 5,
+      "samples": [
+        "micron MT29F256G08CBCBB.l: candidate=32L(L06B) base=L06B",
+        "micron MT29F384G08EBCBB.l: candidate=32L(B0KB) base=B0KB",
+        "micron MT29F4T08EULKE.l: candidate=176L(B47T) base=B47T",
+        "micron MT29F512G08CECBB.l: candidate=32L(L06B) base=L06B",
+        "micron MT29F8T08EWLKE.l: candidate=176L(B47T) base=B47T"
+      ]
+    },
+    {
+      "code": "extra.base_id_conflict",
+      "severity": "warning",
+      "message": "Candidate extra payload differs from the existing extra.json record for the same vendor PN.",
+      "count": 1,
+      "samples": [
+        "micron MT29F4T08EULKE.id: candidate=[2CD38932EA34, 2CD38932EA36] base=[2CD38932EA36]"
+      ]
+    },
+    {
+      "code": "fdb.id_override",
+      "severity": "warning",
+      "message": "Candidate fid/id will change the generated fdb.json ID list for an existing PN.",
+      "count": 21,
+      "samples": [
+        "micron MT29F16T08GWLDH: candidate=[2CF38E42EE31, 2CF38E42EE3C] fdb=[2CF38E42EE31]",
+        "micron MT29F1T08EBLCE: candidate=[2CD38932E600] fdb=[2CD38932E600, 2CD38932E601]",
+        "micron MT29F1T08GBLDH: candidate=[2CD30C42EE30, 2CD30C42EE31, 2CD30C42EE3C] fdb=[2CD30C42EE30, 2CD30C42EE31]",
+        "micron MT29F256G08CBCBB: candidate=[2CA46432AA05] fdb=[2CA46432AA04]",
+        "micron MT29F384G08EBCBB: candidate=[2CB47832AA05] fdb=[2CB47832AA04]",
+        "micron MT29F4T08EULKE: candidate=[2CD38932EA34, 2CD38932EA36] fdb=[2CD38932EA36]",
+        "micron MT29F8T08GULDH: candidate=[2CE38D42EE31, 2CE38D42EE3C] fdb=[2CE38D42EE31]",
+        "samsung K9AFGD8J0M: candidate=[EC5E983FCBEC, EC5E983F84CB] fdb=[EC1E983F84CB, EC5E983F84CB]"
+      ]
+    },
+    {
+      "code": "fdb.override_controller_support",
+      "severity": "warning",
+      "message": "An overwritten Flash ID has controller support in generated fdb.json.",
+      "count": 22,
+      "samples": [
+        "micron MT29F1T08EBLCE: 2CD38932E601 controllers=[IS918EN, IS918GA, SM2259XT2, SM2259XT3, SM2262EN, SM2263XT]",
+        "micron MT29F256G08CBCBB: 2CA46432AA04 controllers=[AU6989SN-TA, CBM2099E, CBM2199, CBM2199E, CBM2199EE, FC1179, FC1179S, FC2199S, FC2279AA, FC2279S, FC3379, INIC6081, IS917, IS918, IS918GA, MAS0902, MK8115, PS2307, PS2308, PS3111, SM2246EN, SM2258, SM2258XT, SM2259, SM2259XT2, SM2259XT3, SM3259AA, SM3265AB, SM3265AC, SM3267AB, SM3267AE, SM3268AA, SM3268AB, SM3269AA, SM3269AA_COB, SM3270AA, SM3270AB, SM3270AC, SM3271AB, SM3280AB, SM3280BA, SM3280BB, SM3281AB, SM3281BA, SM3281BB, SM3282BB, YS9082HC, YS9082HP, YS9082HT, YS9083XT, YS9085N, ZC3281]",
+        "micron MT29F384G08EBCBB: 2CB47832AA04 controllers=[AU6989SN-TA, CBM2199, CBM2199E, CBM2199EE, FC1179, FC1179S, FC2199S, FC2279AA, FC2279S, FC3379, INIC6081, MAS0902, MK8115, PS2269, PS2270, PS2307, PS3111, SM2258, SM2258XT, SM2259, SM2259XT2, SM2259XT3, SM3259AA, SM3267AB, SM3267AE, SM3268AA, SM3268AB, SM3269AA, SM3269AA_COB, SM3270AA, SM3270AB, SM3270AC, SM3271AB, SM3281AB, SM3281BB, YS9082HC, YS9082HP, YS9082HT, YS9083XT, YS9085N, ZC3281]",
+        "samsung K9AFGD8J0M: EC1E983F84CB controllers=[FC1179S, FC2199S, FC2279AA, FC2279S, FC3379, IS918EN, IS918GA, MAP1002, MAP1202, MAS0902, MAS1102, SM2258, SM2258XT, SM2259XT2, SM2259XT3, SM2262EN, SM2263XT, SM3265AC, SM3271AB, SM3280AB, SM3280BA, SM3280BB, SM3281AB, SM3281BA, SM3281BB, SM3282BB, YS9082HC, YS9082HP, YS9082HT, YS9085N, ZC3281]",
+        "samsung K9AHGD8J0E: EC1C981F84C2 controllers=[YS9082HT, YS9085N]",
+        "samsung K9AHGD8J0E: EC1E981F84C2 controllers=[FC2199S, FC2279AA, FC2279S, FC3379, IS918EN, SM2259XT2, SM2259XT3, YS9082HT, YS9085N, ZC3281]",
+        "samsung K9AHGD8J0E: EC52DB1F8EC2 controllers=[YS9085N]",
+        "samsung K9AHGD8J0E: EC5C981F84C2 controllers=[YS9082HT, YS9085N]"
+      ]
+    },
+    {
+      "code": "fdb.override_referenced_id",
+      "severity": "warning",
+      "message": "An overwritten Flash ID is still referenced by other PN records.",
+      "count": 17,
+      "samples": [
+        "micron MT29F1T08EBLCE: 2CD38932E601 refs=[micron BW29F1T08EMLCE, micron MT29F4T08EULCE, micron MT29F512G08EBLCE]",
+        "micron MT29F256G08CBCBB: 2CA46432AA04 refs=[micron MT29F1T08CMCBB, micron MT29F1T08CMHBB, micron MT29F256G08CBHBB, micron MT29F512G08CBCBB, micron MT29F512G08CECBB, micron MT29F512G08CEHBB, micron MT29F512G08CFCBB, spectek FXXL06B81KDBABWP]",
+        "micron MT29F384G08EBCBB: 2CB47832AA04 refs=[intel PF29F384G08EBCBB, micron FXXB0KB81KDBCBEH, micron MT29F128G08EBAAB, micron MT29F1HT08EMHBB, micron MT29F1T208ECBBJ, micron MT29F1T208ECCBB, micron MT29F1T208ECHBB, micron MT29F1T2G08ECCBB, micron MT29F1T2G08ECHBB, micron MT29F384G08EBHAF, micron MT29F384G08EBHBB, micron MT29F48B2ALCTG2, micron MT29F768G08EECBB, micron MT29F768G08EEHBB]",
+        "samsung K9AFGD8J0M: EC1E983F84CB refs=[samsung K9AHGD8H0M, samsung K9AHGD8H0M1, samsung K9AHGD8J0M]",
+        "samsung K9AHGD8J0E: EC1E981F84C2 refs=[samsung K9AHGD8H0E]",
+        "samsung K9AHGD8J0E: EC5E981F84C2 refs=[samsung K9CMGY8J5E]",
+        "samsung K9AHGD8J0E: EC5FD91F88C2 refs=[samsung K9OUGY8J5E]",
+        "samsung K9AKGD8J0B: EC51E93F8CCF refs=[samsung K9OUGY8J8D]"
+      ]
+    },
+    {
+      "code": "decodepack.missing_process",
+      "severity": "info",
+      "message": "decodepack did not expose the process/generation carried by the candidate extra record.",
+      "count": 14,
+      "samples": [
+        "micron MT29F01T2ALCQH1: extra=64L(N18A)",
+        "micron MT29F01T2ALCQJ1: extra=96L(N28A)",
+        "micron MT29F16T08GULBH: extra=N69R",
+        "micron MT29F16T08GULBHD5: extra=N69R",
+        "micron MT29F2T08GBLBH: extra=N69R",
+        "micron MT29F2T08GBLBHD4: extra=N69R",
+        "micron MT29F32T08GWLBH: extra=N69R",
+        "micron MT29F32T08GWLBHD6: extra=N69R"
+      ]
+    },
+    {
+      "code": "decodepack.not_found",
+      "severity": "info",
+      "message": "decodepack did not return an ok PN decode for a candidate extra record.",
+      "count": 14,
+      "samples": [
+        "intel FP29F01P2ALCQL1: status=not_found",
+        "micron BW29F1T08EMLCE: status=not_found",
+        "micron BW29F4T08EMLCE: status=not_found",
+        "sndk 1215DFKHEOFC-0128GB: status=not_found",
+        "sndk 14756YFFN50NZ-064GB: status=not_found",
+        "sndk FYGLRJ0185B6A-128G: status=not_found",
+        "sndk FYGLRJ08028M3A-128G: status=not_found",
+        "sndk FYGLRJ08028M4A-128G: status=not_found"
+      ]
+    },
+    {
+      "code": "fdb.id_fanout",
+      "severity": "info",
+      "message": "Candidate Flash ID is already used by other generated FDB part records.",
+      "count": 175,
+      "samples": [
+        "intel FP29F01P2ALCQL1: 89092832C200 refs=[intel PF29F01P2BLCQL1, intel PF29F02P2BMCQL1, intel PF29F04P2BNCQL1, intel PF29F08P2BOCQL1, intel PF29F16P2BWCQL1]",
+        "intel PF29F01T2ALCQK1: 89CB9832C600 refs=[intel 29F4T08GBCAGESA, intel PF29F4T08GBCAG-ESA]",
+        "intel PF29F01T2ALCQK2: 89092932C200 refs=[intel PF29F01P2BLCQL1, intel PF29F02P2BMCQL1]",
+        "intel PF29F01T2ALCQK4: 89092A32C200 refs=[intel PF29F01P2BLCQL1, intel PF29F02P2BMCQL1, intel PF29F04P2BNCQL1, intel PF29F08P2BOCQL1, intel PF29F16P2BWCQL1]",
+        "intel PF29F01T2ALCQKA: 89E3AD32C204 refs=[intel JS29F01T2ALCQK1, intel PF29F01T2ALCQKA2D]",
+        "intel PF29F02T2AMCQK1: 89E3AD32C600 refs=[intel PF29F08T2APCQK1]",
+        "intel PF29F02T2APCMG2: 89C4E532AA01 refs=[intel 29F2T08CUCBB, intel JS29F256G08CBCBB, intel PF29F02T2AOCMG2, intel PF29F02T2APCMG1, intel PF29F2T08CUCBBM4, intel PF29F32B2ALCMG2]",
+        "intel PF29F02T2APCMG2: 89CCF932AA01 refs=[intel PF29F03T2AOCTG4]"
+      ]
+    },
+    {
+      "code": "fdb.new_part_existing_id",
+      "severity": "info",
+      "message": "Candidate Flash ID is already used by other generated FDB part records.",
+      "count": 11,
+      "samples": [
+        "micron FNNB05A128G1KDBAB: 2C845832A100 refs=[micron MT29F128G08EBAAB, micron MT29F256G08EECDB, micron MT29F256G08EFCDB, micron MT29F512G08EMCDB, phison IT17G24AOA, spectek FNNB05A128G1KDBAB]",
+        "micron MT29F256G08EBHBF-R: 2CA40832A104 refs=[micron MT29F1T08EMHBF, micron MT29F256G08BHBF3, micron MT29F256G08EBCAG, micron MT29F256G08EBHBF, micron MT29F512G08EEHAF]",
+        "micron MT29F512G08EDCCG: 2CA40832A108 refs=[micron MT29F256G08EBCAG, micron MT29F512G08EEHAF]",
+        "samsung K9CMGD8J0D: EC51EA8F81C1 refs=[samsung K9AFGD8J0D]",
+        "samsung K9DYGY8J5B: EC52EA3F8ECF refs=[samsung K9AKGD8J0B, samsung K9OUGY8J8F]",
+        "samsung K9OUGA8J1A: EC519ABF8CCC refs=[samsung K90UGA8J1A]",
+        "samsung K9OVGD8J2B: EC51E93F8CCF refs=[samsung K9AKGD8J0B, samsung K9OUGY8J8D]",
+        "skhynix H27Q2T87EC9R: AD5A16F30070 refs=[skhynix H27Q2T87EC, skhynix H27Q2T8CEC, skhynix H27QDG8D2C, skhynix H27QFG8VEC]"
+      ]
+    }
+  ],
+  "ok": true
+}

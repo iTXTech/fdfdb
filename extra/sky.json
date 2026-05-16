@@ -6,7 +6,8 @@
       "PF29F01T2ALCQK1": {
         "fid": [
           "89CB9832C600"
-        ]
+        ],
+        "l": "N38A"
       },
       "PF29F01T2ALCQK2": {
         "fid": [
@@ -22,7 +23,14 @@
         "fid": [
           "89E3AD32C204",
           "89CB9832C204"
-        ]
+        ],
+        "l": "N38B"
+      },
+      "PF29F01T2BLCQKM": {
+        "fid": [
+          "89D32C32C608"
+        ],
+        "l": "N38E"
       },
       "PF29F02T2AMCQK1": {
         "fid": [
@@ -35,6 +43,12 @@
           "89CCF932AA01"
         ]
       },
+      "PF29F04T2ANCQJ2": {
+        "fid": [
+          "89E39D32C600"
+        ],
+        "l": "N28A"
+      },
       "PF29F04T2ANCQK1": {
         "fid": [
           "89F3AE32C600"
@@ -46,66 +60,110 @@
           "89DCFA32AA01"
         ]
       },
+      "PF29F04T4AWCTH2": {
+        "fid": [
+          "89C48932A100"
+        ],
+        "l": "B16A"
+      },
       "PF29F08T2AOCQK1": {
         "fid": [
           "892BAF32C600"
-        ]
+        ],
+        "l": "N38A"
+      },
+      "PF29F08T2AWCTH1": {
+        "fid": [
+          "89D48932A600"
+        ],
+        "l": "B17A"
       },
       "PF29F08T4AOCQK1": {
         "fid": [
           "892BAF32C600"
-        ]
+        ],
+        "l": "N38A"
+      },
+      "PF29F16T2AWCQH1": {
+        "fid": [
+          "89E48D32AA00"
+        ],
+        "l": "N18A"
       },
       "PF29F48B2ALCTG2": {
         "fid": [
           "89B47832AA01"
         ]
+      },
+      "PF29H01T2AMCTJ1": {
+        "fid": [
+          "89C41832A201"
+        ],
+        "l": "B27A"
       }
     },
     "micron": {
       "FBNB57T512G1KLBAEJ4": {
         "id": [
           "2CC30832E630"
-        ]
+        ],
+        "l": "B57T"
+      },
+      "FNMB47R512G1KLBAEJ4": {
+        "id": [
+          "2CC30832EA30",
+          "2CC30832EA31",
+          "2CC30832EA34",
+          "2CD38932EA30",
+          "2CE38A32EA31"
+        ],
+        "l": "B47R"
       },
       "FNNB05A128G1KDBAB": {
         "id": [
           "2C845832A100"
-        ]
+        ],
+        "l": "B05A"
       },
       "MT29E6T08ETHBBM5": {
         "id": [
           "2CCCF932AA05"
-        ]
+        ],
+        "l": "B0KB"
       },
       "MT29F128G08CBCEB": {
         "id": [
           "2C844432AA04",
           "2C844434AA00",
           "2C84C434AA00"
-        ]
+        ],
+        "l": "L05B"
       },
       "MT29F128G08CBCEE": {
         "id": [
           "2CA4C534AA00"
-        ]
+        ],
+        "l": "L05B"
       },
       "MT29F128G08EBCDB": {
         "id": [
           "2C845832A104",
           "2C84D832A100"
-        ]
+        ],
+        "l": "B05A"
       },
       "MT29F16T08EWLCH": {
         "id": [
           "2CF38A32E830",
           "2CF38A32E831"
-        ]
+        ],
+        "l": "B58R"
       },
       "MT29F16T08EWLEHD8": {
         "id": [
           "2CF38A32E834"
-        ]
+        ],
+        "l": "B68S"
       },
       "MT29F16T08GULBH": {
         "id": [
@@ -122,86 +180,133 @@
       "MT29F16T08GWLCE": {
         "id": [
           "2CF38E32EA30"
-        ]
+        ],
+        "l": "N48R"
       },
       "MT29F16T08GWLDH": {
         "id": [
           "2CF38E42EE31",
           "2CF38E42EE3C"
-        ]
+        ],
+        "l": "N58R"
       },
       "MT29F16T08GWLDHD8": {
         "id": [
           "2CF38E42EE30"
-        ]
+        ],
+        "l": "N58R"
       },
       "MT29F1HT08EMCBB": {
         "id": [
           "2CB4F832AA04"
-        ]
+        ],
+        "l": "B0KB"
       },
       "MT29F1HT08EMHBB": {
         "id": [
           "2CB47832AA04"
+        ],
+        "l": "B0KB"
+      },
+      "MT29F1T08EBLCE": {
+        "id": [
+          "2CD38932E600"
         ]
       },
       "MT29F1T08EBLCH": {
         "id": [
           "2CD30832E830"
-        ]
+        ],
+        "l": "B58R"
       },
       "MT29F1T08EBLEH36": {
         "id": [
           "2CD30832E836"
-        ]
+        ],
+        "l": "B68S"
       },
       "MT29F1T08EBLEH3W": {
         "id": [
           "2CD30832E834"
-        ]
+        ],
+        "l": "B68S"
       },
       "MT29F1T08EBLEHD4": {
         "id": [
           "2CD30832E835"
-        ]
+        ],
+        "l": "B68S"
       },
       "MT29F1T08GBLDH": {
         "id": [
           "2CD30C42EE30",
           "2CD30C42EE31",
           "2CD30C42EE3C"
-        ]
+        ],
+        "l": "N58R"
       },
       "MT29F256G08CBCBB": {
         "id": [
           "2CA46432AA05"
+        ],
+        "l": "L06B"
+      },
+      "MT29F256G08EBHAF": {
+        "id": [
+          "2CA46432AA01",
+          "2CA40832A100",
+          "2CA48832A100"
+        ]
+      },
+      "MT29F256G08EBHAF1": {
+        "id": [
+          "2CC48932A104",
+          "2CD48932A601"
+        ]
+      },
+      "MT29F256G08EBHBF-R": {
+        "id": [
+          "2CA40832A104"
         ]
       },
       "MT29F256G08EBLCE": {
         "id": [
           "2CA37832E510"
-        ]
+        ],
+        "l": "B36R"
       },
       "MT29F2T08CQCBBG2": {
         "id": [
           "2CC4E532AA05"
-        ]
+        ],
+        "l": "L06B"
       },
       "MT29F2T08CUCBB": {
         "id": [
           "2CC4E532AA04"
-        ]
+        ],
+        "l": "L06B"
       },
       "MT29F2T08EMLCE": {
         "id": [
           "2CE38A32E601"
-        ]
+        ],
+        "l": "B27B"
+      },
+      "MT29F2T08EMLDE": {
+        "id": [
+          "2CD3F932EA10",
+          "2CE3FA32EA10",
+          "2CE38A32EA34"
+        ],
+        "l": "B37R"
       },
       "MT29F2T08EUHAF": {
         "id": [
           "2CC48932A100",
           "2CC48932A101"
-        ]
+        ],
+        "l": "B16A"
       },
       "MT29F2T08GBLBH": {
         "id": [
@@ -218,7 +323,8 @@
       "MT29F2T08GELDHD4": {
         "id": [
           "2CD30842EE31"
-        ]
+        ],
+        "l": "N58R"
       },
       "MT29F32T08GWLBH": {
         "id": [
@@ -235,38 +341,45 @@
       "MT29F384G08EBCBB": {
         "id": [
           "2CB47832AA05"
-        ]
+        ],
+        "l": "B0KB"
       },
       "MT29F3T08EUCBB": {
         "id": [
           "2CCCF932AA04"
-        ]
+        ],
+        "l": "B0KB"
       },
       "MT29F4T08EMLCH": {
         "id": [
           "2CD30832E831"
-        ]
+        ],
+        "l": "B58R"
       },
       "MT29F4T08EUHAF": {
         "id": [
           "2CD48932A600"
-        ]
+        ],
+        "l": "B17A"
       },
       "MT29F4T08EUHBF": {
         "id": [
           "2CD49932A201"
-        ]
+        ],
+        "l": "B27A"
       },
       "MT29F4T08EULEE": {
         "id": [
           "2CD38932EA31"
-        ]
+        ],
+        "l": "B47R"
       },
       "MT29F4T08EULKE": {
         "id": [
           "2CD38932EA34",
           "2CD38932EA36"
-        ]
+        ],
+        "l": "B47T"
       },
       "MT29F4T08GELBHD4": {
         "id": [
@@ -277,23 +390,27 @@
       "MT29F512G08CECBB": {
         "id": [
           "2CA46432AA04"
-        ]
+        ],
+        "l": "L06B"
       },
       "MT29F512G08EBHAF": {
         "id": [
           "2CC40832A600",
           "2CC40832A601"
-        ]
+        ],
+        "l": "B17A"
       },
       "MT29F512G08EBHAF1": {
         "id": [
           "2CE48A32A601"
-        ]
+        ],
+        "l": "B17A"
       },
       "MT29F512G08EBHAF2": {
         "id": [
           "2CE48A32A600"
-        ]
+        ],
+        "l": "B17A"
       },
       "MT29F512G08EBHBF": {
         "id": [
@@ -302,51 +419,70 @@
           "2CC40832A200",
           "2CE49A32A200",
           "2CD49932A200"
-        ]
+        ],
+        "l": "B27A"
       },
       "MT29F512G08EBLDE": {
         "id": [
           "2CC37832EA10"
-        ]
+        ],
+        "l": "B37R"
       },
       "MT29F512G08EBLGE": {
         "id": [
           "2CC30832E601",
           "2CC30832E604"
-        ]
+        ],
+        "l": "B27C"
+      },
+      "MT29F512G08EDCCG": {
+        "id": [
+          "2CA40832A108"
+        ],
+        "l": "B16A"
       },
       "MT29F512G08MBLKE": {
         "id": [
           "2CC30832EA36"
         ],
-        "l": "176L(B47T)"
+        "l": "B47T"
       },
       "MT29F8T08EULCH": {
         "id": [
           "2CE38932E830",
           "2CE38932E831"
+        ],
+        "l": "B58R"
+      },
+      "MT29F8T08EULEE": {
+        "id": [
+          "2CE38A32EA33"
         ]
       },
       "MT29F8T08EULEHD5": {
         "id": [
           "2CE38932E834",
           "2CE38932E835"
-        ]
+        ],
+        "l": "B68S"
       },
       "MT29F8T08EWHBFM5": {
         "id": [
           "2CE49A32A201"
-        ]
+        ],
+        "l": "B27A"
       },
       "MT29F8T08EWLEE": {
         "id": [
           "2CE38A32EA30"
-        ]
+        ],
+        "l": "B47R"
       },
       "MT29F8T08EWLKE": {
         "id": [
           "2CE38A32EA36"
-        ]
+        ],
+        "l": "B47T"
       },
       "MT29F8T08GMLBHD4": {
         "id": [
@@ -358,12 +494,27 @@
         "id": [
           "2CE38D42EE31",
           "2CE38D42EE3C"
-        ]
+        ],
+        "l": "N58R"
       },
       "MT29F8T08GULDHD5": {
         "id": [
           "2CE38D42EE30"
-        ]
+        ],
+        "l": "N58R"
+      },
+      "PF29F16T2AWCQH1": {
+        "id": [
+          "2CE48D32AA00"
+        ],
+        "l": "N18A"
+      },
+      "PF29F512G08EBLCE": {
+        "id": [
+          "2CE38A32E600",
+          "2CC30832E600"
+        ],
+        "l": "B27B"
       }
     },
     "samsung": {
@@ -371,24 +522,66 @@
         "fid": [
           "EC5FAC4B88C1"
         ],
+        "l": "SSV7",
         "c": "QLC"
+      },
+      "K9ADGD8U0E": {
+        "fid": [
+          "EC1A882F80C9"
+        ],
+        "l": "SSV3"
+      },
+      "K9AFGD8H0A": {
+        "fid": [
+          "EC1ED93F88CB",
+          "EC1C983F84CB"
+        ]
+      },
+      "K9AFGD8J0A": {
+        "fid": [
+          "EC1E98BF84CC"
+        ],
+        "l": "SSV5"
       },
       "K9AFGD8J0B": {
         "fid": [
           "EC5C98BF84CC",
           "EC5C98BF84C0"
+        ],
+        "l": "SSV5"
+      },
+      "K9AFGD8J0C": {
+        "fid": [
+          "EC1C98AF84CD",
+          "EC5C98AF84CD"
+        ],
+        "l": "SSV6"
+      },
+      "K9AFGD8J0M": {
+        "fid": [
+          "EC5E983FCBEC",
+          "EC5E983F84CB",
+          "EC1E983F84CB"
         ]
+      },
+      "K9AHGD8H0B": {
+        "fid": [
+          "EC1E98AF84CD"
+        ],
+        "l": "SSV6"
       },
       "K9AHGD8H0E": {
         "fid": [
           "EC1E981F84C2"
-        ]
+        ],
+        "l": "SSV6P"
       },
       "K9AHGD8J0D": {
         "fid": [
           "EC5EA88F88C1",
           "EC5FE98F8EC1"
-        ]
+        ],
+        "l": "SSV7"
       },
       "K9AHGD8J0E": {
         "fid": [
@@ -400,28 +593,33 @@
         "fid": [
           "EC5FA83F88DF",
           "EC5FA83F88EF"
-        ]
+        ],
+        "l": "SSV8"
       },
       "K9AKGD8J0D": {
         "fid": [
           "EC5FA89F88C3"
-        ]
+        ],
+        "l": "SSV9"
       },
       "K9BKGD8J1A": {
         "fid": [
           "EC5ED9AF88CD"
-        ]
+        ],
+        "l": "SSV6P"
       },
       "K9CMGD8J0D": {
         "fid": [
           "EC51EA8F81C1"
         ],
+        "l": "SSV7",
         "m": "CER"
       },
       "K9CMGY8J5E": {
         "fid": [
           "EC5E981F84C2"
-        ]
+        ],
+        "l": "SSV6P"
       },
       "K9DMGB8S7C": {
         "fid": [
@@ -438,6 +636,7 @@
         "fid": [
           "EC519BBF8ECC"
         ],
+        "l": "SSV5",
         "m": "CER"
       },
       "K9DUGB8S7M": {
@@ -460,18 +659,21 @@
         "fid": [
           "EC5FDAAF8CCD"
         ],
+        "l": "SSV6",
         "m": "CER"
       },
       "K9DVGB8J1A": {
         "fid": [
           "EC529BBF8ECC"
         ],
+        "l": "SSV5",
         "m": "CER"
       },
       "K9DVGB8J1B": {
         "fid": [
           "EC52DBAF8ECD"
         ],
+        "l": "SSV6",
         "m": "CER"
       },
       "K9DVGB8J1M": {
@@ -485,6 +687,7 @@
           "EC51DAAF8CCD",
           "EC51DBAF8ECD"
         ],
+        "l": "SSV6",
         "m": "CER"
       },
       "K9DVGY8J5E": {
@@ -492,28 +695,33 @@
           "EC51DA1F8CC2",
           "EC52DB1F8EC2"
         ],
+        "l": "SSV6P",
         "m": "CER"
       },
       "K9DYGY8J5B": {
         "fid": [
           "EC52EA3F8ECF"
         ],
+        "l": "SSV8",
         "m": "CER"
       },
       "K9GCGD8U0D": {
         "fid": [
           "ECDE94F3A4C6"
-        ]
+        ],
+        "l": "SS16"
       },
       "K9GDGD8U0B": {
         "fid": [
           "EC3A9443A4CA"
-        ]
+        ],
+        "l": "SS14"
       },
       "K9GDGD8U0D": {
         "fid": [
           "EC3A94C3A4CA"
-        ]
+        ],
+        "l": "SS14"
       },
       "K9GFGD8F0M": {
         "fid": [
@@ -534,6 +742,7 @@
         "fid": [
           "EC5F9ABF8CCC"
         ],
+        "l": "SSV5",
         "m": "CER"
       },
       "K9OMGY8J5B": {
@@ -551,6 +760,7 @@
         "fid": [
           "EC519ABF8CCC"
         ],
+        "l": "SSV5",
         "m": "CER"
       },
       "K9OUGB8J1M": {
@@ -562,12 +772,14 @@
       "K9OUGY8J5D": {
         "fid": [
           "EC1FE98F8EC1"
-        ]
+        ],
+        "l": "SSV7"
       },
       "K9OUGY8J5E": {
         "fid": [
           "EC5FD91F88C2"
         ],
+        "l": "SSV6P",
         "m": "CER"
       },
       "K9OUGY8J5M": {
@@ -580,34 +792,41 @@
       "K9OUGY8J6D": {
         "fid": [
           "EC51E91F8CCF"
-        ]
+        ],
+        "l": "SSV8"
       },
       "K9OUGY8J8D": {
         "fid": [
           "EC53EB3F81CF"
-        ]
+        ],
+        "l": "SSV8"
       },
       "K9OUGY8J8F": {
         "fid": [
           "EC51EA3F8ECF",
           "EC5FA83F88CF"
-        ]
+        ],
+        "l": "SSV8"
       },
       "K9OUGY8J8H": {
         "fid": [
           "EC5EA83F88CF",
           "EC5FE93F8CCF"
-        ]
+        ],
+        "l": "SSV8"
       },
       "K9OVGD8J2B": {
         "fid": [
           "EC51E93F8CCF"
-        ]
+        ],
+        "l": "SSV8",
+        "m": "CER"
       },
       "K9OVGY8J5D": {
         "fid": [
           "EC51E99F8CC3"
-        ]
+        ],
+        "l": "SSV9"
       },
       "K9PKGY8S7A": {
         "fid": [
@@ -651,54 +870,121 @@
       "K9XVGB8J1M": {
         "fid": [
           "EC52DE1F8CCB"
-        ]
+        ],
+        "l": "SSV4",
+        "m": "CER"
       },
       "K9XVGD8J5C": {
         "fid": [
           "EC51ED4B8CC1"
         ],
-        "c": "QLC"
+        "c": "QLC",
+        "m": "CER"
       },
       "K9XVGD8J5D": {
         "fid": [
           "EC51ED6B8CC3"
-        ]
+        ],
+        "l": "SSV9"
       },
       "K9XVGY8J5A": {
         "fid": [
           "EC52DE6B8CCC",
           "EC51DD6B88CC"
-        ]
+        ],
+        "l": "SSV5",
+        "m": "CER"
       },
       "K9XVGY8J5M": {
         "fid": [
           "EC51DD1F88CB"
         ],
+        "l": "SSV4",
         "c": "QLC"
       },
       "K9YYGA8J1D": {
         "fid": [
           "EC53EF6B81C3"
-        ]
+        ],
+        "l": "SSV9"
       },
       "K9YYGD8J5D": {
         "fid": [
           "EC52EE6B8EC3"
-        ]
+        ],
+        "l": "SSV9"
+      },
+      "KLUGGAR1FA": {
+        "fid": [
+          "EC1FD9BF88CC"
+        ],
+        "l": "SSV5"
       }
     },
     "skhynix": {
+      "H25BFT4D1C8R": {
+        "fid": [
+          "AD7E2A5302B0"
+        ],
+        "l": "HYV6"
+      },
+      "H25BFT4M9R8R": {
+        "fid": [
+          "AD5E293300A0",
+          "AD5E2A3300A0"
+        ],
+        "l": "HYV5"
+      },
+      "H25BFT8A1B": {
+        "fid": [
+          "AD5E295302B0",
+          "AD5E285302B0"
+        ],
+        "l": "HYV6"
+      },
+      "H25BFT8A1B8R": {
+        "fid": [
+          "AD7E285302B0"
+        ],
+        "l": "HYV6"
+      },
+      "H25BFT8A1BLR": {
+        "fid": [
+          "AD7E285302B2"
+        ],
+        "l": "HYV6"
+      },
+      "H25BFT8A1M8R": {
+        "fid": [
+          "AD7E283300A2"
+        ],
+        "l": "HYV5"
+      },
+      "H25BFT8A1M8R-BDJ": {
+        "fid": [
+          "AD7E283300A0"
+        ],
+        "l": "HYV5"
+      },
+      "H25BFT8A1MDA-BCH": {
+        "fid": [
+          "AD5E283300A0"
+        ],
+        "l": "HYV5"
+      },
       "H25G9TC18CX488": {
         "fid": [
           "AD7E290B00C2"
-        ]
+        ],
+        "l": "HYV7"
       },
       "H25G9TD18CX576": {
         "fid": [
           "AD7E283B00D2",
           "AD7E283B00D0",
           "AD89283B00D0"
-        ]
+        ],
+        "l": "HYV8"
       },
       "H25JGQ8F4M9R": {
         "fid": [
@@ -706,21 +992,53 @@
         ],
         "c": "QLC"
       },
+      "H25JGT4D1C8R": {
+        "fid": [
+          "AD892A5300B0"
+        ],
+        "l": "HYV6"
+      },
+      "H25JGT8A1M8R": {
+        "fid": [
+          "AD89285300B0"
+        ],
+        "l": "HYV6"
+      },
+      "H25JGT8A1MDA-BCH": {
+        "fid": [
+          "AD89285300B2"
+        ],
+        "l": "HYV6"
+      },
+      "H25JGT8B3M8R": {
+        "fid": [
+          "AD89295300B0"
+        ],
+        "l": "HYV6"
+      },
       "H25QEM8A1BDA": {
         "fid": [
           "AD5C14630890"
         ],
         "c": "MLC"
       },
+      "H25QFTMF4A9R": {
+        "fid": [
+          "AD5E2A221090"
+        ],
+        "l": "HYV4"
+      },
       "H25T2TB88E": {
         "fid": [
           "AD7E295302B0"
-        ]
+        ],
+        "l": "HYV6"
       },
       "H25T2TC88C": {
         "fid": [
           "AD7E2A0B00C0"
-        ]
+        ],
+        "l": "HYV7"
       },
       "H25T2TD48C": {
         "fid": [
@@ -732,7 +1050,8 @@
           "AD7E293B00D2",
           "AD7E2A3B00D0",
           "AD7E293B00D0"
-        ]
+        ],
+        "l": "HYV8"
       },
       "H25T3QA88CX548": {
         "fid": [
@@ -743,7 +1062,8 @@
       "H25T3TC88CX658": {
         "fid": [
           "AD89293B00D0"
-        ]
+        ],
+        "l": "HYV8"
       },
       "H25T3TD88C": {
         "fid": [
@@ -755,7 +1075,7 @@
         "fid": [
           "AD89295300B2"
         ],
-        "l": "128L 3Dv6"
+        "l": "HYV6"
       },
       "H25T4TDG8C": {
         "fid": [
@@ -766,111 +1086,165 @@
       "H27Q1T8YEC": {
         "fid": [
           "AD5A15F30070"
-        ]
+        ],
+        "l": "HYV2"
       },
       "H27Q2T87EC9R": {
         "fid": [
           "AD5A16F30070"
-        ]
+        ],
+        "l": "HYV2"
+      },
+      "H27Q2T8QEA9B": {
+        "fid": [
+          "AD5C292A0190"
+        ],
+        "l": "HYV4"
+      },
+      "H27Q2T8QFB9R": {
+        "fid": [
+          "AD5C29BA0080"
+        ],
+        "l": "HYV3"
+      },
+      "H27Q4T8LEA9R": {
+        "fid": [
+          "AD5C2A2A0190"
+        ],
+        "l": "HYV4"
       },
       "H27QDG8D2B8R": {
         "fid": [
           "AD3A14AB424A"
-        ]
+        ],
+        "l": "HY16"
+      },
+      "H27QDG8M2C8R": {
+        "fid": [
+          "AD5A28BA0080"
+        ],
+        "l": "HYV3"
       },
       "H27QDG8T2C8R": {
         "fid": [
           "AD5A14F30070"
-        ]
+        ],
+        "l": "HYV2"
+      },
+      "H27QEG8M2A": {
+        "fid": [
+          "AD5C282A0190"
+        ],
+        "l": "HYV4"
+      },
+      "H27QEG8M3MDA": {
+        "fid": [
+          "AD5C28BA0080"
+        ],
+        "l": "HYV3"
       },
       "H27QFG8PDM5R": {
         "fid": [
           "AD3A18A36125"
-        ]
+        ],
+        "l": "HY16"
       },
       "H27TDG8T2D": {
         "fid": [
           "AD3A14030850"
-        ]
+        ],
+        "l": "HY14"
       }
     },
     "sndk": {
       "0251DXDE50ZC": {
         "fid": [
           "45409BB3FE6B"
-        ]
+        ],
+        "l": "SBiCS4"
       },
       "05485-008G": {
         "fid": [
           "45DEA8927650"
         ],
-        "l": "A19nm[1y]"
+        "l": "SNK1Y"
       },
       "05485-016G": {
         "fid": [
           "454CA9927A50"
         ],
-        "l": "A19nm[1y]"
+        "l": "SNK1Y"
       },
       "05485-032G": {
         "fid": [
           "453CAA927E50"
         ],
-        "l": "A19nm[1y]"
+        "l": "SNK1Y"
       },
       "9316DVJAF06N": {
         "fid": [
           "453E9BB37E72"
-        ]
+        ],
+        "l": "SBiCS3"
       },
       "SD15139-0128G": {
         "fid": [
           "453AA6937E51"
         ],
-        "l": "15nm[1z]"
+        "l": "SNK15"
       },
       "SDINBDG4-64G": {
         "fid": [
           "453E97937E51"
-        ]
+        ],
+        "l": "SNK15"
       },
       "SDRNKCCCH-256G": {
         "fid": [
           "453CA5937E50"
         ],
-        "l": "15nm[1z]"
+        "l": "SNK15"
+      },
+      "SDTNAIAMA-032G": {
+        "fid": [
+          "453C98B376F1",
+          "453C98B376F9",
+          "453C98B37679",
+          "453C98B37671"
+        ],
+        "l": "SBiCS2"
       },
       "SDTNAIAMA-064G": {
         "fid": [
           "453E99B37A71",
           "453E99B37A79"
-        ]
+        ],
+        "l": "SBiCS2"
       },
       "SDTNAIAMA-120G": {
         "fid": [
           "45489AB37E71",
           "45489AB37E79"
+        ],
+        "l": "SBiCS2"
+      },
+      "SDTNAIAMA-64GB": {
+        "fid": [
+          "453E99B37A63"
         ]
       },
       "SDTNQFAMA-0032G": {
         "fid": [
           "453CA5937ED0"
         ],
+        "l": "SNK1Y",
         "m": "8DDK"
-      },
-      "SDTNQFAMA-008G": {
-        "fid": [
-          "453C9693F457",
-          "45DE94937657",
-          "45DE949376D0",
-          "45DE94937650"
-        ],
-        "m": "6DDJ; 6DDK"
       },
       "SDTNRIAMA-008GK": {
         "fid": [
           "453EAB927E50"
-        ]
+        ],
+        "l": "SNK1Y"
       },
       "SDTNSHAMA-016GB": {
         "fid": [
@@ -880,28 +1254,33 @@
           "453EA6937E51",
           "453AA4937AD1"
         ],
+        "l": "SNK15",
         "m": "7DFL"
       },
       "SDTNSHAMA-064G": {
         "fid": [
           "453E96937ED1"
-        ]
+        ],
+        "l": "SNK15"
       },
       "SDUNBIEMM-32G": {
         "fid": [
           "45489AB37EF2"
-        ]
+        ],
+        "l": "SBiCS3"
       },
       "SDUNCIAMA-0128GB": {
         "fid": [
           "45489AB37EEB"
-        ]
+        ],
+        "l": "SBiCS4"
       },
       "SDUNCIAMA-0256GB": {
         "fid": [
           "454899B37AE3",
           "453E98B376EB"
-        ]
+        ],
+        "l": "SBiCS4"
       },
       "SDUNCIAMA-032GB": {
         "fid": [
@@ -911,12 +1290,42 @@
           "453C98B3766B",
           "453C98B37663"
         ],
+        "l": "SBiCS4",
         "m": "8T24"
       },
       "SDUNCIAMA-032GB-TOGGLE": {
         "fid": [
           "453C98B376EB"
+        ],
+        "l": "SBiCS4"
+      },
+      "SDUNCIAMA-064GCE": {
+        "fid": [
+          "450098037664"
         ]
+      },
+      "SDUNCIAMA-1T00B54DEC": {
+        "fid": [
+          "45489C03766C",
+          "45489C0376EC"
+        ]
+      },
+      "SDUNCIAMA-256GB": {
+        "fid": [
+          "45499A037EEC",
+          "45499A037EE4",
+          "45499AB37E6B",
+          "45499AB37E63"
+        ],
+        "m": "9T24"
+      },
+      "SDUNCIAMA1-064GB": {
+        "fid": [
+          "453E99037A64",
+          "454999B37A6B",
+          "453E9A037E64"
+        ],
+        "m": "4DIE"
       },
       "SDUNCIAMA1TB": {
         "fid": [
@@ -926,36 +1335,108 @@
       "SDUNCIAMA2-064GB": {
         "fid": [
           "45499AB37EEB"
-        ]
+        ],
+        "l": "SBiCS4"
       },
       "SDUNCIAMB-0512GB": {
         "fid": [
           "45709BB37E6B"
+        ],
+        "l": "SBiCS4"
+      },
+      "SDUNCIAMB-064GB": {
+        "fid": [
+          "453E9B03F264"
         ]
       },
       "SDUNCIAMB1-064GB": {
         "fid": [
           "453E9AB37E6B"
-        ]
+        ],
+        "l": "SBiCS4"
       },
       "SDUNCIAMC-064GB": {
         "fid": [
           "453E9AB3FE6B"
-        ]
+        ],
+        "l": "SBiCS4"
       },
       "SDUNCIAZZ-256GCE": {
         "fid": [
           "453E99B3FA6B"
-        ]
+        ],
+        "l": "SBiCS4"
       },
       "SDUNCICMA-032GB": {
         "fid": [
           "453C9AB37E6B"
+        ],
+        "l": "SBiCS4"
+      },
+      "SDUNDIAMA-64GCE": {
+        "fid": [
+          "453E98B3F6E3"
+        ]
+      },
+      "SDUNDIAMB-64GCE": {
+        "fid": [
+          "454899B3FAE3"
+        ]
+      },
+      "SDUNEIAMA-064GCE": {
+        "fid": [
+          "453E99037A6C"
+        ]
+      },
+      "SDUNEIOBA-128GCE": {
+        "fid": [
+          "45FF9A037E64",
+          "45FF9A037E6C",
+          "45409A037EE4"
+        ]
+      },
+      "SDUNEIOBB-128GCE": {
+        "fid": [
+          "45409A037E64"
+        ]
+      },
+      "SDUNEIOMA-064GCE": {
+        "fid": [
+          "45FF98037664",
+          "45FF99037A64"
+        ]
+      },
+      "SDUNEIOMA-128GCE": {
+        "fid": [
+          "45499A037E6C",
+          "45409B03F264",
+          "45409B03F26C"
+        ]
+      },
+      "SDUNEIOMA-1TBCE": {
+        "fid": [
+          "45419B03F264"
         ]
       },
       "SDUNEIOMA-64GCE": {
         "fid": [
           "453EA8037A65"
+        ],
+        "l": "SBiCS6"
+      },
+      "SDUNEIOMB-128GCE": {
+        "fid": [
+          "45FF9B03F264"
+        ]
+      },
+      "SDUNEIOMG-128GCE": {
+        "fid": [
+          "4548980376E4"
+        ]
+      },
+      "SDUNEIOMZ-128GCE": {
+        "fid": [
+          "45499A037E64"
         ]
       },
       "SDWNCJAMA-128GCE": {
@@ -964,117 +1445,178 @@
           "45739CB3766B",
           "45739CB376E3"
         ],
+        "l": "SBiCS4",
         "c": "QLC",
         "m": "8F24"
+      },
+      "SDYNAIAMA-032G": {
+        "fid": [
+          "453C98B37672"
+        ],
+        "m": "8T23"
       },
       "SDYNBIAMA-032G": {
         "fid": [
           "453C9BB37E72",
           "454899B37AF2"
-        ]
+        ],
+        "l": "SBiCS3"
       },
       "SDYNBIAMA-064G": {
         "fid": [
           "454899B37A72"
-        ]
+        ],
+        "l": "SBiCS3"
       },
       "SDYNBICMA-032G": {
         "fid": [
           "453C9AB37E72"
-        ]
+        ],
+        "l": "SBiCS3"
+      },
+      "SDYNEHBRG-256G": {
+        "fid": [
+          "4548A8037AE5",
+          "4549A9037EE6",
+          "4540AA03F2E6",
+          "4548A8037AE6"
+        ],
+        "l": "SBiCS6"
       },
       "SDYNEHBRG1-256G": {
         "fid": [
           "4548A8037A65"
-        ]
+        ],
+        "l": "SBiCS6"
       },
       "SDYNEHBRGK-256G": {
         "fid": [
           "4549AA03F2E5"
-        ]
+        ],
+        "l": "SBiCS6"
       },
       "SDYNEHBRGM-256G": {
         "fid": [
           "4549A9037E65",
           "4549A9037EE5"
-        ]
+        ],
+        "l": "SBiCS6"
       },
       "SDYNSGDPM-128GIR1": {
         "fid": [
           "453C95937AD1"
-        ]
+        ],
+        "l": "SNK15"
       },
       "SDYNSGERM-0128G": {
         "fid": [
           "454897937E51"
-        ]
+        ],
+        "l": "SNK15"
       },
       "SDYNSGERM-0160G": {
         "fid": [
           "455897937E51",
           "455897937ED1"
-        ]
+        ],
+        "l": "SNK15"
       },
       "SDYNSGERM-016G": {
         "fid": [
           "453A96937E51"
-        ]
+        ],
+        "l": "SNK15"
       },
       "SDYNSHERM1-0256G": {
         "fid": [
           "4548A7937E51"
-        ]
+        ],
+        "l": "SNK15"
       },
       "SDZNBIAMA-064G": {
         "fid": [
           "453E98B376F2"
-        ]
+        ],
+        "l": "SBiCS3"
       }
     },
     "spectek": {
       "FNNB16A256G1DHBAF": {
         "fid": [
           "B5A40832A100"
-        ]
+        ],
+        "l": "B16A"
       },
       "FNNM26A256G1KHBAG": {
         "fid": [
           "2CA36032C600"
         ]
+      },
+      "MT29F256G08EBHAF": {
+        "fid": [
+          "B5A46432AA04",
+          "B5A48832A100"
+        ]
       }
     },
     "ymtc": {
+      "KRN09TC1W03MXD": {
+        "fid": [
+          "9BC428493000"
+        ],
+        "l": "WYS"
+      },
+      "YMN08TB1B1AU1B": {
+        "fid": [
+          "9BC449251000",
+          "9BC348251000"
+        ],
+        "l": "JGS"
+      },
       "YMN08TB1B1HU1B": {
         "fid": [
           "9BC54A251000",
           "9BC318251000"
-        ]
+        ],
+        "l": "JGS"
+      },
+      "YMN09TC1B1DC6C": {
+        "fid": [
+          "9BC529492000",
+          "9BC428492000"
+        ],
+        "l": "TAS"
       },
       "YMN09TC1B1DCAD": {
         "fid": [
           "9BC529493000"
-        ]
+        ],
+        "l": "WYS"
       },
       "YMN09TC1B1HCAD": {
         "fid": [
           "9BC428494000"
-        ]
+        ],
+        "l": "WYS"
       },
       "YMN09TF1B5DCBE": {
         "fid": [
           "9BC458554000"
-        ]
+        ],
+        "l": "WTS"
       },
       "YMN09TF1B5JCBE": {
         "fid": [
           "9BC559554000"
-        ]
+        ],
+        "l": "WTS"
       },
       "YMN0AQF1B1JCAD": {
         "fid": [
           "9BC55C553000",
           "9BC65D553000"
-        ]
+        ],
+        "l": "EMS"
       },
       "YMN0ATF1B1HPAD2": {
         "fid": [
@@ -1085,27 +1627,44 @@
         "fid": [
           "9BC558754000",
           "9BC558794000"
-        ]
+        ],
+        "l": "SQS"
       },
       "YMN0ATF1B5JCBE": {
         "fid": [
           "9BC659754000"
-        ]
+        ],
+        "l": "SQS"
       },
       "YMN0ATF1B5JFBE": {
         "fid": [
           "9BC659794000"
-        ]
+        ],
+        "l": "SQS"
       },
       "YMN0ATF1W00CAD": {
         "fid": [
           "9BC558713000"
-        ]
+        ],
+        "l": "WDS"
+      },
+      "YMN0BQF1B5HCBE": {
+        "fid": [
+          "9BC65C954000"
+        ],
+        "l": "PTS"
+      },
+      "YMN0BQF1B5JCBE": {
+        "fid": [
+          "9BC65D954000"
+        ],
+        "l": "PTS"
       },
       "YMN0WQC1B1AC6C": {
         "fid": [
           "9BD5588D2000"
-        ]
+        ],
+        "l": "HUS"
       }
     }
   }

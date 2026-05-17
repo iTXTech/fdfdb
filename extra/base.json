@@ -147,6 +147,31 @@
           "EC1A98BF94C6"
         ]
       },
+      "K9ACGD8S0C": {
+        "id": [
+          "ECAEB8DE86C5"
+        ],
+        "l": "SS19"
+      },
+      "K9BDGD8U0D": {
+        "id": [
+          "EC3AC9BF94C6"
+        ],
+        "l": "SS16"
+      },
+      "K9BFGD8U0D": {
+        "id": [
+          "EC3CD9BF98C6"
+        ],
+        "l": "SS16"
+      },
+      "K9GCGD8U0F": {
+        "id": [
+          "EC3A94C3A4CA",
+          "ECDE94C3A4CA"
+        ],
+        "l": "SS14"
+      },
       "K9QFGY8S7M": {
         "id": [
           "ECA7A06A68C4"
@@ -295,6 +320,39 @@
           "2CA40832A104"
         ],
         "l": "B16C"
+      },
+      "MT29F128G08CFAAA": {
+        "l": "L74A"
+      },
+      "MT29F128G08EBEBB": {
+        "l": "B95A"
+      },
+      "MT29F128G08EECBB": {
+        "l": "B95A"
+      },
+      "MT29F128G08EFAAA": {
+        "l": "B74A"
+      },
+      "MT29F16G08CBABA": {
+        "l": "L62A"
+      },
+      "MT29F256G08CJAAA": {
+        "l": "L74A"
+      },
+      "MT29F256G08EJAAA": {
+        "l": "B74A"
+      },
+      "MT29F4G08ABAEA": {
+        "l": "M70M"
+      },
+      "MT29F512G08CUAAA": {
+        "l": "L74A"
+      },
+      "MT29F64G08CBAAA": {
+        "l": "L74A"
+      },
+      "MT29F64G08EBAAA": {
+        "l": "B74A"
       },
       "MT29F512G08CECBB": {
         "l": "L06B"

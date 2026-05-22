@@ -70,6 +70,10 @@
           "AD89284B00E0"
         ],
         "l": "HYV9",
+        "pkg": "152-ball BGA 14x18x1.0mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Client",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 1,
         "e": 1,
         "r": 1,
@@ -80,6 +84,10 @@
           "AD89284B00E0"
         ],
         "l": "HYV9",
+        "pkg": "152-ball BGA 14x18x1.0mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Client",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 2,
         "e": 2,
         "r": 2,
@@ -90,6 +98,10 @@
           "AD89284B00E0"
         ],
         "l": "HYV9",
+        "pkg": "152-ball BGA 14x18x1.0mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Client",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 4,
         "e": 4,
         "r": 4,
@@ -100,6 +112,10 @@
           "AD89294B00E0"
         ],
         "l": "HYV9",
+        "pkg": "152-ball BGA 14x18x1.35mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Client",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 8,
         "e": 4,
         "r": 4,
@@ -110,6 +126,10 @@
           "AD89294B00E0"
         ],
         "l": "HYV9",
+        "pkg": "152-ball BGA 14x18x1.35mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Enterprise",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 8,
         "e": 4,
         "r": 4,
@@ -120,6 +140,10 @@
           "AD892A4B00E0"
         ],
         "l": "HYV9",
+        "pkg": "152-ball BGA 14x18x1.35mm",
+        "sg": "DQ Speed=1600Mbps",
+        "pc": "Enterprise",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 16,
         "e": 4,
         "r": 4,
@@ -130,6 +154,10 @@
           "AD89284B00E0"
         ],
         "l": "HYV9",
+        "pkg": "316-ball BGA 14x18x1.0mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Client",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 4,
         "e": 4,
         "r": 4,
@@ -140,6 +168,10 @@
           "AD89294B00E0"
         ],
         "l": "HYV9",
+        "pkg": "316-ball BGA 14x18x1.35mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Client",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 8,
         "e": 4,
         "r": 4,
@@ -150,6 +182,10 @@
           "AD892A4B00E0"
         ],
         "l": "HYV9",
+        "pkg": "316-ball BGA 14x18x1.35mm",
+        "sg": "DQ Speed=1600Mbps",
+        "pc": "Client",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 16,
         "e": 4,
         "r": 4,
@@ -160,6 +196,10 @@
           "AD89284B00E0"
         ],
         "l": "HYV9",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Client",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 4,
         "e": 4,
         "r": 4,
@@ -170,6 +210,10 @@
           "AD89294B00E0"
         ],
         "l": "HYV9",
+        "pkg": "154-ball BGA 11.5x13.5x1.35mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Client",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 8,
         "e": 4,
         "r": 4,
@@ -180,6 +224,10 @@
           "AD89284B00E0"
         ],
         "l": "HYV9",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Enterprise",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 1,
         "e": 1,
         "r": 1,
@@ -190,6 +238,10 @@
           "AD89284B00E0"
         ],
         "l": "HYV9",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Enterprise",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 2,
         "e": 2,
         "r": 2,
@@ -200,6 +252,10 @@
           "AD89284B00E0"
         ],
         "l": "HYV9",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Enterprise",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 4,
         "e": 4,
         "r": 4,
@@ -210,6 +266,10 @@
           "AD89294B00E0"
         ],
         "l": "HYV9",
+        "pkg": "154-ball BGA 11.5x13.5x1.35mm",
+        "sg": "DQ Speed=2400Mbps",
+        "pc": "Enterprise",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 8,
         "e": 4,
         "r": 4,
@@ -220,10 +280,240 @@
           "AD892A4B00E0"
         ],
         "l": "HYV9",
+        "pkg": "154-ball BGA 11.5x13.5x1.5mm",
+        "sg": "DQ Speed=2100Mbps",
+        "pc": "Enterprise",
+        "vol": "Vcc: 2.5V, VccQ: 1.2V",
         "d": 16,
         "e": 4,
         "r": 4,
         "n": 2
+      },
+      "H25T0TG18GX807": {
+        "fid": [
+          "AD79284B02E0"
+        ],
+        "l": "HYV9H",
+        "c": "TLC",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "Max Speed=3600MT/s",
+        "pc": "Client",
+        "d": 1,
+        "e": 1,
+        "r": 1,
+        "n": 1,
+        "pl": 4
+      },
+      "H25T1TG28GX840": {
+        "fid": [
+          "AD79284B02E0"
+        ],
+        "l": "HYV9H",
+        "c": "TLC",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "Max Speed=3600MT/s",
+        "pc": "Client",
+        "d": 2,
+        "e": 2,
+        "r": 2,
+        "n": 2,
+        "pl": 4
+      },
+      "H25T2TG48GX842": {
+        "fid": [
+          "AD79284B02E0"
+        ],
+        "l": "HYV9H",
+        "c": "TLC",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "Max Speed=3600MT/s",
+        "pc": "Client",
+        "d": 4,
+        "e": 4,
+        "r": 4,
+        "n": 2,
+        "pl": 4
+      },
+      "H25T3TG88GX844": {
+        "fid": [
+          "AD79294B02E0"
+        ],
+        "l": "HYV9H",
+        "c": "TLC",
+        "pkg": "154-ball BGA 11.5x13.5x1.35mm",
+        "sg": "Max Speed=3600MT/s",
+        "pc": "Client",
+        "d": 8,
+        "e": 4,
+        "r": 4,
+        "n": 2,
+        "pl": 4
+      },
+      "H25T2TG48GX846": {
+        "fid": [
+          "AD79284B02E0"
+        ],
+        "l": "HYV9H",
+        "c": "TLC",
+        "pkg": "316-ball BGA 14x18x1.0mm",
+        "sg": "Max Speed=3600MT/s",
+        "pc": "Client",
+        "d": 4,
+        "e": 4,
+        "r": 4,
+        "n": 4,
+        "pl": 4
+      },
+      "H25T3TG88GX848": {
+        "fid": [
+          "AD79294B02E0"
+        ],
+        "l": "HYV9H",
+        "c": "TLC",
+        "pkg": "316-ball BGA 14x18x1.35mm",
+        "sg": "Max Speed=3600MT/s",
+        "pc": "Client",
+        "d": 8,
+        "e": 4,
+        "r": 4,
+        "n": 4,
+        "pl": 4
+      },
+      "H25T4TGG8GX848": {
+        "fid": [
+          "AD792A4B02E0"
+        ],
+        "l": "HYV9H",
+        "c": "TLC",
+        "pkg": "316-ball BGA 14x18x1.35mm",
+        "sg": "Max Speed=3600MT/s",
+        "pc": "Client",
+        "d": 16,
+        "e": 4,
+        "r": 4,
+        "n": 4,
+        "pl": 4
+      },
+      "H25T3QM48GX817": {
+        "fid": [
+          "AD780C5B30E0"
+        ],
+        "l": "HYV9Q",
+        "c": "QLC",
+        "pkg": "316-ball BGA 14x18x1.0mm",
+        "sg": "Max Speed=3200MT/s",
+        "pc": "Client",
+        "d": 4,
+        "e": 4,
+        "r": 4,
+        "n": 4,
+        "pl": 6
+      },
+      "H25T4QM88GX819": {
+        "fid": [
+          "AD780D5B30E0"
+        ],
+        "l": "HYV9Q",
+        "c": "QLC",
+        "pkg": "316-ball BGA 14x18x1.35mm",
+        "sg": "Max Speed=3200MT/s",
+        "pc": "Client",
+        "d": 8,
+        "e": 4,
+        "r": 4,
+        "n": 4,
+        "pl": 6
+      },
+      "H25T5QMG8GX819": {
+        "fid": [
+          "AD780E5B30E0"
+        ],
+        "l": "HYV9Q",
+        "c": "QLC",
+        "pkg": "316-ball BGA 14x18x1.35mm",
+        "sg": "Max Speed=3200MT/s",
+        "pc": "Client",
+        "d": 16,
+        "e": 4,
+        "r": 4,
+        "n": 4,
+        "pl": 6
+      },
+      "H25T1QM18GX834": {
+        "fid": [
+          "AD780C5B30E0"
+        ],
+        "l": "HYV9Q",
+        "c": "QLC",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "Max Speed=3200MT/s",
+        "pc": "Enterprise",
+        "d": 1,
+        "e": 1,
+        "r": 1,
+        "n": 2,
+        "pl": 6
+      },
+      "H25T2QM28GX836": {
+        "fid": [
+          "AD780C5B30E0"
+        ],
+        "l": "HYV9Q",
+        "c": "QLC",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "Max Speed=3200MT/s",
+        "pc": "Enterprise",
+        "d": 2,
+        "e": 2,
+        "r": 2,
+        "n": 2,
+        "pl": 6
+      },
+      "H25T3QM48GX822": {
+        "fid": [
+          "AD780C5B30E0"
+        ],
+        "l": "HYV9Q",
+        "c": "QLC",
+        "pkg": "154-ball BGA 11.5x13.5x1.0mm",
+        "sg": "Max Speed=3200MT/s",
+        "pc": "Enterprise",
+        "d": 4,
+        "e": 4,
+        "r": 4,
+        "n": 2,
+        "pl": 6
+      },
+      "H25T4QM88GX824": {
+        "fid": [
+          "AD780D5B30E0"
+        ],
+        "l": "HYV9Q",
+        "c": "QLC",
+        "pkg": "154-ball BGA 11.5x13.5x1.35mm",
+        "sg": "Max Speed=3200MT/s",
+        "pc": "Enterprise",
+        "d": 8,
+        "e": 4,
+        "r": 4,
+        "n": 2,
+        "pl": 6
+      },
+      "H25T5QMG8GX830": {
+        "fid": [
+          "AD780E5B30E0"
+        ],
+        "l": "HYV9Q",
+        "c": "QLC",
+        "pkg": "154-ball BGA 11.5x13.5x1.7mm",
+        "sg": "Max Speed=2280MT/s",
+        "pc": "Enterprise",
+        "so": "IF-Chip",
+        "d": 16,
+        "e": 4,
+        "r": 4,
+        "n": 2,
+        "pl": 6
       }
     },
     "samsung": {

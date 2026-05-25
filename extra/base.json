@@ -45,6 +45,13 @@
         ]
       }
     },
+    "phison": {
+      "T27HGA5A1V": {
+        "f": [
+          "9848A8037AE5"
+        ]
+      }
+    },
     "skhynix": {
       "H27QFG8YHE": {
         "id": [
